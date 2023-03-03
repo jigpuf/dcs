@@ -1,12 +1,10 @@
 import React from 'react';
 
-class Pid extends React.Component {
-  render () {
+const Pid = () => {
     return (
       <div>PID Theory
       </div>
     );
-  }
 }
 
 export default Pid;

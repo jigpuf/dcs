@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Injection extends React.Component {
-  render () {
+const Injection = () => {
+
     return (
       <div>Injection Meter</div>
     );
-  }
+  
 }
 
 export default Injection;

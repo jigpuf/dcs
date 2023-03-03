@@ -3,7 +3,6 @@ import Accelerometers from './dumb/accels.js';
 import Anemometer from './dumb/anemometer.js';
 import Flame from './dumb/flame.js';
 import Flow from './dumb/flowMeter.js';
-import Hyv from './dumb/hyv.js';
 import Limit from './dumb/limit.js';
 import LoadCell from './dumb/loadCell.js';
 import LoadPin from './dumb/loadPin.js';
@@ -34,7 +33,6 @@ class Dumb extends React.Component {
       {name: 'Anemometer', slug: 'anemometer', component:<Anemometer /> },
       {name: 'Flame Detectors', slug: 'flame', component:<Flame /> },
       {name: 'Flow Meter', slug: 'flow', component:<Flow /> },
-      {name: 'Hydraulic Valves', slug: 'hyv', component:<Hyv /> },
       {name: 'Limits', slug: 'limits', component:<Limit />},
       {name: 'Load Cell', slug: 'lc', component:<LoadCell />},
       {name: 'Load Pin', slug: 'lp', component:<LoadPin />},

@@ -1,11 +1,10 @@
 import React from 'react';
 
-class Stat extends React.Component {
-  render () {
+const Stat = () => {
     return (
       <div>Status Lines</div>
     );
-  }
+
 }
 
 export default Stat;

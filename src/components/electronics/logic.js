@@ -1,11 +1,10 @@
 import React from 'react';
 
-class Logic extends React.Component {
-  render () {
+const Logic = () => {
     return (
       <div>Logic</div>
     );
-  }
+
 }
 
 export default Logic;

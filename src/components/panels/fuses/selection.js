@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Selection extends React.Component {
-  render () {
+const Selection = () => {
     return (
       <div>
       <p>
@@ -30,7 +29,6 @@ class Selection extends React.Component {
       ></a><br />
       </div>
     );
-  }
 }
 
 export default Selection;

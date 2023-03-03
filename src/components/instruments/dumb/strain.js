@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Strain extends React.Component {
-  render () {
+const Strain = () => {
+
     return (
       <div>Strain</div>
     );
-  }
+
 }
 
 export default Strain;

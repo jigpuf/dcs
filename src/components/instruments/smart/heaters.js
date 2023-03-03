@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Heaters extends React.Component {
-  render () {
+const Heaters = () => {
+
     return (
       <div>
       <p>Heaters are used for heating gases and liquids.  The circuits typically
@@ -63,7 +63,6 @@ class Heaters extends React.Component {
 
       </div>
     );
-  }
 }
 
 export default Heaters;

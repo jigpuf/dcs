@@ -1,7 +1,6 @@
 import React from 'react';
 
-class PlcCommunications extends React.Component {
-  render () {
+const PlcCommunications = () => {
     return (
       <div>
         <table>
@@ -18,7 +17,7 @@ class PlcCommunications extends React.Component {
 
       </div>
     );
-  }
+  
 }
 
 export default PlcCommunications;

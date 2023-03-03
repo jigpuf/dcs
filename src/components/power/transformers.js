@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Transformers extends React.Component {
-  render () {
+const Transformers = () => {
     return (
       <div>
       <a href='https://www.youtube.com/watch?v=uES1i2jFwJE'
@@ -10,7 +9,6 @@ class Transformers extends React.Component {
       >Transformers Physics Problems - Voltage, Current & Power Calculations - Electromagnetic Induction</a><br/>
       </div>
     );
-  }
 }
 
 export default Transformers;

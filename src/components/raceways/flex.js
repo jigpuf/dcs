@@ -1,11 +1,9 @@
 import React from 'react';
 
-class Flex extends React.Component {
-  render () {
+const Flex = () => {
     return (
       <div> Flex Conduit</div>
     );
-  }
 }
 
 export default Flex;

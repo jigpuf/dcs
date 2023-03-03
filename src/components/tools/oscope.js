@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Oscope extends React.Component {
-  render () {
+const Oscope = () =>{
+
     return (
       <div>O-Scope</div>
     );
-  }
+  
 }
 
 export default Oscope;

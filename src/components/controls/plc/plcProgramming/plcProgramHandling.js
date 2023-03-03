@@ -1,7 +1,6 @@
 import React from 'react';
 
-class PlcLoadProgram extends React.Component {
-  render () {
+const PlcLoadProgram = () => {
     return (
       <div>
         <h2>Program Handling</h2>
@@ -24,7 +23,7 @@ class PlcLoadProgram extends React.Component {
         <h3>Remove program from PLC</h3>
       </div>
     );
-  }
+  
 }
 
 export default PlcLoadProgram;

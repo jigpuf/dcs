@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Excel extends React.Component {
-  render () {
+const Excel = () => {
+
     return (
       <div>
       <h2>Excel</h2>
@@ -18,7 +18,6 @@ class Excel extends React.Component {
       Pivot Table with slicers Tutorial</a><br />
       </div>
     );
-  }
 }
 
 export default Excel;

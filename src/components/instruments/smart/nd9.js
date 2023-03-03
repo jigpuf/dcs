@@ -1,7 +1,6 @@
 import React from 'react';
 
-class ND9 extends React.Component {
-  render () {
+const ND9 = () => {
     return (
       <div>
         <li><a href='https://www.youtube.com/watch?v=crWapTcfx_c' target ='_blank'
@@ -43,7 +42,6 @@ class ND9 extends React.Component {
         <h3>Adding to software</h3>
       </div>
     );
-  }
 }
 
 export default ND9;

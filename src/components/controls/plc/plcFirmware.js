@@ -1,7 +1,6 @@
 import React from 'react';
 
-class PlcFirmware extends React.Component {
-  render () {
+const PlcFirmware = () => {
     return (
       <div>
         <h2>PLC Firmware</h2>
@@ -19,7 +18,6 @@ class PlcFirmware extends React.Component {
           <h3>Flash Firmware</h3>
       </div>
     );
-  }
 }
 
 export default PlcFirmware;

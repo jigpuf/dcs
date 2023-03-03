@@ -1,11 +1,9 @@
 import React from 'react';
 
-class Pcb extends React.Component {
-  render () {
+const Pcb = () => {
     return (
       <div>Pcb</div>
     );
-  }
 }
 
 export default Pcb;

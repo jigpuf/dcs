@@ -1,7 +1,6 @@
 import React from 'react';
 
-class LoadPin extends React.Component {
-  render () {
+const LoadPin = () => {
     return (
       <div>
       Load LoadPin
@@ -27,7 +26,6 @@ class LoadPin extends React.Component {
         Instrument Checkout:<br />
       <h3>Adding to software</h3></div>
     );
-  }
 }
 
 export default LoadPin;

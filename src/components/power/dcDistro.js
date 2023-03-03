@@ -1,7 +1,7 @@
 import React from 'react';
 
-class DcDistro extends React.Component {
-  render () {
+const DcDistro= () => {
+
     return (
       <div>
         <h2>Raptor DC Distribution</h2>
@@ -11,7 +11,6 @@ class DcDistro extends React.Component {
         <h3>Low Level</h3>
       </div>
     );
-  }
 }
 
 export default DcDistro;

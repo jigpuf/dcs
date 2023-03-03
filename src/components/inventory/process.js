@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Process extends React.Component {
-  render () {
+const Process = () => {
     return (
       <div>
         <h2>Inventory Process</h2>
@@ -18,7 +17,7 @@ class Process extends React.Component {
         <h3>CapX</h3>
       </div>
     );
-  }
+
 }
 
 export default Process;

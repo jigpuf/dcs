@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Terminations extends React.Component {
-  render () {
+const Terminations = () => {
     return (
       <div>
       <li>MS</li>
@@ -25,7 +24,7 @@ class Terminations extends React.Component {
       <li>D38999</li>
       </div>
     );
-  }
+
 }
 
 export default Terminations;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Multimeter extends React.Component {
-  render () {
+const Multimeter = () => {
+
     return (
       <div>multimeter</div>
     );
-  }
+
 }
 
 export default Multimeter;

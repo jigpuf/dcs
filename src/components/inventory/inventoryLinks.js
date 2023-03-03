@@ -1,7 +1,7 @@
 import React from 'react';
 
-class InventoryLinks extends React.Component {
-  render () {
+const InventoryLinks = () => {
+
     return (
       <div>
         <h2>Inventory Links</h2>
@@ -16,7 +16,6 @@ class InventoryLinks extends React.Component {
           </table>
       </div>
     );
-  }
 }
 
 export default InventoryLinks;

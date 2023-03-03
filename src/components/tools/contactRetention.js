@@ -1,7 +1,7 @@
 import React from 'react';
 
-class ContactRetention extends React.Component {
-  render () {
+const ContactRetention = () => {
+
     return (
       <div>
         <h2>Contact Retention Tool</h2>
@@ -10,7 +10,6 @@ class ContactRetention extends React.Component {
 
       </div>
     );
-  }
 }
 
 export default ContactRetention;

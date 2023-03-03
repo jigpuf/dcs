@@ -1,11 +1,9 @@
 import React from 'react';
 
-class Watlow extends React.Component {
-  render () {
+const Watlow = () => {
     return (
       <div>Watlow</div>
     );
-  }
 }
 
 export default Watlow;

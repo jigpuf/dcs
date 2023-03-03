@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Philtec extends React.Component {
-  render () {
+const Philtec = () => {
+
     return (
       <div>
         <h2>Philtec instruments</h2>
@@ -12,7 +12,7 @@ class Philtec extends React.Component {
         </ol>
       </div>
     );
-  }
+
 }
 
 export default Philtec;

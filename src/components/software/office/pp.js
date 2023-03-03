@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Pp extends React.Component {
-  render () {
+const Pp = () => {
+
     return (
       <div>Power Point</div>
     );
-  }
+
 }
 
 export default Pp;

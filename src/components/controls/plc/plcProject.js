@@ -1,7 +1,6 @@
 import React from 'react';
 
-class PlcProject extends React.Component {
-  render () {
+const PlcProject = () => {
     return (
       <div>
        <h2>Plc Project</h2>
@@ -83,7 +82,7 @@ class PlcProject extends React.Component {
           <br /><br /><br /><br /><br /><br />
       </div>
     );
-  }
+
 }
 
 export default PlcProject;

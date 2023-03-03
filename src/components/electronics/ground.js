@@ -1,11 +1,10 @@
 import React from 'react';
 
-class Ground extends React.Component {
-  render () {
+const Ground = () => {
     return (
       <div>Ground</div>
     );
-  }
+  
 }
 
 export default Ground;

@@ -1,11 +1,10 @@
 import React from 'react';
 
-class Examples extends React.Component {
-  render () {
+const Examples = () => {
+
     return (
       <div>Examples</div>
     );
-  }
 }
 
 export default Examples;

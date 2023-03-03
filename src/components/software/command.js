@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Command extends React.Component {
-  render () {
+const Command = () => {
+
     return (
       <div>
       Ping:<br />
@@ -30,7 +30,7 @@ class Command extends React.Component {
       >Windows Command Line Tutorial - 5 - PATH Variable</a><br />
       </div>
     );
-  }
+
 }
 
 export default Command;

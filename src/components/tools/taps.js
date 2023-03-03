@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Taps extends React.Component {
-  render () {
+const Taps = () => {
+
     return (
       <div>
         <h2>Taps</h2>
@@ -17,7 +17,6 @@ class Taps extends React.Component {
 
       </div>
     );
-  }
 }
 
 export default Taps;

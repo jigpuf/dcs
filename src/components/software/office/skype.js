@@ -1,11 +1,10 @@
 import React from 'react';
 
-class Skype extends React.Component {
-  render () {
+const Skype = () => {
+
     return (
       <div>Skype</div>
     );
-  }
 }
 
 export default Skype;

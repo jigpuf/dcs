@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Labview extends React.Component {
-  render () {
+const Labview = () => {
+
     return (
       <div>
       Labview:<br />
@@ -10,7 +10,7 @@ class Labview extends React.Component {
 
       </div>
     );
-  }
+
 }
 
 export default Labview;

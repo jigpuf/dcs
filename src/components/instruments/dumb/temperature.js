@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Temperature extends React.Component {
-  render () {
+const Temperature = () => {
+
     return (
       <div>
       <h2>Temperature</h2>
@@ -79,7 +79,7 @@ class Temperature extends React.Component {
           <h3>Adding to software</h3>
       </div>
     );
-  }
+
 }
 
 export default Temperature;

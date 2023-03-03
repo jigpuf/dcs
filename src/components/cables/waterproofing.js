@@ -1,13 +1,11 @@
 import React from 'react';
 
-class Waterproofing extends React.Component {
-  render () {
+const Waterproofing = () => {
     return (
       <div>
       Waterproofing
       </div>
     );
   }
-}
 
 export default Waterproofing;

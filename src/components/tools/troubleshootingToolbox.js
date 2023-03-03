@@ -1,7 +1,7 @@
 import React from 'react';
 
-class TroubleshootingJbox extends React.Component {
-  render () {
+const TroubleshootingJbox = () => {
+
     return (
       <div>
       <h2>Troubleshooting toolbox</h2>
@@ -42,7 +42,7 @@ class TroubleshootingJbox extends React.Component {
         <h3>Troubleshooting table</h3>
       </div>
     );
-  }
+  
 }
 
 export default TroubleshootingJbox;

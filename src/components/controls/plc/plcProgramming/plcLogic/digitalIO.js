@@ -1,7 +1,6 @@
 import React from 'react';
 
-class DigitalIO extends React.Component {
-  render () {
+const DigitalIO = () => {
     return (
       <div>Digital IO
         <table>
@@ -15,7 +14,6 @@ class DigitalIO extends React.Component {
         be in the logic</p>
       </div>
     );
-  }
 }
 
 export default DigitalIO;

@@ -1,11 +1,10 @@
 import React from 'react';
 
-class Breaker extends React.Component {
-  render () {
+const Breaker = () => {
+
     return (
       <div>Breaker</div>
     );
-  }
 }
 
 export default Breaker;

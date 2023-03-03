@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Numbers extends React.Component {
-  render () {
+const Numbers = () =>{
+
     return (
       <div>
         <table>
@@ -165,7 +165,6 @@ class Numbers extends React.Component {
         </table>
       </div>
     );
-  }
 }
 
 export default Numbers;

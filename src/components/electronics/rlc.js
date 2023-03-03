@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Rlc extends React.Component {
-  render () {
+const Rlc = () => {
     return (
       <div>
       <h3>RLC Circuits</h3>
@@ -64,7 +63,6 @@ class Rlc extends React.Component {
       √(R<sup>2</sup> + ((2πfL) - (2πfC)<sup>-1</sup>)<sup>2</sup>)<br /><br /><br /><br /><br /><br /><br /><br />
       </div>
     );
-  }
 }
 
 export default Rlc;

@@ -1,7 +1,6 @@
 import React from 'react';
 
-class NiModuleSwaps extends React.Component {
-  render () {
+const NiModuleSwaps = () => {
     return (
       <div>
       <h2>Ni Module Swaps</h2>
@@ -33,7 +32,6 @@ class NiModuleSwaps extends React.Component {
 
       </div>
     );
-  }
 }
 
 export default NiModuleSwaps;

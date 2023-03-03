@@ -1,11 +1,9 @@
 import React from 'react';
 
-class Valves extends React.Component {
-  render () {
+const Valves = () => {
     return (
       <div>Valves</div>
     );
-  }
 }
 
 export default Valves;

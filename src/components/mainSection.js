@@ -8,52 +8,34 @@ import Power from './power.js';
 import Software from './software.js';
 import Tools from './tools.js';
 import Panels from './panels.js';
-import Training from './training.js';
 import Inventory from './inventory.js';
 import Network from './network.js';
-import Links from './links.js';
+import Manager from './manager.js';
 import Apps from './apps.js';
 
 
 
-/*
-Since all the sections are rendering in the Main Section, we must import
-all relevant files.  React from react must be in every file.  We are importing
-the component with capital letters from the file with the path ./
-*/
-
 const MainSection = (props) => {
-  const activeTab3 = props.activeTab2;
-  //creates variable to contain the props.activeTab2 value from App.js
+  const activeTab = props.activeTab;
   return (
-    <div className="mainSection">
-      {activeTab3 === 'controls' && <Controls />}
-      {activeTab3 === 'instruments' && <Instruments />}
-      {activeTab3 === 'cables' && <Cables />}
-      {activeTab3 === 'raceways' && <Raceways />}
-      {activeTab3 === 'electronics' && <Electronics />}
-      {activeTab3 === 'power' && <Power />}
-      {activeTab3 === 'networking' && <Network />}
-      {activeTab3 === 'software' && <Software />}
-      {activeTab3 === 'tools' && <Tools />}
-      {activeTab3 === 'training' && <Training />}
-      {activeTab3 === 'panels' && <Panels />}
-      {activeTab3 === 'inventory' && <Inventory />}
-      {activeTab3 === 'links' && <Links />}
-      {activeTab3 === 'apps' && <Apps />}
-
-
-
+    <div className="main">
+      {activeTab === 'controls' && <Controls />}
+      {activeTab === 'instruments' && <Instruments />}
+      {activeTab === 'cables' && <Cables />}
+      {activeTab === 'raceways' && <Raceways />}
+      {activeTab === 'electronics' && <Electronics />}
+      {activeTab === 'power' && <Power />}
+      {activeTab === 'networking' && <Network />}
+      {activeTab === 'software' && <Software />}
+      {activeTab === 'tools' && <Tools />}
+      {activeTab === 'panels' && <Panels />}
+      {activeTab === 'inventory' && <Inventory />}
+      {activeTab === 'manage' && <Manager />}
+      {activeTab === 'apps' && <Apps />}
 
     </div>
   );
 };
-/*
-If the active tab prop from App.js ==== the given value,and the following
-component exists, then it will call the component.
-*/
+
 export default MainSection;
-/*
-the export default is what will export if the component in the file is not
-specified.
-*/
+

@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Concepts extends React.Component {
-  render () {
+const Concepts = () => {
     return (
       <div>
       <a href='https://www.youtube.com/watch?v=4oRT7PoXSS0'
@@ -11,7 +10,6 @@ class Concepts extends React.Component {
 
       </div>
     );
-  }
 }
 
 export default Concepts;

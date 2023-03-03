@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Rockwell extends React.Component {
-  render () {
+const Rockwell = () => {
+
     return (
       <div>Rockwell</div>
     );
-  }
+
 }
 
 export default Rockwell;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Rigid extends React.Component {
-  render () {
+const Rigid = () => {
+
     return (
       <div>Rigid Conduit</div>
     );
-  }
+
 }
 
 export default Rigid;

@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Aws extends React.Component {
-  render () {
+const Aws = () => {
     return (
       <div>
         <h2>AWS</h2>
@@ -24,7 +23,6 @@ class Aws extends React.Component {
         lives with the other MWLs</p>
       </div>
     );
-  }
 }
 
 export default Aws;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Er5k extends React.Component {
-  render () {
+const Er5k = () => {
+
     return (
       <div>
       <h3>Information</h3>
@@ -98,7 +98,6 @@ class Er5k extends React.Component {
       <hr />
       </div>
     );
-  }
 }
 
 export default Er5k;

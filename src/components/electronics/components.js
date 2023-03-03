@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Components extends React.Component {
-  render () {
+const Components = () => {
+
     return (
       <div>
       <h2>Components</h2>
@@ -19,7 +19,7 @@ class Components extends React.Component {
       Boolean Algebra, types, use
       </div>
     );
-  }
+
 }
 
 export default Components;

@@ -8,19 +8,11 @@ import Nd9 from './smart/nd9.js';
 import Tugger from './smart/tugger.js';
 import Level from './smart/level.js';
 import AudioPlayer from './smart/audioPlayer.js';
+import ButtonMaker from '../../utilities/buttonMaker.js';
 
 
-class Smart extends React.Component {
-  state = {
-    tier1: undefined,
-  }
-  pickTier1  = (item) => {
-    return () => {
-      this.setState({tier1:item})
-    }
-  }
-  render () {
-    const Items = [
+const Smart = () => {
+    const items = [
       {name: 'Open Path', slug: 'clearPath', component:<ClearPath /> },
       {name: 'Coriolis', slug: 'coriolis', component:<Coriolis /> },
       {name: 'ER5K', slug: 'er5k', component:<Er5k /> },
@@ -31,34 +23,13 @@ class Smart extends React.Component {
       {name: 'Level Transmitters', slug: 'level', component:<Level /> },
       {name: 'Audio Player', slug: 'audio', component:<AudioPlayer /> },
     ]
-    const renderItems = Items.map(item => {
-      return (
-        <button
-          key={item.slug}
-          onClick={this.pickTier1(item.slug)}
-          className={this.state.tier1 === item.slug ? "tier1 active" : "tier1"}
-        >{item.name}</button>
-      )
-    })
-    const tier1 = Items.filter(item => {
-      return this.state.tier1 === item.slug;
-    });
-    const renderTier2Component = tier1[0] && tier1[0].component;
     return (
       <div>
         <ul>
-          {renderItems}
+        <ButtonMaker buttons={items}/>
         </ul>
-        Information:Model, Part Number, Manufacturer Website, Videos, Manuals<br />
-        Physical Setup:Control Hardware, Circuit Diagram, Installation, Pinout, Connectors<br />
-        Setup:Software, Parameters, Calibration, Software Assets<br />
-        System Setup:Calculation, adding to software<br />
-        Troubleshooting:Simulate Instrument, Simulate Channel<br />
-        Tools: For instalation, troubleshooting<br />
-        <hr />
-        {renderTier2Component}
       </div>
     )
-    }
+    
   }
 export default Smart;

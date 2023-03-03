@@ -1,11 +1,11 @@
 import React from 'react';
 
-class LVDT extends React.Component {
-  render () {
+const LVDT = () => {
+
     return (
       <div>LVDTs</div>
     );
-  }
+
 }
 
 export default LVDT;

@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Crimpers extends React.Component {
-  render () {
+const Crimpers = () => {
     return (
       <div>
         <table>
@@ -152,7 +151,6 @@ class Crimpers extends React.Component {
         </table>
       </div>
     );
-  }
 }
 
 export default Crimpers;

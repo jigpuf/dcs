@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Remote extends React.Component {
-  render () {
+const Remote = () => {
+
     return (
       <div>
         <h2>Remote In</h2>
@@ -25,7 +25,6 @@ class Remote extends React.Component {
 
       </div>
     );
-  }
 }
 
 export default Remote;

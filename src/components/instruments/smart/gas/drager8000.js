@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Drager8000 extends React.Component {
-  render () {
+const Drager8000 = () => {
     return (
       <div>
         <h2>Drager8000</h2>
@@ -160,7 +159,6 @@ class Drager8000 extends React.Component {
           </ul><br /><br /><br /><br />
       </div>
     );
-  }
 }
 
 export default Drager8000;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-class It extends React.Component {
-  render () {
+const It = () => {
+
     return (
       <div>
       <h2>Troubleshooting IT Issues</h2>
@@ -12,7 +12,6 @@ class It extends React.Component {
 
       </div>
     );
-  }
 }
 
 export default It;

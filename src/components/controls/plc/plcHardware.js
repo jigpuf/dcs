@@ -1,7 +1,6 @@
 import React from 'react';
 
-class PlcHardware extends React.Component {
-  render () {
+const PlcHardware = () => {
     return (
       <div>
       <h2>Hardware</h2>
@@ -81,7 +80,6 @@ class PlcHardware extends React.Component {
           Contact:ccarnes@reynco.com 254-776-7400
       </div>
     );
-  }
 }
 
 export default PlcHardware;

@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Wheatstone extends React.Component {
-  render () {
+const Wheatstone = () => {
     return (
       <div>
       <h3>Wheatstone:</h3>
@@ -12,7 +11,6 @@ class Wheatstone extends React.Component {
 
       </div>
     );
-  }
 }
 
 export default Wheatstone;

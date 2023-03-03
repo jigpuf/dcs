@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Anemometer extends React.Component {
-  render () {
+const Anemometer = () => {
+
     return (
       <div>Anemometer</div>
     );
-  }
+
 }
 
 export default Anemometer;

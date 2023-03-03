@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Confluence extends React.Component {
-  render () {
+const Confluence = () => {
+
     return (
       <div>Confluence</div>
     );
-  }
+
 }
 
 export default Confluence;

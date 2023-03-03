@@ -1,7 +1,6 @@
 import React from 'react';
 
-class AudioPlayer extends React.Component {
-  render () {
+const AudioPlayer = () => {
     return (
       <div>
         <h2>Audio Player</h2>
@@ -34,7 +33,6 @@ class AudioPlayer extends React.Component {
       <h3>Adding to software</h3>
       </div>
     );
-  }
 }
 
 export default AudioPlayer;

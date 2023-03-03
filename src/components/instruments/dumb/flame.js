@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Flame extends React.Component {
-  render () {
+const Flame = () => {
+
     return (
       <div>
       <h2>Flame Detector</h2>
@@ -33,7 +33,6 @@ class Flame extends React.Component {
         Instrument Checkout:<br />
       <h3>Adding to software</h3></div>
     );
-  }
 }
 
 export default Flame;

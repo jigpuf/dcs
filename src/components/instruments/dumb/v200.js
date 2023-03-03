@@ -1,7 +1,7 @@
 import React from 'react';
 
-class V200 extends React.Component {
-  render () {
+const V200 = () => {
+
     return (
       <div>
         <h3>Video</h3>
@@ -91,7 +91,7 @@ class V200 extends React.Component {
         <h3>Adding to software</h3>
       </div>
     );
-  }
+
 }
 
 export default V200;

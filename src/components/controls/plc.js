@@ -6,20 +6,10 @@ import PlcFirmware from './plc/plcFirmware.js'
 import PlcCommunications from './plc/plcCommunications.js'
 import PlcConfigure from './plc/plcConfigure.js'
 import PlcProject from './plc/plcProject.js'
+import ButtonMaker from '../../utilities/buttonMaker.js';
 
-class PLC extends React.Component {
-  state = {
-    tier1: undefined,
-  }
-  pickTier1 = (item) => {
-    return () => {
-      this.setState({tier1:item})
-    }
-  }
-
-  render () {
-
-    const Items = [
+const PLC = () => {
+    const items = [
       {name: 'Hardware', slug: 'hardware', component:<PlcHardware /> },
       {name: 'Firmware', slug: 'firmware', component:<PlcFirmware />},
       {name: 'Software', slug: 'software', component:<PlcSoftware /> },
@@ -28,30 +18,14 @@ class PLC extends React.Component {
       {name: 'Communications', slug: 'communications', component:<PlcCommunications />},
       {name: 'Project', slug: 'project', component:<PlcProject />},
     ]
-    const renderItems = Items.map(item => {
-      return (
-        <button
-          key={item.slug}
-          onClick={this.pickTier1(item.slug)}
-          className={this.state.tier1 === item.slug ? "tier1 active" : "tier1"}
-          >{item.name}</button>
-      )
-    })
-    const tier1 = Items.filter(item => {
-      return this.state.tier1 === item.slug;
-    });
-        const renderTier2Component = tier1[0] && tier1[0].component;
     return (
       <div>
-      <ul>
-        {renderItems}
-        <hr />
-        {renderTier2Component}
-      </ul>
+        <ul>
+        <ButtonMaker buttons={items}/>
+        </ul>
       </div>
-
     )
+    
   }
-}
 
 export default PLC;

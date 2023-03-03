@@ -1,7 +1,6 @@
 import React from 'react';
 
-class LoadCell extends React.Component {
-  render () {
+const LoadCell = () => {
     return (
       <div>
         <table>
@@ -40,7 +39,7 @@ class LoadCell extends React.Component {
         <h3>Adding to software</h3>
       </div>
     );
-  }
+  
 }
 
 export default LoadCell;

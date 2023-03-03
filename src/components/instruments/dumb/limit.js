@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Limit extends React.Component {
-  render () {
+const Limit = () => {
     return (
       <div>
         <h3>Information</h3>
@@ -47,7 +46,6 @@ class Limit extends React.Component {
         <h3>Adding to software</h3>
       </div>
     );
-  }
 }
 
 export default Limit;

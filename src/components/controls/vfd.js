@@ -1,13 +1,11 @@
 import React from 'react';
 
-class Vfd extends React.Component {
-  render () {
+const Vfd = () => {
     return (
       <div>
       VFD
       </div>
     );
-  }
 }
 
 export default Vfd;

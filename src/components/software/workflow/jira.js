@@ -1,11 +1,9 @@
 import React from 'react';
 
-class Jira extends React.Component {
-  render () {
+const Jira = () => {
     return (
       <div>Jira</div>
     );
-  }
 }
 
 export default Jira;

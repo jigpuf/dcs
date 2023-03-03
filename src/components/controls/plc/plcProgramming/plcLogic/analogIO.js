@@ -1,7 +1,6 @@
 import React from 'react';
 
-class AnalogIO extends React.Component {
-  render () {
+const AnalogIO = () => {
     return (
       <div>
       AnalogIO
@@ -9,6 +8,5 @@ class AnalogIO extends React.Component {
       </div>
     );
   }
-}
 
 export default AnalogIO;

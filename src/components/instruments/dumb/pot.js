@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Pot extends React.Component {
-  render () {
+const Pot = () => {
+
     return (
       <div>
       Potentiometer
       </div>
     );
-  }
+
 }
 
 export default Pot;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-class NiControl extends React.Component {
-  render () {
+const NiControl = () => {
+
     return (
       <div>NI Control</div>
     );
-  }
+  
 }
 
 export default NiControl;

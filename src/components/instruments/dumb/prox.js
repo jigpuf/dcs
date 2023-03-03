@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Prox extends React.Component {
-  render () {
+const Prox = () => {
+
     return (
       <div>
         <h2>Proximity</h2>
@@ -52,7 +52,6 @@ class Prox extends React.Component {
           <h3>Adding to software</h3>
       </div>
     );
-  }
 }
 
 export default Prox;

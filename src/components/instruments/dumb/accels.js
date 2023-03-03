@@ -1,11 +1,9 @@
 import React from 'react';
 
-class Accelerometers extends React.Component {
-  render () {
+const Accelerometers = () => {
     return (
       <div>Accelerometers</div>
     );
-  }
 }
 
 export default Accelerometers;

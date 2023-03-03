@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Tugger extends React.Component {
-  render () {
+const Tugger = () => {
+
     return (
       <div>Tugger</div>
     );
-  }
+
 }
 
 export default Tugger;

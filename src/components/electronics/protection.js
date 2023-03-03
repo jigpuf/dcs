@@ -1,11 +1,9 @@
 import React from 'react';
 
-class Protection extends React.Component {
-  render () {
+const Protection = () => {
     return (
       <div>Protection</div>
     );
-  }
 }
 
 export default Protection;

@@ -1,7 +1,6 @@
 import React from 'react';
 
-class NiHardware extends React.Component {
-  render () {
+const NiHardware = () => {
     return (
       <div>
         <h2>NI Hardware</h2>
@@ -32,7 +31,6 @@ class NiHardware extends React.Component {
             <br /><br /><br /><br /><br /><br /><br />
       </div>
     );
-  }
 }
 
 export default NiHardware;

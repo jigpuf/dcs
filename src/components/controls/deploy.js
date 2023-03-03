@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Deploy extends React.Component {
-  render () {
+const Deploy = () => {
     return (
       <div>
         <h2>Deploy System</h2>
@@ -48,7 +47,6 @@ class Deploy extends React.Component {
           <br /><br /><br /><br /><br />
       </div>
     );
-  }
 }
 
 export default Deploy;

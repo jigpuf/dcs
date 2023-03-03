@@ -1,7 +1,7 @@
 import React from 'react';
 
-class Outlook extends React.Component {
-  render () {
+const Outlook = () => {
+
     return (
       <div>
         <h2>Outlook</h2>
@@ -10,7 +10,7 @@ class Outlook extends React.Component {
           by right clicking table.
       </div>
     );
-  }
+  
 }
 
 export default Outlook;

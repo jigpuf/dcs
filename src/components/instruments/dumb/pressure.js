@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Pressure extends React.Component {
-  render () {
+const Pressure = () => {
     return (
       <div>
         <h3>Part selection</h3>
@@ -74,7 +73,7 @@ class Pressure extends React.Component {
           Software Checkouts:<br />
       </div>
     );
-  }
+
 }
 
 export default Pressure;

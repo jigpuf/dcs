@@ -1,11 +1,10 @@
 import React from 'react';
 
-class Flow extends React.Component {
-  render () {
+const Flow = () => {
+
     return (
       <div></div>
     );
-  }
 }
 
 export default Flow;

@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Osi extends React.Component {
-  render () {
+const Osi  = () =>{
     return (
       <div>
       <h3>Networking</h3>
@@ -70,6 +69,6 @@ class Osi extends React.Component {
       >OSI model Demystified</a><br />
       </div>
     );
-  }
+
   }
 export default Osi;

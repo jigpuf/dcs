@@ -1,7 +1,7 @@
 import React from 'react';
 
-class ClearPath extends React.Component {
-  render () {
+const ClearPath = () => {
+
     return (
       <div>
         <h2>Open Path</h2>
@@ -36,7 +36,7 @@ class ClearPath extends React.Component {
         Instrument Checkout:<br />
       <h3>Adding to software</h3></div>
     );
-  }
+
 }
 
 export default ClearPath;

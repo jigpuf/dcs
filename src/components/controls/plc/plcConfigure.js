@@ -1,7 +1,6 @@
 import React from 'react';
 
-class PlcConfigure extends React.Component {
-  render () {
+const PlcConfigure = () => {
     return (
       <div>
         <h2>Configuration</h2>
@@ -77,7 +76,7 @@ class PlcConfigure extends React.Component {
           </ol>
       </div>
     );
-  }
+  
 }
 
 export default PlcConfigure;
