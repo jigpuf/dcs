@@ -3,6 +3,40 @@ import React from 'react';
 const Limit = () => {
     return (
       <div>
+        <h2>Limits</h2>
+        <h3>Limits based on limit board</h3>
+        <table>
+          <tr>
+            <th>Dsubs</th>
+            <th>Color</th>
+            <th>Contacts</th>
+            <th>Goes to</th>
+          </tr>
+          <tr>
+            <td>Output</td>
+            <td>White</td>
+            <td>1-37</td>
+            <td>DAQ NI 9205</td>
+          </tr>
+          <tr>
+            <td>Open</td>
+            <td>Purple</td>
+            <td>Brown</td>
+            <td>White</td>
+          </tr>
+          <tr>
+            <td>Closed</td>
+            <td>Brown</td>
+            <td>1-32</td>
+            <td>Channel</td>
+          </tr>
+          <tr>
+            <td>Return</td>
+            <td>White</td>
+            <td>1-32</td>
+            <td>Channel</td>
+          </tr>
+        </table>
         <h3>Information</h3>
           <table>
             <tr><th>Model</th><th>Part Number</th><th>Website</th><th>Video</th><th>Manual</th></tr>

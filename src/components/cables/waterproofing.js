@@ -3,7 +3,7 @@ import React from 'react';
 const Waterproofing = () => {
     return (
       <div>
-      Waterproofing
+      Waterproofing:
       </div>
     );
   }

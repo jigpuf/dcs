@@ -1,27 +1,32 @@
 import React from 'react';
+import ButtonMaker from '../../utilities/buttonMaker.js';
+import MS from './terminations/ms.js'
+import D38999 from './terminations/d38999.js'
+import Coax from './terminations/coax.js'
+import RJ45 from './terminations/rj45.js'
+import Ribbon from './terminations/ribbon.js'
+import Mouse from './terminations/mouse.js'
+import DSUB from './terminations/dsub.js'
+import M8 from './terminations/m8.js'
+
+
 
 const Terminations = () => {
+  const items = [
+    {name: 'MS', slug: 'ms', component:<MS /> },
+    {name: 'D38999', slug: 'd38', component:<D38999 /> },
+    {name: 'Coax', slug: 'coax', component:<Coax /> },
+    {name: 'RJ-45', slug: 'rj45', component:<RJ45 /> },
+    {name: 'Ribbon', slug: 'ribbon', component:<Ribbon /> },
+    {name: 'Mighty Mouse', slug: 'mouse', component:<Mouse /> },
+    {name: 'D-Sub', slug: 'dsub', component:<DSUB /> },
+    {name: 'M8', slug: 'm8', component:<M8 /> },
+
+  ]
     return (
       <div>
-      <li>MS</li>
-      <li>D-sub</li>
-      <li>Coax</li>
-      <a href='' target='_blank'
-      >Coax RG-58 termination</a>
-        <ol>
-          <li>Cut jacket back the length of the connector body</li>
-          <li>Cut back the braid to length of the base of the connector</li>
-          <li>Put the sleeve on the outer jacket for crimping later</li>
-          <li>Measure for the inner sleeve based on the distance of the end of the connector</li>
-          <li>Put pin on, should bottom out on the inner jacket but be visible in the window</li>
-          <li>put in the connector under the braid and it should pop in the place. crimp</li>
-        </ol>
-      <li></li>
-      <li>RJ-45</li>
-      <li>Ribbon</li>
-      <li>Mighty Mouse</li>
-      <li>M8</li>
-      <li>D38999</li>
+        <ButtonMaker buttons={items}/>
+     
       </div>
     );
 

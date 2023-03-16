@@ -11,6 +11,7 @@ const Ni = () => {
       {name: 'Hardware', slug: 'niHardware', component:<NiHardware /> },
       {name: 'Communications', slug: 'niCommunications', component:<NiCommunications /> },
       {name: 'SCB100', slug: 'scb', component:<Scb100 /> },
+      
       ]
       return (
         <div>
