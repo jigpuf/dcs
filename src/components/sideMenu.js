@@ -21,6 +21,7 @@ const SideMenu = (props) => {
     const renderItems = items.map(item => {
       return(
           <li key={item.slug}>
+
               <button
                   className={props.activeTab === item.slug ? 'active' : ''}//ternary
                   onClick={props.openTab(item.slug)}
@@ -33,6 +34,7 @@ const SideMenu = (props) => {
   return(
       <aside className='side' id='side' >
           <ul>
+            DCS
               {renderItems}
           </ul>
       </aside>

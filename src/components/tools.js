@@ -10,6 +10,7 @@ import Oscope from './tools/oscope.js'
 import FunctionG from './tools/functionG.js'
 import ContactRetention from './tools/contactRetention.js'
 import ButtonMaker from '../utilities/buttonMaker.js';
+import Placeholder from '../utilities/placeholder.js';
 
 const Tools = () => {
     const items = [
@@ -23,6 +24,9 @@ const Tools = () => {
       {name: 'O-Scope', slug: 'oscope', component:<Oscope />},
       {name: 'Function Generator', slug: 'function', component:<FunctionG />},
       {name: 'Contact retention tool', slug: 'retention', component:<ContactRetention />},
+      {name: 'HiPot', slug: 'hipot', component:<Placeholder />},
+      {name: 'Printer', slug: 'printer', component:<Placeholder />},
+
     ]
     return (
       <div>

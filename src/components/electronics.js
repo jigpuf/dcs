@@ -7,6 +7,7 @@ import Logic from './electronics/logic.js';
 import Ground from './electronics/ground.js';
 import Pcb from './electronics/pcb.js';
 import ButtonMaker from '../utilities/buttonMaker.js';
+import Placeholder from '../utilities/placeholder.js';
 
 const Electronics = () => {
 
@@ -19,6 +20,8 @@ const Electronics = () => {
       {name: 'Digital/logic gates', slug: 'digital', component:<Logic /> },
       {name: 'Grounding', slug: 'isolation', component:<Ground /> },
       {name: 'PCBs', slug: 'pcb', component:<Pcb /> },
+      {name: 'PID Theory', slug: 'pid', component:<Placeholder /> },
+
     ]
     
     return (
