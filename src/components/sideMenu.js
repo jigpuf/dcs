@@ -16,6 +16,8 @@ const SideMenu = (props) => {
       { name: 'Inventory', slug: 'inventory' },
       { name: 'Project Manage', slug: 'manage'},
       { name: 'Apps', slug: 'apps' },
+      { name: 'Build', slug: 'build' },
+      { name: 'Cars', slug: 'cars' },
 
     ];
     const renderItems = items.map(item => {

@@ -12,6 +12,8 @@ import Inventory from './inventory.js';
 import Network from './network.js';
 import Manager from './manager.js';
 import Apps from './apps.js';
+import Build from './build.js';
+import Cars from './cars.js';
 
 
 
@@ -32,6 +34,9 @@ const MainSection = (props) => {
       {activeTab === 'inventory' && <Inventory />}
       {activeTab === 'manage' && <Manager />}
       {activeTab === 'apps' && <Apps />}
+      {activeTab === 'build' && <Build />}
+      {activeTab === 'cars' && <Cars />}
+
 
     </div>
   );
