@@ -127,7 +127,7 @@ const Encapsulation = () =>{
     <h3>Prepare</h3>
         <TableMaker head={codeHead} array={prepare} tableType='coding' />
     <h3>Design</h3>
-        <img src='/scripture.svg'/>
+        <img src='/csharp/scripture.svg'/>
     <h3>Prove</h3>
         <TableMaker head={codeHead} array={prove} tableType='coding' />
     <h3>Ponder</h3>

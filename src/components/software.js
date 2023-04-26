@@ -14,7 +14,7 @@ import PLC from './software/plc.js';
 import Labview from './software/labview.js';
 import Media from './software/media.js';
 import Mac from './software/mac.js';
-import Arduino from './software/arduino.js';
+import Arduino from './controls/arduino.js';
 import Raspberry from './software/raspberry.js';
 import Python from './software/python.js';
 import Learning from './software/learning.js';

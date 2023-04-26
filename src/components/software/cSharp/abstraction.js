@@ -193,12 +193,12 @@ const Abstraction = () =>{
       'Case 1 Start',
       'if case == 1, create new message object from Write Class',
       'from message object, call display prompt function()',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
+      'from message object, call getEntry function.  This takes the entry',
+      'Break from case 1',
+      'Case 2 Start',
+      'create new display object from Display Class',
+      'call getData function from display class',
+      'Break from case 2',
       '',
       '',
       '',
@@ -533,7 +533,7 @@ Manager (Apple) 2022-2023<br/>
           <TableMaker head={codeHead} array={prepareProgram} tableType='coding'/> 
         <h3>Learning 2 Design Activity</h3>
           <TableMaker head={designActivityHead} array={designActivity} tableType='1LL'/>
-          <img src='/journalDiagram.png'/>
+          <img src='/csharp/journalDiagram.png'/>
         <h3>Learning 2 Prove</h3>
           <TableMaker head={codeHead} array={prove2Program} tableType='coding'/>
           <h4>How I went above and beyond</h4>
