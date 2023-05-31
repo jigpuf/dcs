@@ -19,6 +19,10 @@ const JSOperators = () =>{
         {name: 'Scope', slug: 'scope', component:<Placeholder />},
         {name: 'Code Block', slug: 'block', component:<Placeholder />},
         {name: 'Order of Operations', slug: 'order', component:<Placeholder />},
+        {name: 'Bitwise', slug: '', component:<Placeholder />},
+        {name: 'TypeOf', slug: '', component:<Placeholder />},
+        {name: 'Delete', slug: '', component:<Placeholder />},
+        {name: 'Coersion', slug: '', component:<Placeholder />},
 
     ];
     return(

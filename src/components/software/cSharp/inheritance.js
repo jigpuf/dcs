@@ -253,33 +253,7 @@ const Inheritance = () =>{
 
     <h3>Designer</h3>
       <h2>Inheritance - Design Activity</h2>
-  
-      <h3>Overview</h3>
-      <p>Meet with your team and prepare a design for this week's programming assignment.</p>
-  
 
-        <h4>Regarding "Guidance from a Mentor"</h4>
-        <p>This activity is designed to help you walk through the design process as a team. Because decisions in the first steps determine many steps that follow, we want to make sure you don't start down a path that will lead to problems later.</p>
-        <p>If we were in a conference room together at a company, the mentor would quietly observe the discussion and only interject if the conversation started to lead in a bad direction.</p>
-        <p>In the case of this activity, because the instructor cannot be in each team meeting, we have placed "Guidance from a mentor" sections throughout the design process. You should <strong>not</strong> expand and look at these sections until you have done your best as a team to answer the questions. Then, <em>after</em> you have answered the questions, you should check these Guidance sections to make sure you are headed in a good direction.</p>
-        <p><strong>Important:</strong> There is more than one good way to design a project. We have been hesitant to include any guidance like this, because you shouldn't think this is the only way to solve the problem or the way you <em>must</em> do the project. If your design is following a similar approach, but uses slightly different words for the classes/variables/methods, that is great! You don't have to conform exactly to the suggestions here.</p>
-  
-      <h3>Agenda</h3>
-      <p>Use the following as an agenda for your team meeting. Whoever is assigned to be the lead student for this gathering should help guide the group through these steps and ask the questions listed here.</p>
-  
-      <h4>Before the meeting: Verify the time, location, and lead student</h4>
-      <p>This could be as simple as posting a message to your MS Teams channel that says something like, <em>"Hi guys, are we still planning to meet tomorrow at 7pm Mountain Time? Let's use the MS Teams video feature again."</em> Or, if someone else has already posted a message like this, it could be as simple as "liking" their message.</p>
-  
-      <p>Make sure to identify who will be the lead student for this week. For example, <em>"Emily, are you still good to be the lead student for this week?"</em></p>
-  
-      <h4>Begin with Prayer</h4>
-  
-      <h4>Discuss the Preparation Learning Activity</h4>
-      <p>Take a minute to talk about the learning activity from this week. Talk through any difficulties that people had understanding the material or completing the activity.</p>
-      <ol>
-        <li>What part of the learning activity was the hardest for you?</li>
-      </ol>
-  
       <h4>Review the Program Specification</h4>
       <ol>
         <li>What does the program do?</li>
@@ -287,41 +261,6 @@ const Inheritance = () =>{
         <li>What output does it produce?</li>
         <li>How does the program end?</li>
       </ol>
-  
-      <details>
-        <summary>
-          Guidance from a Mentor
-        </summary>
-  
-        <p>Looking at the menu for the program can be a good place to start.</p>
-        <p>Take the time to go through each activity and discuss the way that activity should work. What does it require the user to type in? What does it display to the user?</p>
-  
-      </details>
-  
-      <h4>Determine the classes</h4>
-      <p>The first step in designing a program like this is to think about the classes you will need. When thinking about classes, it is often helpful to consider the strong nouns in the program description.</p>
-  
-      <ol>
-        <li>What are good candidates for classes in this program?</li>
-        <li>What are the primary responsibilities of each class?</li>
-      </ol>
-  
-      <details>
-        <summary>
-          Guidance from a Mentor
-        </summary>
-        <p>The main components of this program are the activities. Recognizing that they will all have some behaviors and attributes in common, it makes sense to have a base class and then derived classes for each specific kind of activity, such as:</p>
-  
-        <ul>
-          <li><code>Activity</code></li>
-          <li><code>BreathingActivity</code></li>
-          <li><code>ReflectingActivity</code></li>
-          <li><code>ListingActivity</code></li>
-        </ul>
-  
-        <p>You might also to have a class to handle the menu and interaction, or you might choose to handle this directly in your <code>Main</code> method in the <code>Program</code> class.</p>
-      </details>
-  
   
       <h4>Define class behaviors</h4>
       <p>Now that you have decided on the classes, you will need and their responsibilities, the next step is to define the behaviors of these classes. These will become methods for the class.</p>

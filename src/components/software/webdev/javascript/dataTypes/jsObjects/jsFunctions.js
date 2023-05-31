@@ -1,13 +1,65 @@
 import React from 'react';
 import ButtonMaker from '../../../../../../utilities/buttonMaker.js';
 import Placeholder from '../../../../../../utilities/placeholder.js';
-//import Placeholder from '../../../utilities/placeholder.js';
+import TableMaker from '../../../../../../utilities/tableMaker.js';
 
 const JSFunction = () =>{
-
+    const codeHead =['Step','Explain', 'Code']
+    const syntax =[
+        {step:'Function Declaration',
+            points:['','','',], 
+            code:['function add(num1,num2){',
+            'return(num1+num2);',
+            '}',
+            ]
+        },
+        {step:'Function Expression',
+            points:['','','','','',], 
+            code:['','','','','']
+        },        
+        {step:'Arrow Function',
+            points:['','','','','',], 
+            code:['','','','','']
+        },        
+        {step:'Arrow Function shorthand no arguments',
+            points:['','','','','',], 
+            code:['','','','','']
+        },        
+        {step:'Callback Functions',
+            points:['','','','','',], 
+            code:['','','','','']
+        },        
+        {step:'Anonymous Function',
+            points:['','','','','',], 
+            code:['','','','','']
+        },        
+        {step:'Recursive Function',
+            points:['','','','','',], 
+            code:['','','','','']
+        },        
+    ]
     return(
         <div>
         <h1>Function Syntax</h1>
+            <h2>Types</h2>
+                <ul>
+                    <li>Standard</li>
+                    <li>Callback</li>
+                    <li>Arrow, declaration,expression</li>
+                    <li>Anonymous</li>
+                    <li>Recursive</li>
+                </ul>
+                Points to consider:
+                <ul>
+                    <li>Scope</li>
+                    <li>Hoising</li>
+                    <li>Life Cycle effect/ASYNC</li>
+                    <li>Shorthand methods</li>
+                    <li>Arguments/parameters</li>
+                </ul>
+            <h2>Syntax</h2>
+        
+            <TableMaker head={codeHead} array={syntax} tableType='coding' />
             <h2>Arrow Functions</h2>
                 <table>
                     <tr>
@@ -42,12 +94,12 @@ const JSFunction = () =>{
                 <td>function functionNameHere(parameters)&#123;<br />
                 codeHere;<br />
                 return(codeHere);<br />
-              }</td></tr>
+              </td></tr>
             <tr><td>Function Expression</td>
                 <td>Const functionNameHere = function(parameterHere)&#123;<br />
                 codeHere;<br />
                 return(codeHere);<br />
-              };</td></tr>
+              ;</td></tr>
             <tr><td>Call</td>
                 <td>functionNameHere(argumentHere);</td></tr>
           </table>
