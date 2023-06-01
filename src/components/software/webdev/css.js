@@ -1,4 +1,5 @@
 import React from 'react';
+import CSSNotes from './css/cssNotes.js'
 import Layout from './css/layout.js'
 import Color from './css/color.js'
 import Size from './css/size.js'
@@ -14,7 +15,7 @@ import Placeholder from '../../../utilities/placeholder.js';
 const CSS = () =>{
     const items = [
         {name: 'Lectures', slug: 'lectures', component:<Placeholder />},
-        {name: 'Notes', slug: 'notes', component:<Placeholder />},
+        {name: 'Notes', slug: 'notes', component:<CSSNotes />},
         {name: 'Layout', slug: 'layouts', component:<Layout />},
         {name: 'Color', slug: 'color', component:<Color />},
         {name: 'Size Units', slug: 'size', component:<Size />},

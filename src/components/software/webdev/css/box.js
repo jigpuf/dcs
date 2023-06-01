@@ -19,6 +19,7 @@ const Box= () =>{
           <tr><td></td><td></td></tr>
           <tr><td></td><td></td></tr>
           <tr><td></td><td></td></tr>
+          <img src='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/box-model.png'/>
 
           <a href='https://htmlcolorcodes.com/color-picker/' target='_blank'
           >Color Selector</a>

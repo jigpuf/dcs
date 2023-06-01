@@ -8,14 +8,14 @@ class Text extends React.Component {
           <table>
             <tr><th>Text property</th><th>Example</th><th>Effect</th></tr>
             <tr><td>font-family</td><td>font-family: "Helvetica", sans-serif</td><td>Chooses font</td></tr>
-            <tr><td>font-size</td><td></td><td></td></tr>
+            <tr><td>font-size</td><td>font-size: 60px;</td><td></td></tr>
             <tr><td>font-weight</td><td></td><td></td></tr>
             <tr><td>font-style</td><td></td><td></td></tr>
             <tr><td>text-decoration</td><td></td><td></td></tr>
-            <tr><td>line-height</td><td></td><td></td></tr>
-            <tr><td>text-align</td><td></td><td></td></tr>
-            <tr><td>color</td><td>color: black,</td><td>Choose color of font</td></tr>
-            <tr><td>letter spacing</td><td></td><td></td></tr>
+            <tr><td>line-height</td><td>line-height: 2;</td><td></td></tr>
+            <tr><td>text-align</td><td>text-align: center;</td><td></td></tr>
+            <tr><td>color</td><td>color: black;</td><td>Choose color of font</td></tr>
+            <tr><td>letter spacing</td><td>letter-spacing: 1px;</td><td></td></tr>
             <tr><td>text-align</td><td></td><td></td></tr>
             <tr><td></td><td></td><td></td></tr>
             <tr><td></td><td></td><td></td></tr>
