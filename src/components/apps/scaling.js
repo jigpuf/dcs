@@ -5,51 +5,79 @@ const Scaling = () =>{
   const [span, setSpan] = useState(100)
   const [input, setInput] = useState(4)
   const [unit, setUnit] = useState('PSI')
-
+  const [minAmp, setMinAmp] = useState(4)
+  const [maxAmp, setMaxAmp] = useState(20)
+  const [minVolt, setMinVolt] = useState(5)
+  const [maxVolt, setMaxVolt] = useState(5)
+  const resistor = .25
 
   return(
     <div>
      <h1>Scaling</h1>
+
      <table>
       <tr>
         <th>Unit</th>
         <td><input type="text" value={unit} onChange={(e) =>setUnit(e.target.value)}/></td>
       </tr>
       <tr>
-        <th>Min scale</th>
+        <th>Min {unit}</th>
         <td><input type="number" value={zero} onChange={(e) =>setZero(e.target.value)}/></td>
       </tr>
       <tr>
-        <th>Max scale</th>
+        <th>Max {unit}</th>
         <td><input type="number" value={span} onChange={(e) =>setSpan(e.target.value)}/></td>
+      </tr>
+      <tr>
+        <th>Min mA</th>
+        <th><input type="number" value={minAmp} onChange={(e) =>setMinAmp(e.target.value)}/></th>
+      </tr>
+      <tr>
+        <th>Max mA</th>
+        <th><input type="number" value={maxAmp} onChange={(e) =>setMaxAmp(e.target.value)}/></th>
       </tr>
       <tr>
         <th>Input mA</th>
         <td><input type="number" value={input} onChange = {(e) =>setInput(e.target.value)}/></td>
       </tr>
      </table>
-<hr/>
+      <hr />
+
+     <table>
+        <tr>
+            <th>Input mA</th>
+            <th>{unit}</th>
+            <th>Current</th>
+            <th>Voltage through Resistor</th>
+          </tr>
+          <tr>
+            <th>{input}</th>
+            <td>{((span-zero)/(maxAmp-minAmp))*(input-minAmp)+(zero*1)}</td>
+            <td>{input}mA</td>
+            <td>{input*resistor}v</td>
+          </tr>
+      </table>
+
+
         <table>
         <tr>
-            <th>Level</th>
-            <th>Value</th>
-            <th>Current</th>
-            <th>Voltage</th>
-          </tr>
-          <tr>
-            <th>Input</th>
-            <td>{(span-zero)*((input-4)/16)+(zero*1)} {unit}</td>
-            <td>{input}mA</td>
-            <td>{input*.001*250}v</td>
-          </tr>
-        </table>
-        <hr></hr>
+          <th>Slope</th>
+          <th>Offset</th>
+        </tr>
+        <tr>
+          <td>{(span-zero)/(maxAmp-minAmp)}</td>
+          <td>{zero}</td>
+        </tr>
+      </table>
+       
+
+    
         <table>
           <tr>
             <th>Level</th>
             <th>Value</th>
             <th>Current</th>
-            <th>Voltage</th>
+            <th>Voltage through resistor</th>
           </tr>
   
           <tr>
@@ -61,32 +89,32 @@ const Scaling = () =>{
           <tr>
             <th>Zero</th>
             <td>{zero} {unit}</td>
-            <td>4mA</td>
-            <td>1v</td>
+            <td>{minAmp}mA</td>
+            <td>{minAmp*.001*250}v</td>
           </tr>
           <tr>
             <th>25%</th>
             <td>{((span-zero)*(.25)+(zero*1))} {unit}</td>
-            <td>8mA</td>
-            <td>2v</td>
+            <td>{((maxAmp-minAmp)*(.25))+(minAmp*1)}mA</td>
+            <td>{(((maxAmp-minAmp)*(.25))+(minAmp*1))*resistor}v</td>
           </tr>
           <tr>
             <th>50%</th>
             <td>{((span-zero)*(.5)+(zero*1))} {unit}</td>
-            <td>12mA</td>
-            <td>3v</td>
+            <td>{((maxAmp-minAmp)*(.5))+(minAmp*1)}mA</td>
+            <td>{(((maxAmp-minAmp)*(.5))+(minAmp*1))*resistor}v</td>
           </tr>
           <tr>
             <th>75%</th>
             <td>{((span-zero)*(.75)+(zero*1))} {unit}</td>
-            <td>16mA</td>
-            <td>4v</td>
+            <td>{((maxAmp-minAmp)*(.75))+(minAmp*1)}mA</td>
+            <td>{(((maxAmp-minAmp)*(.75))+(minAmp*1))*resistor}v</td>
           </tr>
           <tr>
             <th>Span</th>
             <td>{span} {unit}</td>
-            <td>20mA</td>
-            <td>5v</td>
+            <td>{((maxAmp-minAmp)*(1))+(minAmp*1)}mA</td>
+            <td>{(((maxAmp-minAmp)*(1))+(minAmp*1))*resistor}v</td>
           </tr>
         </table>
     </div>
