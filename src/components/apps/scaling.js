@@ -16,6 +16,9 @@ const Scaling = () =>{
      <h1>Scaling</h1>
 
      <table>
+     <hr />
+      Instrument
+      <hr />
       <tr>
         <th>Unit</th>
         <td><input type="text" value={unit} onChange={(e) =>setUnit(e.target.value)}/></td>
@@ -28,6 +31,9 @@ const Scaling = () =>{
         <th>Max {unit}</th>
         <td><input type="number" value={span} onChange={(e) =>setSpan(e.target.value)}/></td>
       </tr>
+      <hr />
+      Signal
+      <hr />
       <tr>
         <th>Min mA</th>
         <th><input type="number" value={minAmp} onChange={(e) =>setMinAmp(e.target.value)}/></th>
@@ -37,13 +43,14 @@ const Scaling = () =>{
         <th><input type="number" value={maxAmp} onChange={(e) =>setMaxAmp(e.target.value)}/></th>
       </tr>
       <tr>
-        <th>Input mA</th>
+        <th>Active mA</th>
         <td><input type="number" value={input} onChange = {(e) =>setInput(e.target.value)}/></td>
       </tr>
      </table>
       <hr />
-
+<h2>Reading</h2>
      <table>
+
         <tr>
             <th>Input mA</th>
             <th>{unit}</th>
@@ -58,20 +65,27 @@ const Scaling = () =>{
           </tr>
       </table>
 
-
+    <h2>Slope | Offset</h2>
         <table>
         <tr>
+          <th>Measurement</th>
           <th>Slope</th>
           <th>Offset</th>
         </tr>
         <tr>
+          <td>Current</td>
           <td>{(span-zero)/(maxAmp-minAmp)}</td>
           <td>{zero}</td>
+        </tr>
+        <tr>
+          <td>Voltage</td>
+          <td></td>
+          <td></td>
         </tr>
       </table>
        
 
-    
+    <h2>Injection Meter</h2>
         <table>
           <tr>
             <th>Level</th>
