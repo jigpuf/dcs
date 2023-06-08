@@ -15,6 +15,8 @@ import Labview from './software/labview.js';
 import Media from './software/media.js';
 import Mac from './software/mac.js';
 import Arduino from './controls/arduino.js';
+import ArduinoSoftware from './software/arduinoSoftware.js';
+
 import Raspberry from './software/raspberry.js';
 import Python from './software/python.js';
 import Learning from './software/learning.js';
@@ -40,6 +42,7 @@ const Software = () => {
       {name: 'Media', slug: 'media', component:<Media />},
       {name: 'Mac OS', slug: 'mac', component:<Mac />},
       {name: 'Arduino', slug: 'arduino', component:<Arduino />},
+      {name: 'Arduinon Software', slug: 'arduinoSoftware', component:<ArduinoSoftware />},
       {name: 'Raspberry Pi', slug: 'raspberry', component:<Raspberry />},
       {name: 'Python', slug: 'python', component:<Python />},
       {name: 'Learning', slug: 'learning', component:<Learning />},

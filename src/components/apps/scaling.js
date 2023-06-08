@@ -55,7 +55,7 @@ const Scaling = () =>{
             <th>Input mA</th>
             <th>{unit}</th>
             <th>Current</th>
-            <th>Voltage through Resistor</th>
+            <th>Voltage across 250 ohm Resistor</th>
           </tr>
           <tr>
             <th>{input}</th>
@@ -91,7 +91,7 @@ const Scaling = () =>{
             <th>Level</th>
             <th>Value</th>
             <th>Current</th>
-            <th>Voltage through resistor</th>
+            <th>Voltage across 250 ohm resistor</th>
           </tr>
   
           <tr>
