@@ -1,15 +1,14 @@
 import React from 'react';
 import ArduinoCommands from './arduino/arduinoCommands.js'
-
+import ArduinoDataTypes from './arduino/arduinoDataTypes.js'
 import ButtonMaker from '../../utilities/buttonMaker.js';
 import Placeholder from '../../utilities/placeholder.js';
 
 const ArduinoSoftware = () => {
     const items = [
-      {name: 'Data Types', slug: 'types', component:<Placeholder />},
+      {name: 'Data Types', slug: 'types', component:<ArduinoDataTypes />},
       {name: 'Program sections', slug: 'sections', component:<Placeholder />},
       {name: 'Commands', slug: 'comands', component:<ArduinoCommands />},
-
     ]
     return (
       <div>

@@ -6,28 +6,53 @@ import TableMaker from '../../../../../../utilities/tableMaker.js';
 const JSFunction = () =>{
     const codeHead =['Step','Explain', 'Code']
     const syntax =[
-        {step:'Function Declaration',
-            points:['','','',], 
+        {step:'Function Declaration(Hoisted)',
+            points:['Declare as function called add. Take two arguments. Open Scope',
+            'Return the sum of the two numbers','Close Scope',], 
             code:['function add(num1,num2){',
             'return(num1+num2);',
             '}',
             ]
         },
-        {step:'Function Expression',
-            points:['','','','','',], 
-            code:['','','','','']
+        {step:'Function Expression(Not Hoisted)',
+            points:['create expression named sumAmount that takes two arguments, open scope',
+            'returns the sum of the two arguments',
+            'close scope',], 
+            code:['const sumAmount = (num1,num2){',
+            'return(num1+num2);',
+            '}',]
         },        
-        {step:'Arrow Function',
-            points:['','','','','',], 
-            code:['','','','','']
+        {step:'Arrow Function(not hoisted?)',
+            points:['create expression that takes two arguments, open scope',
+            'returns the sum of the two arguments',
+            'close scope',], 
+            code:['const sum = (num1,num2)=>{',
+            'return(num1+num2);',
+            '}',]
         },        
         {step:'Arrow Function shorthand no arguments',
-            points:['','','','','',], 
-            code:['','','','','']
+            points:['This implies the variables are global',], 
+            code:['const sum=()=>num1+num2;',]
         },        
         {step:'Callback Functions',
-            points:['','','','','',], 
-            code:['','','','','']
+            points:['A callback is a way of forcing thing to happen in a specific order.  This is useful in ASNC use in Javascript.  The callback function is used as an argument in another function.',
+            'Make expression called display that takes sum as an argument. open scope. This is the callback function',
+            'Log the value of sum in the console',
+            'Close scope',
+            'Make expression called add that takes three arguments, two numbers and a callback function. open scope.  An anonymous function could be used here ifyou didnt want to call the function from the outside',
+            'creates variable from the sum of the two arguments',
+            'calls the callback function',
+            'Close scope',
+            'calls the primary function and send the arguments.  Notice the function doesnt have parenthesis',], 
+            code:['//callback',
+            'const display=(sum)=>{',
+            'console.log(sum);',
+            '}',
+            'const add=(num1,num2,myCallback)=>{',
+            ' const sum = num1+ num2;',
+            'myCallback(sum);',
+            '}',
+            'add(5,5,display);',]
         },        
         {step:'Anonymous Function',
             points:['','','','','',], 
@@ -42,13 +67,7 @@ const JSFunction = () =>{
         <div>
         <h1>Function Syntax</h1>
             <h2>Types</h2>
-                <ul>
-                    <li>Standard</li>
-                    <li>Callback</li>
-                    <li>Arrow, declaration,expression</li>
-                    <li>Anonymous</li>
-                    <li>Recursive</li>
-                </ul>
+
                 Points to consider:
                 <ul>
                     <li>Scope</li>

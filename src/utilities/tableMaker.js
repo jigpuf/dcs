@@ -189,8 +189,8 @@ const  TableMaker= (props) =>{
             return(
                 <tr>
                     <td>{row.step}</td>
-                    <td><ol>{points}</ol></td>
-                    <td><ol>{lines}</ol></td>
+                    <td><details><ol>{points}</ol></details></td>
+                    <td><details><ol>{lines}</ol></details></td>
                 </tr>
             )
         })

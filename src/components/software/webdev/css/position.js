@@ -12,8 +12,14 @@ class Position extends React.Component {
           <tr><td>Absolute</td><td>Offset from top left corner</td></tr>
           <tr><td>Z-index</td><td>Sets order images are shown Bottom to top starting with 1</td></tr>
           <tr><td>Fixed</td><td>Sets in one place and ignores window movement</td></tr>
-          <tr><td>Float</td><td>Decide what side to float something to.  Everything else will line
-          up next to it.</td></tr>
+          <tr>
+            <td>Float</td>
+            <td>
+              <li>Decide what side to float something to.  Everything else will line up next to it.</li>
+              <li>If you set the value to "clear:left", it will go below any float left elements in their container </li>
+              <li><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/clear' target='_blank'>Clear</a></li>
+            </td>
+          </tr>
         </table>
           <table>
             <tr><th>Positioning Method</th><th>Syntax</th></tr>
