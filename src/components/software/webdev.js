@@ -1,10 +1,11 @@
-import React from 'react';
-import ButtonMaker from '../../utilities/buttonMaker.js';
-import Placeholder from '../../utilities/placeholder.js';
-import Javascript from './webdev/javascript.js';
+import React from 'react'
+import ButtonMaker from '../../utilities/buttonMaker.js'
+import Placeholder from '../../utilities/placeholder.js'
+import Javascript from './webdev/javascript.js'
 import JSX from './webdev/jsx.js'
-import HTML from './webdev/html.js';
-import CSS from './webdev/css.js';
+import Mongo from './webdev/mongo.js'
+import HTML from './webdev/html.js'
+import CSS from './webdev/css.js'
 import Webpage from './webdev/webpage.js'
 
 
@@ -16,7 +17,7 @@ const Webdev = () =>{
         {name: 'Node', slug: 'node', component:<Placeholder />},
         {name: 'Javascript', slug: 'js', component:<Javascript />},
         {name: 'React', slug: 'react', component:<JSX />},
-        {name: 'MongoDB', slug: 'mongo', component:<Placeholder />},
+        {name: 'MongoDB', slug: 'mongo', component:<Mongo />},
         {name: 'New Webpage', slug: 'webpage', component:<Webpage />},
 
     ];

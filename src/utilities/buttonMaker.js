@@ -19,10 +19,11 @@ const ButtonMaker = (props) =>{
     const renderActiveButton = activeButton[0] && activeButton[0].component;
     return(
         <div>
+            <hr/>
             <ul>
                 {buttons}
             </ul>
-            <hr />
+
             {renderActiveButton}
 
         </div>

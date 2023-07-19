@@ -1,6 +1,6 @@
 import React from 'react';
-import ButtonMaker from '../../utilities/buttonMaker.js';
-import Placeholder from '../../utilities/placeholder.js';
+import ButtonMaker from '../../../utilities/buttonMaker.js';
+import Placeholder from '../../../utilities/placeholder.js';
 
 const CPP = () =>{
     const items = [

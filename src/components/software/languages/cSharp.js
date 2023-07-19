@@ -1,16 +1,16 @@
 import React from 'react';
-import Setup from './cSharp/setup.js'
-import Introduction from './cSharp/introduction.js'
-import Abstraction from './cSharp/abstraction.js'
-import Encapsulation from './cSharp/encapsulation.js'
-import Inheritance from './cSharp/inheritance.js'
-import Polymorphism from './cSharp/polymorphism.js'
-import Final from './cSharp/final.js'
-import Conclusion from './cSharp/conclusion.js'
-import CSharpVideos from './cSharp/cSharpVideos.js'
+import Setup from '../cSharp/setup.js'
+import Introduction from '../cSharp/introduction.js'
+import Abstraction from '../cSharp/abstraction.js'
+import Encapsulation from '../cSharp/encapsulation.js'
+import Inheritance from '../cSharp/inheritance.js'
+import Polymorphism from '../cSharp/polymorphism.js'
+import Final from '../cSharp/final.js'
+import Conclusion from '../cSharp/conclusion.js'
+import CSharpVideos from '../cSharp/cSharpVideos.js'
 
-import ButtonMaker from '../../utilities/buttonMaker.js';
-import Placeholder from '../../utilities/placeholder.js';
+import ButtonMaker from '../../../utilities/buttonMaker.js';
+import Placeholder from '../../../utilities/placeholder.js';
 
 const CSharp = () =>{
     const items = [

@@ -1,7 +1,7 @@
 import React from 'react';
 import Nimax from './control/nimax.js'
 import Rockwell from './control/rockwell.js'
-import NiControl from './control/nicontrol.js'
+import NiControl from '../controls/ni/nicontrol.js'
 import ButtonMaker from '../../utilities/buttonMaker.js'
 
 const Control = () => {

@@ -3,20 +3,22 @@ import Fuses from './panels/fuses.js'
 import Breaker from './panels/breaker.js'
 import Examples from './panels/examples.js'
 import ButtonMaker from '../utilities/buttonMaker.js';
-
+import Placeholder from '../utilities/placeholder.js'
 const Controls = () => {
     const items = [
       {name: 'Fuse', slug: 'fuse', component:<Fuses />},
       {name: 'Breaker', slug: 'breaker', component:<Breaker />},
-      {name: 'Contactor', slug: 'contactor',},
-      {name: 'Relay', slug: 'relay',},
-      {name: 'Power Supply', slug: 'power',},
-      {name: 'HOA Switches', slug: 'hoa' },
-      {name: 'Terminals', slug: 'terminals' },
-      {name: 'Current Transducers', slug: 'ct' },
+      {name: 'Contactor', slug: 'contactor', component:<Placeholder />},
+      {name: 'Relay', slug: 'relay', component:<Placeholder />},
+      {name: 'Power Supply', slug: 'power', component:<Placeholder />},
+      {name: 'HOA Switches', slug: 'hoa',  component:<Placeholder />},
+      {name: 'Terminals', slug: 'terminals', component:<Placeholder /> },
+      {name: 'Current Transducers', slug: 'ct',  component:<Placeholder />},
       {name: 'Panel Examples', slug: 'examples', component:<Examples />},
-      {name: 'Resisters', slug: 'resisters',},
-      {name: '', slug: '',},
+      {name: 'Resisters', slug: 'resisters', component:<Placeholder />},
+      {name: 'Backplane', slug: 'backplane', component:<Placeholder />},
+      {name: 'Enclosure', slug: 'enclosure', component:<Placeholder />},
+
     ]
     return (
       <div>

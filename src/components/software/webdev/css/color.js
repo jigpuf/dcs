@@ -15,7 +15,9 @@ const Color = () => {
             <tr><td>Name</td><td>colorName</td><td>color: tomato;</td></tr>
           </table>
         <h3>Sources</h3>
-        <a href='https://coolors.co/generate' target='_blank'>Coolors</a>
+        <a href='https://coolors.co/generate' target='_blank'>Coolors</a><br/>
+        <a href='https://colorhunt.co/' target='_blank'>Color Hunt</a>
+
     </div>
   )
 }

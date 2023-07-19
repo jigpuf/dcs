@@ -1,13 +1,13 @@
 import React from 'react';
-import PythonComments from './python/pythonComments.js'
-import PythonDataTypes from './python/pythonDataTypes.js'
-import PythonVariables from './python/pythonVariables.js'
-import PythonScope from './python/pythonScope.js'
-import PythonOperators from './python/pythonOperators.js'
-import PythonControlFlow from './python/pythonControlFlow.js'
-import PythonDebugging from './python/pythonDebugging.js'
-import PythonReferences from './python/pythonReferences.js'
-import ButtonMaker from '../../utilities/buttonMaker.js';
+import PythonComments from '../python/pythonComments.js'
+import PythonDataTypes from '../python/pythonDataTypes.js'
+import PythonVariables from '../python/pythonVariables.js'
+import PythonScope from '../python/pythonScope.js'
+import PythonOperators from '../python/pythonOperators.js'
+import PythonControlFlow from '../python/pythonControlFlow.js'
+import PythonDebugging from '../python/pythonDebugging.js'
+import PythonReferences from '../python/pythonReferences.js'
+import ButtonMaker from '../../../utilities/buttonMaker.js';
 
 
 
