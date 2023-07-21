@@ -31,7 +31,7 @@ const HtmlStructuredData = () =>{
 ]
     return(
         <div>
-            <h2>Structured Data</h2>
+            <h2>Structured Content</h2>
             <h2>Details</h2>
             <TableMaker head={codeHead} array={tags} tableType='coding' />
 

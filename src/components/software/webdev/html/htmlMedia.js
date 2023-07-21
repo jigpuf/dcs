@@ -17,6 +17,7 @@ const HtmlMedia = () =>{
             <tr><td>Up a folder</td><td>href='../'</td></tr>
             <tr><td>In same folder</td><td>href='./'</td></tr>
             <tr><td>Internal to page</td><td>href='#idName'</td></tr>
+            <tr><td>Dummy link</td><td>href='#'</td></tr>
             <tr></tr>
           </table>
         <h3>Images</h3>

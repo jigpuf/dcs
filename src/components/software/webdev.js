@@ -24,6 +24,7 @@ const Webdev = () =>{
     return(
         <div>
             <ButtonMaker buttons={items}/>
+            Yu 25, smilga 37, whalbeck 8
         </div>
     );
     }
