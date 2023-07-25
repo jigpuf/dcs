@@ -7,14 +7,12 @@ const Scaling = () =>{
   const [unit, setUnit] = useState('PSI')
   const [minAmp, setMinAmp] = useState(4)
   const [maxAmp, setMaxAmp] = useState(20)
-  const [minVolt, setMinVolt] = useState(5)
-  const [maxVolt, setMaxVolt] = useState(5)
   const resistor = .25
 
   return(
     <div>
      <h1>Scaling</h1>
-
+      <p>For 4-20mA device going through a 1-5v signal conditioner or 250 ohm resistor</p>
      <table>
      <hr />
       Instrument
@@ -48,22 +46,7 @@ const Scaling = () =>{
       </tr>
      </table>
       <hr />
-<h2>Reading</h2>
-     <table>
 
-        <tr>
-            <th>Input mA</th>
-            <th>{unit}</th>
-            <th>Current</th>
-            <th>Voltage across 250 ohm Resistor</th>
-          </tr>
-          <tr>
-            <th>{input}</th>
-            <td>{((span-zero)/(maxAmp-minAmp))*(input-minAmp)+(zero*1)}</td>
-            <td>{input}mA</td>
-            <td>{input*resistor}v</td>
-          </tr>
-      </table>
 
     <h2>Slope | Offset</h2>
         <table>
@@ -71,16 +54,22 @@ const Scaling = () =>{
           <th>Measurement</th>
           <th>Slope</th>
           <th>Offset</th>
+          <th>Active Unscaled</th>
+          <th>Active {unit}</th>
         </tr>
         <tr>
           <td>Current</td>
           <td>{(span-zero)/(maxAmp-minAmp)}</td>
-          <td>{zero}</td>
+          <td>{0-(((span-zero)/(maxAmp-minAmp)*4))}</td>
+          <td>{input}mA</td>
+          <td>{input*((span-zero)/(maxAmp-minAmp))+(0-(((span-zero)/(maxAmp-minAmp)*4)))}</td>
         </tr>
         <tr>
           <td>Voltage</td>
-          <td></td>
-          <td></td>
+          <td>{(span-zero)/((maxAmp-minAmp)*.25)}</td>
+          <td>{0-((span-zero)/((maxAmp-minAmp)*.25))}</td>
+          <td>{input*resistor}v</td>
+          <td>{(input*resistor)*((span-zero)/((maxAmp-minAmp)*.25))+(0-((span-zero)/((maxAmp-minAmp)*.25)))}</td>
         </tr>
       </table>
        
@@ -96,7 +85,7 @@ const Scaling = () =>{
   
           <tr>
             <th>Dead</th>
-            <td>0 {unit}</td>
+            <td>{0*((span-zero)/(maxAmp-minAmp))+(0-(((span-zero)/(maxAmp-minAmp)*4)))} {unit}</td>
             <td>0mA</td>
             <td>0v</td>
           </tr>
