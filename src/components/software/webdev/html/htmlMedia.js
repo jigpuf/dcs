@@ -70,9 +70,6 @@ const HtmlMedia = () =>{
         <h3>Meter</h3>
         <h3>Progress</h3>
         <h3>Canvas</h3>
-
-        <h3>Figure</h3>
-
         </div>
     );
     }

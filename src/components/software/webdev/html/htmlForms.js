@@ -1,9 +1,51 @@
 import React from 'react';
 
 const HtmlForms = () =>{
+  const attributes=[
+    {name:'action', tags:['form',''], notes:''},
+    {name:'method', tags:['form',''], notes:''},
+    {name:'id', tags:['input',''], notes:''},
+    {name:'for', tags:['label',''], notes:''},
+    {name:'name', tags:['',''], notes:''},
+    {name:'type', tags:['input',''], notes:''},
+    {name:'value', tags:['',''], notes:''},
+    {name:'checked', tags:['',''], notes:''},
+    {name:'placeholder', tags:['',''], notes:''},
+    {name:'min', tags:['',''], notes:''},
+    {name:'max', tags:['',''], notes:''},
+    {name:'minlength', tags:['',''], notes:''},
+    {name:'maxlength', tags:['',''], notes:''},
+    {name:'rows', tags:['',''], notes:''},
+    {name:'columns', tags:['',''], notes:''},
+    {name:'step', tags:['',''], notes:''},
+    {name:'target', tags:['',''], notes:''},
+    {name:'multiple', tags:['',''], notes:''},
+    {name:'required', tags:['',''], notes:''},
+
+  ]
+  const syntax=[
+    {input:'form', lines:['','',], notes:['','']},
+    {input:'button', lines:['','',], notes:['','']},
+    {input:'submit', lines:['','',], notes:['','']},
+    {input:'checkbox', lines:['','',], notes:['','']},
+    {input:'radio', lines:['','',], notes:['','']},
+    {input:'select', lines:['','',], notes:['','']},
+    {input:'range', lines:['','',], notes:['','']},
+    {input:'textarea', lines:['','',], notes:['','']},
+    {input:'month', lines:['','',], notes:['','']},
+    {input:'time', lines:['','',], notes:['','']},
+    {input:'email', lines:['','',], notes:['','']},
+    {input:'password', lines:['','',], notes:['','']},
+    {input:'text', lines:['','',], notes:['','']},
+    {input:'number', lines:['','',], notes:['','']},
+
+  ]
     return(
         <div>
-            <h2>Forms</h2>
+            <h1>Forms</h1>
+            <p>A form is a wrapper that will send all the information within it as an HTML request to a specific URL</p>
+
+            <hr/>
             input types-text, submit, radio, checkbox, number, range, color, date,
       tel, email, url, password, file, pulldown menu<br />
       textarea<br />

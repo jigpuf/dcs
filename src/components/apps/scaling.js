@@ -72,8 +72,13 @@ const Scaling = () =>{
           <td>{(input*resistor)*((span-zero)/((maxAmp-minAmp)*.25))+(0-((span-zero)/((maxAmp-minAmp)*.25)))}</td>
         </tr>
       </table>
-       
-
+      For 4 to 20mA signals
+       <li>CurrentSlope = MaxRange-MinRange/16, eg.  (30psi-0psi)/16</li>
+       <li>CurrentOffset = 0-(CurrentSlope*4)</li>
+      <li>VoltageSlope = MaxRange-MinRange/4, eg. (30psi-0psi)/4</li>
+      <li>VoltageOffset = 0-(VoltageSlope*1)</li>
+      On current calculations 16 equals the mA scale 20mA-4mA, 4 is the bottom of the mA scale<br/>
+      On voltage calculations 4 equals 5v-1v, 1 is the bottom of the voltage scale
     <h2>Injection Meter</h2>
         <table>
           <tr>

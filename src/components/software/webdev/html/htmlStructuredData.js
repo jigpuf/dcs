@@ -53,6 +53,7 @@ const HtmlStructuredData = () =>{
                  &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Porpois Oriface&lt;/td&gt;&lt;/tr&gt;<br />
             &lt;/table&gt;<br />
           </pre>
+          If you want to make a cell strech across multople columns, add attribute colspan='3' to stretch across 3 columns, rowspan works the same for making a cell taller
           Renders:<br />
           <table>
             <tr><th>Number</th><th>Name</th></tr>
@@ -87,11 +88,19 @@ const HtmlStructuredData = () =>{
             </ul>
           </div>
           <hr />
-        <h2>Paragraphs</h2>
-          &lt;p&gt;&lt;/p&gt;
-          <hr />
         <h2>Div</h2>
+        Divs are just bnlock level generic containers.  There are a number of semantic containers that do the same thing as div but make it easier for webscrapers and accessibilty
           &lt;div&gt;&lt;/div&gt;
+          <li>nav- For holding links</li>
+          <li>main- primary content of page</li>
+          <li>article- easy to distribute parts of page, content that could stand alone</li>
+          <li>p- paragragh level content</li>
+          <li>aside- things that are off to the side of the main content</li>
+          <li>footer- footer type information</li>
+          <li>header- start of major sections</li>
+          <li>time- anything to do with time</li>
+          <li>figure- things like diagrams</li>
+
           <hr />
         <h2>Break</h2>
           &lt;br /&gt;
