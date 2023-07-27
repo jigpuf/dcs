@@ -129,7 +129,7 @@ const HtmlText = () => {
   const characters = [
     { character: "<", syntax: "&lt;", decimal: "&#60;" },
     { character: ">", syntax: "&gt;", decimal: "&#62;" },
-    { character: <p>&Omega;</p>, syntax: "&Omega;", decimal: "&#937;" },
+    { character: "Ω", syntax: "&Omega;", decimal: "&#937;" },
     { character: "`", syntax: "", decimal: "&#768;" },
     { character: "!", syntax: "", decimal: "&#33;" },
     { character: "$", syntax: "", decimal: "&#36;" },
@@ -149,15 +149,15 @@ const HtmlText = () => {
     { character: ";", syntax: "", decimal: "&#59;" },
     { character: "=", syntax: "", decimal: "&#61;" },
     { character: "á", syntax: "&aacute;", decimal: "&#225;" },
-    { character: "é", syntax: "", decimal: "" },
-    { character: "í", syntax: "", decimal: "" },
-    { character: "ó", syntax: "", decimal: "" },
-    { character: "ú", syntax: "", decimal: "" },
-    { character: "ñ", syntax: "", decimal: "" },
-    { character: "ü", syntax: "", decimal: "" },
-    { character: "µ", syntax: "", decimal: "" },
-    { character: "→", syntax: "", decimal: "" },
-    { character: "Blank Space", syntax: "", decimal: "" },
+    { character: "é", syntax: "&eacute;", decimal: "&#233;" },
+    { character: "í", syntax: "&iacute;", decimal: "&#237;" },
+    { character: "ó", syntax: "&oacute;", decimal: "&#243;" },
+    { character: "ú", syntax: "&uacute;	", decimal: "&#250;" },
+    { character: "ñ", syntax: "&ntilde;", decimal: "&#241;" },
+    { character: "ü", syntax: "&uuml;", decimal: "&#252;" },
+    { character: "µ", syntax: "&micro;", decimal: "&#181;" },
+    { character: "→", syntax: "&rarr;", decimal: "&#8594;" },
+    { character: "Blank Space", syntax: "&nbsp;", decimal: "&#160;" },
   ];
 
   const renderItems = items.map((item) => {
@@ -208,51 +208,6 @@ const HtmlText = () => {
       </table>
       <h3>Commenting in html</h3>
       &lt;&#33;-- all my comments here --&gt;
-      <tr>
-        <td>&#233;</td>
-        <td>&amp;eacute;</td>
-        <td>&amp;#233;</td>
-      </tr>
-      <tr>
-        <td>&#237;</td>
-        <td>&amp;iacute;</td>
-        <td>&amp;#237;</td>
-      </tr>
-      <tr>
-        <td>&#243;</td>
-        <td>&amp;oacute;</td>
-        <td>&amp;#243;</td>
-      </tr>
-      <tr>
-        <td>&#250;</td>
-        <td>&amp;uacute;</td>
-        <td>&amp;#250;</td>
-      </tr>
-      <tr>
-        <td>&#241;</td>
-        <td>&amp;ntilde;</td>
-        <td>&amp;#241;</td>
-      </tr>
-      <tr>
-        <td>&#252;</td>
-        <td>&amp;uuml;</td>
-        <td>&amp;#252;</td>
-      </tr>
-      <tr>
-        <td>&#181;</td>
-        <td>&amp;micro;</td>
-        <td>&amp;#181;</td>
-      </tr>
-      <tr>
-        <td>&#8594;</td>
-        <td>&amp;rarr;</td>
-        <td>&amp;#8594;</td>
-      </tr>
-      <tr>
-        <td>Blank Space</td>
-        <td>&amp;nbsp;</td>
-        <td>&amp;#160;</td>
-      </tr>
     </div>
   );
 };

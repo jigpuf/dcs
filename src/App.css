@@ -29,20 +29,23 @@
   color: #61dafb;
 }
 
+table,
+td,
+th {
+  border: 1px solid black;
+  background: lightgray;
+  color: black;
+}
 
-  table, td,th{
-    border: 1px solid black;
-    background: lightgray;
-    color: black;
+table,
+th,
+td {
+  border: 1px solid black;
+}
 
-  }
-  
-  table, th, td {
-    border: 1px solid black;
-  }
-  
-  tr:nth-child(2n){
-    background-color: lightgray;
-  }
-
- 
+tr:nth-child(2n) {
+  background-color: lightgray;
+}
+body {
+  margin-bottom: 50px;
+}
