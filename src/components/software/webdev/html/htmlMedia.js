@@ -1,105 +1,187 @@
 import React from "react";
 
 const HtmlMedia = () => {
+  const codeHead = ["Step", "Explain", "Code"];
+  const tags = [
+    {
+      step: "iframes",
+      points: ["", "", "", "", "", "", "", ""],
+      code: ["", "", "", "", "", ""],
+      visual: (
+        <iframe
+          src="https://www.gutenberg.org/"
+          title="Gutenberg Projects"
+        ></iframe>
+      ),
+    },
+    {
+      step: "Paths/ Links",
+      points: [
+        "This is an anchor tag with a reference to a file in the local folder(sibling) './'",
+        "This is an anchor tag with a reference to a file in the a parent folder folder '../' and then in a sibling folder named files",
+        "This is a dummy link that is a placeholder until the real address is entered",
+        "External Link that opens in a new tab",
+        "External Link that opens in this tab",
+        "Internal link to a specific location on this page.  The hashtag means it goes to the place that has the id attribute that matches",
+      ],
+      code: [
+        "<a href='#'>Run</a>",
+        "<a href='../files/walk.js'>Walk</a>",
+        "<a href='#'>Dummy Link</a>",
+        "<a href='https://www.instructables.com/' target='_blank'>Instructables</a>",
+        "<a href='https://www.gutenberg.org/'>Project Gutenberg</a>",
+        `<a href="#canvas">Canvas Section</a>`,
+      ],
+      visual: (
+        <div>
+          <a href="#">Run</a>
+          <br />
+          <a href="#">Walk</a>
+          <br />
+          <a href="#">Dummy Link</a>
+          <br />
+          <a href="https://www.instructables.com/" target="_blank">
+            Instructables
+          </a>
+          <br />
+          <a href="https://www.gutenberg.org/">Project Gutenberg</a>
+          <br />
+          <a href="#canvas">Canvas Section</a>
+        </div>
+      ),
+    },
+    {
+      step: "Images",
+      points: [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Images can be cropped down and resized using adobe preview Tools→Adjust Size",
+        "JPEG- Photos and complex Graphics",
+        "PNG- still simple images",
+        "GIF- moving images",
+        "SVG- Vector",
+      ],
+      code: [
+        "<img",
+        "src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV-ae4RMvZhVHnnKCyAiDQqm2OWPj5bepgLQ&usqp=CAU'",
+        "alt='cute dog'",
+        "width='300px'",
+        "></img>",
+      ],
+      visual: (
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV-ae4RMvZhVHnnKCyAiDQqm2OWPj5bepgLQ&usqp=CAU"
+          alt="cute dog"
+          width="300px"
+        ></img>
+      ),
+    },
+    {
+      step: "Video",
+      points: ["", "", "", "", "", "", "", ""],
+      code: [
+        "<video",
+        "controls",
+        "autoplay",
+        "source",
+        "src='path'",
+        "id='idName'",
+        "type='video/mp4'",
+        "></video>",
+      ],
+      visual: (
+        <video
+          controls
+          autoplay
+          source
+          src=""
+          id="idName"
+          type="video/mp4"
+        ></video>
+      ),
+    },
+    {
+      step: "Audio",
+      points: ["", "", "", "", "", "", "", ""],
+      code: ["", "", "", "", "", "", "", ""],
+      visual: <audio controls src="horse.mp3" type="audio/mpeg"></audio>,
+    },
+    {
+      step: "PDF",
+      points: ["", "", "", "", "", "", "", ""],
+      code: ["", "", "", "", "", "", "", ""],
+      visual: (
+        <a href="Yoga.pdf" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTsGFbbiTF71SKFC_qfyV0xlBZnac17njOvw&usqp=CAU"></img>
+        </a>
+      ),
+    },
+    {
+      step: "API",
+      points: ["", "", "", "", "", "", "", ""],
+      code: ["", "", "", "", "", "", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Meter",
+      points: ["", "", "", "", "", "", "", ""],
+      code: ["", "", "", "", "", "", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Progress",
+      points: ["", "", "", "", "", "", "", ""],
+      code: ["", "", "", "", "", "", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Canvas",
+      points: ["", "", "", "", "", "", "", ""],
+      code: ["", "", "", "", "", "", "", ""],
+      visual: <div></div>,
+    },
+  ];
+  const renderTags = tags.map((item) => {
+    const renderPoints = item.points.map((point) => {
+      return <li>{point}</li>;
+    });
+    const renderCode = item.code.map((codelet) => {
+      return <li>{codelet}</li>;
+    });
+    return (
+      <tr>
+        <td>{item.step}</td>
+        <td>
+          <details>
+            <summary>Notes</summary>
+            <ol>{renderPoints}</ol>
+          </details>
+        </td>
+        <td>
+          <details>
+            <summary>Code</summary>
+            <ol>{renderCode}</ol>
+          </details>
+        </td>
+        <td>{item.visual}</td>
+      </tr>
+    );
+  });
   return (
     <div>
       <h2>Media</h2>
-      <h3>Iframes</h3>
-      <h3>Paths</h3>
-      Same directory= ./ Go up directory= ../
-      <h3>Links</h3>
-      &lt;a href = '....' target="_blank" &gt;Link Name&lt;/a&gt;
-      <br />
-      <a href="">Link Name</a>
-      <br />
       <table>
         <tr>
-          <th>Path type</th>
-          <th>Syntax</th>
+          <th>Tag</th>
+          <th>Notes</th>
+          <th>Code</th>
+          <th>Example</th>
         </tr>
-        <tr>
-          <td>External Link</td>
-          <td>href = 'http:....'</td>
-        </tr>
-        <tr>
-          <td>Up a folder</td>
-          <td>href='../'</td>
-        </tr>
-        <tr>
-          <td>In same folder</td>
-          <td>href='./'</td>
-        </tr>
-        <tr>
-          <td>Internal to page</td>
-          <td>href='#idName'</td>
-        </tr>
-        <tr>
-          <td>Dummy link</td>
-          <td>href='#'</td>
-        </tr>
-        <tr></tr>
+        {renderTags}
       </table>
-      <h3>Images</h3>
-      &lt;img src="smiley.gif" alt="Smiley face" height="42" width="42"&gt;
-      <ul>
-        <li>JPEG- Photos and complex Graphics</li>
-        <li>PNG- still simple images</li>
-        <li>GIF- moving images</li>
-        <li>SVG- Vector</li>
-      </ul>
-      Copyright free images:
-      <br />
-      <ul>
-        <li>
-          <a href="https://www.pexels.com/royalty-free-images" target="_blank">
-            Pexels
-          </a>
-        </li>
-        <li>
-          <a href="https://pixabay.com/" target="_blank">
-            Pixabay
-          </a>
-        </li>
-        <li>
-          <a href="https://gratisography.com/" target="_blank">
-            Gratisography
-          </a>
-        </li>
-      </ul>
-      Images can be cropped down and resized using adobe preview <br />
-      Tools&rarr;Adjust Size
-      <h3>Video</h3>
-      &lt;video id='idName' controls src='path.mp4' poster='path.png'&gt;
-      <br />
-      &lt;/video&gt;
-      <br />
-      <video controls autoplay source src="" type="video/mp4"></video>
-      <h3>Audio</h3>
-      &lt;audio controls&gt;
-      <br />
-      &lt;source src="horse.ogg" type="audio/ogg"&gt;
-      <br />
-      &lt;source src="horse.mp3" type="audio/mpeg&gt;
-      <br />
-      &lt;/audio&gt;
-      <br />
-      <h3>PDF</h3>
-      &lt;a href="path" onclick="window.open('MyPDF.pdf', '_blank',
-      'fullscreen=yes'); return false;" &gt;visibleName &lt;&#47;a&gt;
-      <br />
-      <a
-        href="https://drive.google.com/open?id=15roj--KrhNHGiRgd3C_mxXGqmvO9ict-"
-        target="_blank"
-      >
-        hyrum
-      </a>
-      <br />
-      <a
-        href="https://drive.google.com/open?id=1JlsWQXM9qxZ0WNG6zmmAt21cs1c0ja3S"
-        onclick="window.open('MyPDF.pdf', '_blank', 'fullscreen=yes'); return false;"
-      >
-        MyPDF
-      </a>
       <h3>API</h3>
       <li>Set up account with API provider</li>
       <li>Look at documentation to find out if you need a key</li>
@@ -123,9 +205,7 @@ const HtmlMedia = () => {
         perameters
       </li>
       <li>Manipulate data</li>
-      <h3>Meter</h3>
-      <h3>Progress</h3>
-      <h3>Canvas</h3>
+      <h3 id="canvas">Canvas</h3>
     </div>
   );
 };
