@@ -115,6 +115,23 @@ const HtmlStructuredData = () => {
       ),
     },
     {
+      step: "Description list",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <dl>
+          <dt>Beast of Bodmin</dt>
+          <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+          <dt>Morgawr</dt>
+          <dd>A sea serpent.</dd>
+
+          <dt>Owlman</dt>
+          <dd>A giant owl-like creature.</dd>
+        </dl>
+      ),
+    },
+    {
       step: "Break",
       points: ["", "", ""],
       code: ["<p>", "Roses are red<br />Violets are Blue", "</p>"],
