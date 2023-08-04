@@ -22,23 +22,200 @@ const HtmlForms = () => {
     { name: "multiple", tags: ["", ""], notes: "" },
     { name: "required", tags: ["", ""], notes: "" },
   ];
-  const syntax = [
-    { input: "form", lines: ["", ""], notes: ["", ""] },
-    { input: "button", lines: ["", ""], notes: ["", ""] },
-    { input: "submit", lines: ["", ""], notes: ["", ""] },
-    { input: "checkbox", lines: ["", ""], notes: ["", ""] },
-    { input: "radio", lines: ["", ""], notes: ["", ""] },
-    { input: "select,optgroup", lines: ["", ""], notes: ["", ""] },
-    { input: "range", lines: ["", ""], notes: ["", ""] },
-    { input: "textarea", lines: ["", ""], notes: ["", ""] },
-    { input: "month", lines: ["", ""], notes: ["", ""] },
-    { input: "time", lines: ["", ""], notes: ["", ""] },
-    { input: "email", lines: ["", ""], notes: ["", ""] },
-    { input: "password", lines: ["", ""], notes: ["", ""] },
-    { input: "text", lines: ["", ""], notes: ["", ""] },
-    { input: "number", lines: ["", ""], notes: ["", ""] },
-    { input: "Datalist", lines: ["", ""], notes: ["", ""] },
+
+  const tags = [
+    {
+      step: "Form",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Button",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Checkbox",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <div>
+          Checkbox
+          <br />
+          <input type="checkbox" name="language1" value="English" checked />
+          English
+          <input type="checkbox" name="language1" value="Spanish" checked />
+          Spanish
+          <input type="checkbox" name="language1" value="French" />
+          Frenchz
+        </div>
+      ),
+    },
+    {
+      step: "Radio",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <div>
+          <p>Select Language</p>
+          <input type="radio" name="language" value="English" checked />
+          English
+          <input type="radio" name="language" value="Spanish" />
+          Spanish
+          <input type="radio" name="language" value="French" />
+          Frenchz
+        </div>
+      ),
+    },
+    {
+      step: "Select/Option, Opt Group",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <div>
+          <select name="languages2">
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+          </select>
+        </div>
+      ),
+    },
+    {
+      step: "Range",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Submit",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <div>
+          <input type="submit" value="Submit Here"></input>
+        </div>
+      ),
+    },
+    {
+      step: "Color Selector",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Text",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <div>
+          {" "}
+          <label for="firstName">Label for textBox</label>
+          <br />
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="text"
+          ></input>
+        </div>
+      ),
+    },
+    {
+      step: "Number",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Text Area",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <div>
+          <textarea name="textarea" id="textArea" cols="10" rows="2"></textarea>
+        </div>
+      ),
+    },
+    {
+      step: "E-mail",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <div>
+          <input type="email" name="email" value="email@email"></input>
+        </div>
+      ),
+    },
+    {
+      step: "Password",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: (
+        <div>
+          Password
+          <br />
+          <input
+            type="password"
+            name="password"
+            placeholder="type password"
+          ></input>
+        </div>
+      ),
+    },
+    {
+      step: "Month",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Time",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Date",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
+    {
+      step: "Data List",
+      points: ["", "", ""],
+      code: ["", "", ""],
+      visual: <div></div>,
+    },
   ];
+  const renderTags = tags.map((item) => {
+    const renderPoints = item.points.map((point) => {
+      return <li>{point}</li>;
+    });
+    const renderCode = item.code.map((codelet) => {
+      return <li>{codelet}</li>;
+    });
+    return (
+      <tr>
+        <td>{item.step}</td>
+        <td>
+          <details>
+            <summary>Notes</summary>
+            <ol>{renderPoints}</ol>
+          </details>
+        </td>
+        <td>
+          <details>
+            <summary>Code</summary>
+            <ol>{renderCode}</ol>
+          </details>
+        </td>
+        <td>{item.visual}</td>
+      </tr>
+    );
+  });
   return (
     <div>
       <h1>Forms</h1>
@@ -46,82 +223,7 @@ const HtmlForms = () => {
         A form is a wrapper that will send all the information within it as an
         HTML request to a specific URL
       </p>
-      <hr />
-      input types-text, submit, radio, checkbox, number, range, color, date,
-      tel, email, url, password, file, pulldown menu
-      <br />
-      textarea
-      <br />
-      select/option- multiple
-      <br />
-      button,fieldset/legend, Form Methods:
-      <li>GET</li>
-      <li>POST</li>
-      Action says where form data goes
-      <br />
-      method is how the data will be sent
-      <br />
-      <h3>Form Examples</h3>
-      *need to change this to table that shows code
-      <form action="" method="">
-        Text
-        <br />
-        <label for="firstName">Label for textBox</label>
-        <br />
-        <input
-          type="text"
-          name="firstName"
-          id="firstName"
-          placeholder="text"
-        ></input>
-        <br />
-        Password
-        <br />
-        <input
-          type="password"
-          name="password"
-          placeholder="type password"
-        ></input>
-        <br />
-        Email
-        <br />
-        <input type="email" name="email" value="email@email"></input>
-        <br />
-        Submit Button
-        <br />
-        <input type="submit" value="Submit Here"></input>
-        <br />
-        textarea
-        <br />
-        <textarea name="textarea" id="textArea" cols="10" rows="2"></textarea>
-        <br />
-        radio
-        <br />
-        <p>Select Language</p>
-        <input type="radio" name="language" value="English" checked />
-        English
-        <input type="radio" name="language" value="Spanish" />
-        Spanish
-        <input type="radio" name="language" value="French" />
-        Frenchz
-        <br />
-        Checkbox
-        <br />
-        <input type="checkbox" name="language1" value="English" checked />
-        English
-        <input type="checkbox" name="language1" value="Spanish" checked />
-        Spanish
-        <input type="checkbox" name="language1" value="French" />
-        Frenchz
-        <br />
-        Select
-        <br />
-        <select name="languages2">
-          <option value="English">English</option>
-          <option value="Spanish">Spanish</option>
-          <option value="French">French</option>
-        </select>
-      </form>
+      {renderTags}
     </div>
   );
 };

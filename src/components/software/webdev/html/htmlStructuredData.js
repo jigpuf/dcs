@@ -9,12 +9,12 @@ const HtmlStructuredData = () => {
       points: [
         "Open Details",
         "The summary is what shows as a heading for the detail",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Ordered List",
+        "List item",
+        "List item",
+        "List Item",
+        "Close ordered list",
+        "Close details",
       ],
       code: [
         "<details>",
@@ -39,7 +39,22 @@ const HtmlStructuredData = () => {
     },
     {
       step: "Tables",
-      points: ["", "", "", "", "", "", "", "", "", "", "", "", ""],
+      points: [
+        "Open Table",
+        "Open a table row",
+        "Table header that spans accross 2 rows",
+        "Table Header that spans accross 2 columns",
+        "Close first table row",
+        "Second table row open",
+        "2 Table Header",
+        "Close second table row",
+        "Open third table row",
+        "Table datum",
+        "Table datum",
+        "Table datum",
+        "Close third row",
+        "Close Table",
+      ],
       code: [
         "<table>",
         "<tr>",
@@ -49,6 +64,7 @@ const HtmlStructuredData = () => {
         "<tr>",
         "<th>Man</th> <th>Woman</th>",
         "</tr>",
+        "<tr>",
         "<td>5K</td>",
         "<td>Kman</td>",
         "<td>Kwoman</td>",
@@ -74,15 +90,20 @@ const HtmlStructuredData = () => {
     },
     {
       step: "Lists",
-      points: ["", "", "", "", "", "", "", "", "", ""],
+      points: [
+        "Open unordered list",
+        "two list items",
+        "Ordered list nesten under a list item",
+        "3 list items in the nested list",
+        "Close nested ordered list",
+        "List item from top level list",
+        "Close unordered list",
+      ],
       code: [
         "<ul>",
-        "<li>dog</li>",
-        "<li>cat</li>",
+        "<li>dog</li> <li>cat</li>",
         "<ol>",
-        "<li>cheshire</li>",
-        "<li>tabby</li>",
-        "<li>hairless</li>",
+        "<li>cheshire</li> <li>tabby</li> <li>hairless</li>",
         "</ol>",
         "<li>turtle</li>",
         "</ul>",
@@ -101,40 +122,9 @@ const HtmlStructuredData = () => {
       ),
     },
     {
-      step: "Definitions",
-      points: ["", "", ""],
-      code: [
-        "<p>",
-        "<dfn>Insanity</dfn>Keep giving the same definition of insanity",
-        "</p>",
-      ],
-      visual: (
-        <p>
-          <dfn>Insanity</dfn>Keep giving the same definition of insanity
-        </p>
-      ),
-    },
-    {
-      step: "Description list",
-      points: ["", "", ""],
-      code: ["", "", ""],
-      visual: (
-        <dl>
-          <dt>Beast of Bodmin</dt>
-          <dd>A large feline inhabiting Bodmin Moor.</dd>
-
-          <dt>Morgawr</dt>
-          <dd>A sea serpent.</dd>
-
-          <dt>Owlman</dt>
-          <dd>A giant owl-like creature.</dd>
-        </dl>
-      ),
-    },
-    {
       step: "Break",
-      points: ["", "", ""],
-      code: ["<p>", "Roses are red<br />Violets are Blue", "</p>"],
+      points: ["This would apea a single line without the break"],
+      code: ["Roses are red<br />Violets are Blue"],
       visual: (
         <p>
           Roses are red
@@ -144,7 +134,11 @@ const HtmlStructuredData = () => {
     },
     {
       step: "Horizontal Rule",
-      points: ["", "", ""],
+      points: [
+        "Something above the line",
+        "Makes a line",
+        "Stuff after horizontal rule",
+      ],
       code: ["<p>first subject</p>", "<hr />", "<p>Next subject</p>"],
       visual: (
         <div>

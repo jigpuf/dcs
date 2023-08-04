@@ -1,12 +1,15 @@
 import React from "react";
 
 const HtmlMedia = () => {
-  const codeHead = ["Step", "Explain", "Code"];
   const tags = [
     {
       step: "iframes",
-      points: ["", "", "", "", "", "", "", ""],
-      code: ["", "", "", "", "", ""],
+      points: [
+        "Open Iframe",
+        "the source showing URL of website",
+        "Close Iframe",
+      ],
+      code: ["<iframe", "src='https://www.gutenberg.org/'", "></iframe>"],
       visual: (
         <iframe
           src="https://www.gutenberg.org/"
@@ -53,11 +56,11 @@ const HtmlMedia = () => {
     {
       step: "Images",
       points: [
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Open image tag",
+        "URL of the image",
+        "Alt for screen readers",
+        "Set width of picture",
+        "Close image tag",
         "Images can be cropped down and resized using adobe preview Tools→Adjust Size",
         "JPEG- Photos and complex Graphics",
         "PNG- still simple images",
@@ -81,38 +84,44 @@ const HtmlMedia = () => {
     },
     {
       step: "Video",
-      points: ["", "", "", "", "", "", "", ""],
+      points: ["", "", "", "", "", "", "", "", ""],
       code: [
         "<video",
+        "width='400'",
         "controls",
-        "autoplay",
-        "source",
+        "autoplay>",
+        "<source",
         "src='path'",
         "id='idName'",
         "type='video/mp4'",
-        "></video>",
+        "></source></video>",
       ],
       visual: (
-        <video
-          controls
-          autoplay
-          source
-          src=""
-          id="idName"
-          type="video/mp4"
-        ></video>
+        <video width="400" controls autoplay>
+          <source src="" id="idName" type="video/mp4"></source>
+        </video>
       ),
     },
     {
       step: "Audio",
-      points: ["", "", "", "", "", "", "", ""],
-      code: ["", "", "", "", "", "", "", ""],
+      points: ["", "", "", "", ""],
+      code: [
+        "<audio",
+        "control",
+        "src='horse.mp3'",
+        "type='audio/mpeg'>",
+        "</audio>",
+      ],
       visual: <audio controls src="horse.mp3" type="audio/mpeg"></audio>,
     },
     {
       step: "PDF",
-      points: ["", "", "", "", "", "", "", ""],
-      code: ["", "", "", "", "", "", "", ""],
+      points: ["", "", ""],
+      code: [
+        "<a href='Yoga.pdf'",
+        "target='_blank'>",
+        "<img src='yogabook.png'></img>",
+      ],
       visual: (
         <a href="Yoga.pdf" target="_blank">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTsGFbbiTF71SKFC_qfyV0xlBZnac17njOvw&usqp=CAU"></img>
