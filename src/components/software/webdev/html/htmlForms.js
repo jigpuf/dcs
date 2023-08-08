@@ -26,24 +26,56 @@ const HtmlForms = () => {
   const tags = [
     {
       step: "Form",
-      points: ["", "", ""],
-      code: ["", "", ""],
-      visual: <div></div>,
+      points: [
+        "",
+        "action is the URL where data will be sent",
+        "Method is what type of request is being sent, POST, GET, etc.",
+        "",
+        "",
+      ],
+      code: [
+        "<form",
+        "action=''",
+        "method=''>",
+        "<button></button>",
+        "</form>",
+      ],
+      visual: (
+        <div>
+          <form action="" method="">
+            <button></button>
+          </form>
+        </div>
+      ),
+      output: "",
     },
     {
       step: "Button",
       points: ["", "", ""],
       code: ["", "", ""],
       visual: <div></div>,
+      output: "",
+    },
+    {
+      step: " RegularButton",
+      points: ["", "", ""],
+      code: ["<button", "onclick=''>", "Push Me!", "</button>"],
+      visual: <button onclick="">Push Me!</button>,
+      output: "",
     },
     {
       step: "Checkbox",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: ["", "", "", "", ""],
+      code: [
+        "<input type='checkbox' name='language1' value='English' checked />",
+        "English",
+        "<input type='checkbox' name='language1' value='Spanish' checked />",
+        "Spanish",
+        "<input type='checkbox' name='language1' value='French' />",
+        "Frenchz",
+      ],
       visual: (
         <div>
-          Checkbox
-          <br />
           <input type="checkbox" name="language1" value="English" checked />
           English
           <input type="checkbox" name="language1" value="Spanish" checked />
@@ -52,14 +84,21 @@ const HtmlForms = () => {
           Frenchz
         </div>
       ),
+      output: "",
     },
     {
       step: "Radio",
       points: ["", "", ""],
-      code: ["", "", ""],
+      code: [
+        "<input type='radio' name='language' value='English' checked />",
+        "English",
+        "<input type='radio' name='language' value='Spanish' />",
+        "Spanish",
+        "<input type='radio' name='language' value='French' />",
+        "Frenchz",
+      ],
       visual: (
         <div>
-          <p>Select Language</p>
           <input type="radio" name="language" value="English" checked />
           English
           <input type="radio" name="language" value="Spanish" />
@@ -68,6 +107,7 @@ const HtmlForms = () => {
           Frenchz
         </div>
       ),
+      output: "",
     },
     {
       step: "Select/Option, Opt Group",
@@ -82,28 +122,40 @@ const HtmlForms = () => {
           </select>
         </div>
       ),
+      output: "",
     },
     {
       step: "Range",
       points: ["", "", ""],
       code: ["", "", ""],
-      visual: <div></div>,
+      visual: (
+        <div>
+          <input type="range"></input>
+        </div>
+      ),
+      output: "",
     },
     {
       step: "Submit",
       points: ["", "", ""],
-      code: ["", "", ""],
+      code: ["<input type='submit' value='Submit Here'></input>", "", ""],
       visual: (
         <div>
           <input type="submit" value="Submit Here"></input>
         </div>
       ),
+      output: "",
     },
     {
       step: "Color Selector",
       points: ["", "", ""],
       code: ["", "", ""],
-      visual: <div></div>,
+      visual: (
+        <div>
+          <input type="color"></input>
+        </div>
+      ),
+      output: "",
     },
     {
       step: "Text",
@@ -122,12 +174,17 @@ const HtmlForms = () => {
           ></input>
         </div>
       ),
+      output: "",
     },
     {
       step: "Number",
       points: ["", "", ""],
       code: ["", "", ""],
-      visual: <div></div>,
+      visual: (
+        <div>
+          <input type="number"></input>
+        </div>
+      ),
     },
     {
       step: "Text Area",
@@ -138,6 +195,7 @@ const HtmlForms = () => {
           <textarea name="textarea" id="textArea" cols="10" rows="2"></textarea>
         </div>
       ),
+      output: "",
     },
     {
       step: "E-mail",
@@ -148,6 +206,7 @@ const HtmlForms = () => {
           <input type="email" name="email" value="email@email"></input>
         </div>
       ),
+      output: "",
     },
     {
       step: "Password",
@@ -164,30 +223,51 @@ const HtmlForms = () => {
           ></input>
         </div>
       ),
+      output: "",
     },
     {
       step: "Month",
       points: ["", "", ""],
       code: ["", "", ""],
-      visual: <div></div>,
+      visual: (
+        <div>
+          <input type="month"></input>
+        </div>
+      ),
+      output: "",
     },
     {
       step: "Time",
       points: ["", "", ""],
       code: ["", "", ""],
-      visual: <div></div>,
+      visual: (
+        <div>
+          <input type="time"></input>
+        </div>
+      ),
+      output: "",
     },
     {
       step: "Date",
       points: ["", "", ""],
       code: ["", "", ""],
-      visual: <div></div>,
+      visual: (
+        <div>
+          <input type="date"></input>
+        </div>
+      ),
+      output: "",
     },
     {
       step: "Data List",
       points: ["", "", ""],
       code: ["", "", ""],
-      visual: <div></div>,
+      visual: (
+        <div>
+          <input type="datalist"></input>
+        </div>
+      ),
+      output: "",
     },
   ];
   const renderTags = tags.map((item) => {
@@ -213,6 +293,7 @@ const HtmlForms = () => {
           </details>
         </td>
         <td>{item.visual}</td>
+        <td>{item.output}</td>
       </tr>
     );
   });
@@ -223,7 +304,21 @@ const HtmlForms = () => {
         A form is a wrapper that will send all the information within it as an
         HTML request to a specific URL
       </p>
-      {renderTags}
+      <table>
+        <tr>
+          <th>Tag</th>
+          <th>Notes</th>
+          <th>Code</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        {renderTags}
+      </table>
+      <h2>Form output syntax</h2>
+      <li>url followed by ? to show a form is being used</li>
+      <li>after the ? is a key value pair eg. animal="mouse"</li>
+      <li>between key value pairs an ampersand is used</li>
+      <li>https://finviz.com/screener.ashx?v=111&ft=4</li>
     </div>
   );
 };

@@ -84,7 +84,16 @@ const HtmlMedia = () => {
     },
     {
       step: "Video",
-      points: ["", "", "", "", "", "", "", "", ""],
+      points: [
+        "Open video tag",
+        "width of video",
+        "control puts controls on the video",
+        "autoplay makes the video start playing as soon as it loads",
+        "source open tag",
+        "src is the path to the video file",
+        "type is the type of fiule of the video",
+        "Close source and video tags",
+      ],
       code: [
         "<video",
         "width='400'",
@@ -92,7 +101,6 @@ const HtmlMedia = () => {
         "autoplay>",
         "<source",
         "src='path'",
-        "id='idName'",
         "type='video/mp4'",
         "></source></video>",
       ],
@@ -104,7 +112,13 @@ const HtmlMedia = () => {
     },
     {
       step: "Audio",
-      points: ["", "", "", "", ""],
+      points: [
+        "Open audio tag",
+        "control puts controls on the audio",
+        "src is the file path",
+        "type is the type of file",
+        "Close audio tag",
+      ],
       code: [
         "<audio",
         "control",
@@ -116,11 +130,17 @@ const HtmlMedia = () => {
     },
     {
       step: "PDF",
-      points: ["", "", ""],
+      points: [
+        "PDFs can be called as images in an anchor tag",
+        "target decides if the pdf opens in its own tab",
+        "img tag src is the filepath to the picture",
+        "Close image, close anchor tag",
+      ],
       code: [
         "<a href='Yoga.pdf'",
         "target='_blank'>",
-        "<img src='yogabook.png'></img>",
+        "<img src='yogabook.png'>",
+        "</img></a>",
       ],
       visual: (
         <a href="Yoga.pdf" target="_blank">
@@ -214,7 +234,6 @@ const HtmlMedia = () => {
         perameters
       </li>
       <li>Manipulate data</li>
-      <h3 id="canvas">Canvas</h3>
     </div>
   );
 };
