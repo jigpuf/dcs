@@ -87,41 +87,33 @@ const HtmlMedia = () => {
       points: [
         "Open video tag",
         "width of video",
-        "control puts controls on the video",
+        "controls puts controls on the video",
         "autoplay makes the video start playing as soon as it loads",
-        "source open tag",
         "src is the path to the video file",
-        "type is the type of fiule of the video",
-        "Close source and video tags",
+        "Close video tags",
       ],
       code: [
         "<video",
         "width='400'",
         "controls",
         "autoplay>",
-        "<source",
-        "src='path'",
-        "type='video/mp4'",
-        "></source></video>",
+        "src='video.mp4'",
+        "></video>",
       ],
-      visual: (
-        <video width="400" controls autoplay>
-          <source src="" id="idName" type="video/mp4"></source>
-        </video>
-      ),
+      visual: <video width="400" controls autoplay loop></video>,
     },
     {
       step: "Audio",
       points: [
         "Open audio tag",
-        "control puts controls on the audio",
+        "controls puts controls on the audio",
         "src is the file path",
         "type is the type of file",
         "Close audio tag",
       ],
       code: [
         "<audio",
-        "control",
+        "controls",
         "src='horse.mp3'",
         "type='audio/mpeg'>",
         "</audio>",
@@ -135,24 +127,29 @@ const HtmlMedia = () => {
         "target decides if the pdf opens in its own tab",
         "img tag src is the filepath to the picture",
         "Close image, close anchor tag",
+        "They can also be embeded with iframe",
+        "src is the file path",
+        "width and height can be chosen",
+        "Close iframe tag",
       ],
       code: [
         "<a href='Yoga.pdf'",
         "target='_blank'>",
         "<img src='yogabook.png'>",
         "</img></a>",
+        "<iframe",
+        "src='Yoga.pdf'",
+        "width='100%' height='600px'>",
+        "</iframe>",
       ],
       visual: (
-        <a href="Yoga.pdf" target="_blank">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTsGFbbiTF71SKFC_qfyV0xlBZnac17njOvw&usqp=CAU"></img>
-        </a>
+        <div>
+          <a href="Yoga.pdf" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTsGFbbiTF71SKFC_qfyV0xlBZnac17njOvw&usqp=CAU"></img>
+          </a>
+          <iframe src="Yoga.pdf" width="100%" height="600px"></iframe>
+        </div>
       ),
-    },
-    {
-      step: "API",
-      points: ["", "", "", "", "", "", "", ""],
-      code: ["", "", "", "", "", "", "", ""],
-      visual: <div></div>,
     },
     {
       step: "Meter",

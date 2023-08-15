@@ -27,11 +27,11 @@ const HtmlForms = () => {
     {
       step: "Form",
       points: [
-        "",
+        "Open a form where all form elements will live that will be submitted as HTML requests when this form submits",
         "action is the URL where data will be sent",
-        "Method is what type of request is being sent, POST, GET, etc.",
-        "",
-        "",
+        "Method is what type of request is being sent, POST, GET, Put, Delete, Patch",
+        "Form element",
+        "CLose form",
       ],
       code: [
         "<form",
@@ -47,93 +47,180 @@ const HtmlForms = () => {
           </form>
         </div>
       ),
-      output: "",
+      output: "the entire html request",
     },
     {
       step: "Button",
-      points: ["", "", ""],
-      code: ["", "", ""],
-      visual: <div></div>,
-      output: "",
+      points: [
+        "Open input tag",
+        "Type of input is button",
+        "name is the key in the key:value pair in the submitted form",
+        "data-value is the value portion of the key:value pair sent in the form submision",
+        "Value is what is displayed on the button",
+        "the onclick attribute says what function will happen when the button is clicked",
+        "Close input tag",
+      ],
+      code: [
+        "<input",
+        "type='button'",
+        "name='submitBtn'",
+        "data-value='Data Value'",
+        "value='Display Text'",
+        "onclick='myFunction()'",
+        "></input>",
+      ],
+      visual: (
+        <div>
+          <input
+            type="button"
+            name="submitBtn"
+            data-value="Data Value"
+            value="Display Text"
+            onclick="myFunction()"
+          ></input>
+        </div>
+      ),
+      output: "submitBtn=Data Value",
     },
     {
       step: " RegularButton",
-      points: ["", "", ""],
-      code: ["<button", "onclick=''>", "Push Me!", "</button>"],
+      points: [
+        "This regular button can exist in a form  but not trigger a submission",
+        "onclick holds what function will be performed upon clicking",
+        "Text displayed on the button",
+        "Close button",
+      ],
+      code: ["<button", "onclick='someFunction()'>", "Push Me!", "</button>"],
       visual: <button onclick="">Push Me!</button>,
-      output: "",
+      output: "none",
     },
     {
       step: "Checkbox",
-      points: ["", "", "", "", ""],
+      points: [
+        "Open input tag, type is checkbox, id is checkbox1, the id is important because the label 'for' attribute has to match the id, name will be the part of the key value pair, value is the value part of the key value pair, checked makes the box checked, close input tag",
+        "This label is associated with the input with the id of checkbox1, English is what is displayed, close label.  Making this label associated with the input makes the word clickable to check the box",
+        "Next input box same situation minus the checked attribute",
+        "Label for checkbox2",
+      ],
       code: [
-        "<input type='checkbox' name='language1' value='English' checked />",
-        "English",
-        "<input type='checkbox' name='language1' value='Spanish' checked />",
-        "Spanish",
-        "<input type='checkbox' name='language1' value='French' />",
-        "Frenchz",
+        "<input type='checkbox' id='checkbox1' name='language1' value='english' checked />",
+        "<label for='checkbox1'>English</label>",
+        "<input type='checkbox' id='checkbox2' name='language2' value='Spanish'/>",
+        "<label for='checkbox2'>Spanish</label>",
       ],
       visual: (
         <div>
-          <input type="checkbox" name="language1" value="English" checked />
-          English
-          <input type="checkbox" name="language1" value="Spanish" checked />
-          Spanish
-          <input type="checkbox" name="language1" value="French" />
-          Frenchz
+          <input
+            type="checkbox"
+            id="checkbox1"
+            name="language1"
+            value="english"
+            checked
+          ></input>
+          <label for="checkbox1">English</label>
+
+          <input
+            type="checkbox"
+            id="checkbox2"
+            name="language 2"
+            value="Spanish"
+          ></input>
+          <label for="checkbox2">Spanish</label>
         </div>
       ),
-      output: "",
+      output: "language1=english&language2=spanish  if both are checked",
     },
     {
       step: "Radio",
-      points: ["", "", ""],
+      points: [
+        "Open input, type radio, id so that the label will refer to the input, name is the key for the key value pair, value is the value for the key value pair, it starts as the checked value, close input",
+        "Open label tag, it is for the radioButton1, English is displayed, close label",
+        "Same as above but the value is different but notice the key is the same as the one above. Also this one is not checked.  No more than one should be checked",
+        "Label for the radioButton2",
+      ],
       code: [
-        "<input type='radio' name='language' value='English' checked />",
-        "English",
-        "<input type='radio' name='language' value='Spanish' />",
-        "Spanish",
-        "<input type='radio' name='language' value='French' />",
-        "Frenchz",
+        "<input type='radio' id='radioButton1' name='language' value='english' checked></input>  ",
+        "<label for='radioButton1'>English</label>",
+        "<input type='radio' id='radioButton2' name='language' value='spanish'></input>",
+        "<label for='radioButton2'>Spanish</label>",
       ],
       visual: (
         <div>
-          <input type="radio" name="language" value="English" checked />
-          English
-          <input type="radio" name="language" value="Spanish" />
-          Spanish
-          <input type="radio" name="language" value="French" />
-          Frenchz
+          <input
+            type="radio"
+            id="radioButton1"
+            name="language"
+            value="english"
+            checked
+          ></input>
+          <label for="radioButton1">English</label>
+          <input
+            type="radio"
+            id="radioButton2"
+            name="language"
+            value="spanish"
+          ></input>
+          <label for="radioButton2">Spanish</label>
         </div>
       ),
-      output: "",
+      output: "language=english  or language=spanish",
     },
     {
       step: "Select/Option, Opt Group",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Open select tag, id for label if included, but not really needed, name is the key part of the key value pair",
+        "First option with the value of the key value pair, English is Displayed, Close option Tag",
+        "The second option witht the value for the key value pair, close option",
+        "Close select tag",
+      ],
+      code: [
+        "<select id='mySelect' name='selectedOption'>",
+        "<option value='english'>English</option>",
+        "<option value='spanish'>Spanish</option>",
+        "</select>",
+      ],
       visual: (
         <div>
-          <select name="languages2">
-            <option value="English">English</option>
-            <option value="Spanish">Spanish</option>
-            <option value="French">French</option>
+          <select id="mySelect" name="selectedOption">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
           </select>
         </div>
       ),
-      output: "",
+      output: "selectedOption=english   or selectedOption=spanish",
     },
     {
       step: "Range",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "The <label> element provides a label for the range input.",
+        "The for attribute of the <label> element is associated with the id attribute of the range input using the same value.",
+        "The type attribute is set to 'range' to indicate a range input.",
+        "The id attribute uniquely identifies the range input.",
+        "The name attribute specifies the name of the input, which will be used to identify the selected value when the form is submitted.",
+        "The min and max attributes define the minimum and maximum values of the range.",
+        "The step attribute specifies the increment or decrement value when the slider is moved.",
+        "The value attribute sets the initial value of the range input.",
+        "In react, the range won't change without an event handler",
+      ],
+      code: [
+        "<label for='myRange'>Select a value:</label>",
+        "<input type='range' id='myRange' name='selectedValue' min='0' max='100' step='1' value='50'></input>",
+      ],
       visual: (
         <div>
-          <input type="range"></input>
+          <label for="myRange">Select a value:</label>
+          <input
+            type="range"
+            id="myRange"
+            name="selectedValue"
+            min="0"
+            max="100"
+            step="1"
+            //   value="50"
+          ></input>
         </div>
       ),
-      output: "",
+      output: "selectedValue=75",
     },
     {
       step: "Submit",

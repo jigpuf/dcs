@@ -202,7 +202,6 @@ const HtmlStructuredData = () => {
       <li>aside- things that are off to the side of the main content</li>
       <li>footer- footer type information</li>
       <li>header- start of major sections</li>
-      <li>time- anything to do with time</li>
       <li>figure- things like diagrams</li>
     </div>
   );
