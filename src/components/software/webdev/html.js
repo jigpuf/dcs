@@ -7,9 +7,6 @@ import HtmlText from "./html/htmlText.js";
 import HtmlStructuredData from "./html/htmlStructuredData.js";
 import HtmlMedia from "./html/htmlMedia.js";
 import HtmlForms from "./html/htmlForms.js";
-import HtmlPublishing from "./html/htmlPublishing.js";
-import HtmlAttributes from "./html/htmlAttributes.js";
-import HtmlStorage from "./html/htmlStorage.js";
 
 //import Placeholder from '../../../utilities/placeholder.js';
 
@@ -26,9 +23,6 @@ const HTML = () => {
     },
     { name: "Media", slug: "media", component: <HtmlMedia /> },
     { name: "Forms", slug: "forms", component: <HtmlForms /> },
-    { name: "Publishing", slug: "publish", component: <HtmlPublishing /> },
-    { name: "Attributes", slug: "attributes", component: <HtmlAttributes /> },
-    { name: "Storage", slug: "storage", component: <HtmlStorage /> },
   ];
   return (
     <div>

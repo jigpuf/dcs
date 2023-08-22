@@ -1,28 +1,6 @@
 import React from "react";
 
 const HtmlForms = () => {
-  const attributes = [
-    { name: "action", tags: ["form", ""], notes: "" },
-    { name: "method", tags: ["form", ""], notes: "" },
-    { name: "id", tags: ["input", ""], notes: "" },
-    { name: "for", tags: ["label", ""], notes: "" },
-    { name: "name", tags: ["", ""], notes: "" },
-    { name: "type", tags: ["input", ""], notes: "" },
-    { name: "value", tags: ["", ""], notes: "" },
-    { name: "checked", tags: ["", ""], notes: "" },
-    { name: "placeholder", tags: ["", ""], notes: "" },
-    { name: "min", tags: ["", ""], notes: "" },
-    { name: "max", tags: ["", ""], notes: "" },
-    { name: "minlength", tags: ["", ""], notes: "" },
-    { name: "maxlength", tags: ["", ""], notes: "" },
-    { name: "rows", tags: ["", ""], notes: "" },
-    { name: "columns", tags: ["", ""], notes: "" },
-    { name: "step", tags: ["", ""], notes: "" },
-    { name: "target", tags: ["", ""], notes: "" },
-    { name: "multiple", tags: ["", ""], notes: "" },
-    { name: "required", tags: ["", ""], notes: "" },
-  ];
-
   const tags = [
     {
       step: "Form",
@@ -181,7 +159,7 @@ const HtmlForms = () => {
       ],
       visual: (
         <div>
-          <select id="mySelect" name="selectedOption">
+          <select id="mySelect" name="selectedOption" multiple>
             <option value="english">English</option>
             <option value="spanish">Spanish</option>
           </select>
@@ -224,85 +202,153 @@ const HtmlForms = () => {
     },
     {
       step: "Submit",
-      points: ["", "", ""],
-      code: ["<input type='submit' value='Submit Here'></input>", "", ""],
-      visual: (
-        <div>
-          <input type="submit" value="Submit Here"></input>
-        </div>
-      ),
-      output: "",
+      points: [
+        "Open input, type submit button, the value is what the button says, Close input",
+        "This button will submit all form data",
+      ],
+      code: ["<input type='submit' value='Submit Here'></input>"],
+      visual: <input type="submit" value="Submit Here"></input>,
+      output:
+        "This actually submits all the form data with =in the form tags of this submit button",
     },
     {
       step: "Color Selector",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Open input tag",
+        "The label creates label for the color selector.  The label for attribute ties it to id color",
+        "The <input> element with type='color' creates the color selector input. The id attribute provides a unique identifier for the input, and the name attribute specifies the name of the input field when the form is submitted. The value attribute sets the initial value of the color selector. In this example, the color red (#ff0000) is pre-selected as the initial value.",
+        "Close input tag",
+      ],
+      code: [
+        "<input",
+        "<label for='color'>Select a color:</label>",
+        "type='color' id='color' name='color' value='#ff0000'>",
+        "</input>",
+      ],
       visual: (
-        <div>
-          <input type="color"></input>
-        </div>
+        <form>
+          <label for="color">Select a color:</label>
+          <input type="color" id="color" name="color" value="#ff0000"></input>
+        </form>
       ),
-      output: "",
+      output: "color=%23ff0000    the %23 is how the url code reads#",
     },
     {
       step: "Text",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Label is tied to the id=firstName,  the part inbetween the label tag is what it says, close label",
+        "Input open, type text, name is the key name id is so the label can be tied to it, placeholder is the text that is the default text, close input",
+      ],
+      code: [
+        "<label for='firstName'>Yo' Name</label>",
+        "<input type='text' name='firstName' id='firstName' placeholder='put your name'></input>",
+      ],
       visual: (
         <div>
-          {" "}
-          <label for="firstName">Label for textBox</label>
-          <br />
+          <label for="firstName">Yo' Name</label>
           <input
             type="text"
             name="firstName"
             id="firstName"
-            placeholder="text"
+            placeholder="put your name"
           ></input>
         </div>
       ),
-      output: "",
+      output:
+        "if 'John Doe' is the value entered name=John%20Doe    %20 is the space",
     },
     {
       step: "Number",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Open label tag for label to be matched to the input, between tags is what is displayed, Closed label tag",
+        "Open input tag",
+        "type is number, id makes a label able to attach, name is the key part of key value pair, the min is the minimum the number can show, and the max is the top value possible",
+        "Close input tag",
+      ],
+      code: [
+        "<label for='quantity'>Enter the quantity:</label>",
+        "<input",
+        "type='number' id='quantity' name='quantity' min='1' max='100'>",
+        "</input>",
+      ],
       visual: (
-        <div>
-          <input type="number"></input>
-        </div>
+        <form>
+          <label for="quantity">Enter the quantity:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="100"
+          ></input>
+        </form>
       ),
+      output: "quantity=10",
     },
     {
       step: "Text Area",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Open label tag for links the label the text area, text between tags is displayed, close label tag",
+        "Open textarea tag",
+        "id lets label get linked to this input, name is the key part of the html request, rows decides how tall and cols decides how wide the text area is.",
+        "Close text area tag",
+      ],
+      code: [
+        "<label for='message'>Enter your message:</label>",
+        "<textarea",
+        "id='message' name='message' rows='4' cols='50'",
+        "</textarea>",
+      ],
       visual: (
         <div>
-          <textarea name="textarea" id="textArea" cols="10" rows="2"></textarea>
+          <label for="message">Enter your message:</label>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
         </div>
       ),
-      output: "",
+      output:
+        "message=Hello%2C%20World%21    %2C is the comma and %20 is the space",
     },
     {
       step: "E-mail",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Open label tag, for attribute will link this label to the email input, text between tags is displayed, close label tag",
+        "Open Input tag",
+        "type is email input, id allows the label to be linked, name is the key sent in the http request",
+        "Close input tag",
+      ],
+      code: [
+        "<label for='email'>Enter your email:</label>",
+        "<input",
+        "type='email' id='email' name='email'>",
+        "</input>",
+      ],
       visual: (
         <div>
-          <input type="email" name="email" value="email@email"></input>
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email"></input>
         </div>
       ),
-      output: "",
+      output: "email=example%40example.com   the %40 is the @",
     },
     {
       step: "Password",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Open input tag",
+        "type is password",
+        "name is the key of the http request",
+        "placeholder text is displayed in the password box",
+        "close input tag",
+      ],
+      code: [
+        "<input",
+        "type='password'",
+        "name='password'",
+        "placeholder='type password'>",
+        "</input>",
+      ],
       visual: (
         <div>
           Password
-          <br />
           <input
             type="password"
             name="password"
@@ -310,51 +356,100 @@ const HtmlForms = () => {
           ></input>
         </div>
       ),
-      output: "",
-    },
-    {
-      step: "Month",
-      points: ["", "", ""],
-      code: ["", "", ""],
-      visual: (
-        <div>
-          <input type="month"></input>
-        </div>
-      ),
-      output: "",
+      output: "password=mysecretpassword",
     },
     {
       step: "Time",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Open Label tag, for links it to the time input, text is displayed, close label",
+        "Open Input tag",
+        "type is time input",
+        "id lets the label be linked",
+        "name is the key for the http request",
+        "close input tag",
+      ],
+      code: [
+        "<label for='time'>Enter a time:</label>",
+        "<input",
+        "type='time'",
+        "id='time'",
+        "name='time'>",
+        "</input>",
+      ],
       visual: (
         <div>
-          <input type="time"></input>
+          <label for="time">Enter a time:</label>
+          <input type="time" id="time" name="time"></input>
         </div>
       ),
-      output: "",
+      output: "time=14%3A30",
     },
     {
       step: "Date",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Label tag open, for allows the label to link to the date input, the text is displayed, close label tag",
+        "Open input tag",
+        "type is date input",
+        "id allows the label to be linked to the input",
+        "name is the key for the http request",
+        "Close input tag",
+      ],
+      code: [
+        "<label for='date'>Enter a date:</label>",
+        "<input",
+        "type='date'",
+        "id='date'",
+        "name='date'>",
+        "</input>",
+      ],
       visual: (
         <div>
-          <input type="date"></input>
+          <label for="date">Enter a date:</label>
+          <input type="date" id="date" name="date"></input>
         </div>
       ),
-      output: "",
+      output: "date=2023-08-22",
     },
     {
       step: "Data List",
-      points: ["", "", ""],
-      code: ["", "", ""],
+      points: [
+        "Open Label tag, for allows the label to get linked to the input,text is displayed, close label",
+        "Open Input tag, notice type is text.  This is the field that can be entered manually, id allows the label to be linked to the input name is the key for the http request, name is the key for the http request, list connects this input text to the datalist so it displays with it, close input",
+        "Open datalist tag id allows the text input to be linked to the datalist",
+        "Open option value for http request",
+        "Open option value for http request",
+        "Open option value for http request",
+        "Open option value for http request",
+        "Close Datalist",
+        "Input Type: The <datalist> element is typically used with an <input> element of type 'text', allowing users to enter custom values or select from the predefined options. On the other hand, the <select> element creates a dropdown list of options, and users can only select one option from the list.",
+        "Appearance: The <datalist> element provides an autocomplete feature where the browser displays a dropdown with suggested options as the user types in the input field. The dropdown is specific to the input field and may vary in appearance across different browsers. In contrast, the <select> element displays a dropdown list of options when the user clicks on it, showing all available options at once.",
+        "Custom Values: With the <datalist> element, users can enter custom values that are not present in the predefined list. The browser allows both selection from the dropdown list and manual input. In comparison, the <select> element only allows users to select predefined options and does not permit custom values.",
+        "Multiple Selection: The <select> element can be configured to allow users to select multiple options simultaneously by adding the multiple attribute. This enables users to choose multiple items from the dropdown list. The <datalist> element, however, does not have built-in support for multiple selections.",
+        "Styling: The <select> element provides more styling options, allowing developers to customize the appearance using CSS. This includes styling the dropdown, individual options, and the selection. The <datalist> element has limited styling options and relies more on the default styling of the browser.",
+      ],
+      code: [
+        "<label for='fruit'>Select a fruit:</label>",
+        "<input type='text' id='fruit' name='fruit' list='fruits'></input>",
+        "<datalist id='fruits'>",
+        "<option value='Apple'>",
+        "<option value='Banana'>",
+        "<option value='Orange'>",
+        "<option value='Mango'>",
+        "</datalist>",
+      ],
       visual: (
         <div>
-          <input type="datalist"></input>
+          <label for="fruit">Select a fruit:</label>
+          <input type="text" id="fruit" name="fruit" list="fruits"></input>
+          <datalist id="fruits">
+            <option value="Apple"></option>
+            <option value="Banana"></option>
+            <option value="Orange"></option>
+            <option value="Mango"></option>
+          </datalist>
         </div>
       ),
-      output: "",
+      output: "fruit=Apple",
     },
   ];
   const renderTags = tags.map((item) => {
@@ -402,10 +497,56 @@ const HtmlForms = () => {
         {renderTags}
       </table>
       <h2>Form output syntax</h2>
-      <li>url followed by ? to show a form is being used</li>
-      <li>after the ? is a key value pair eg. animal="mouse"</li>
-      <li>between key value pairs an ampersand is used</li>
-      <li>https://finviz.com/screener.ashx?v=111&ft=4</li>
+      <h3>URL entities/encoding</h3>
+      <ol>
+        <li>
+          URL encoding, also known as percent-encoding, is a mechanism used to
+          represent special characters and non-alphanumeric characters in a URL.
+          It ensures that the URL remains valid and does not conflict with
+          reserved characters or have unintended interpretations.
+        </li>
+        <li>
+          In URL encoding, special characters are represented by a percent sign
+          ("%") followed by two hexadecimal digits. The hexadecimal digits
+          represent the ASCII code of the character being encoded. Here are some
+          common URL entities:
+        </li>
+        <li>
+          Space: In a URL, a space character is represented by "%20". This is
+          because spaces are not allowed in URLs, and the "%20" encoding ensures
+          that the URL remains valid.
+        </li>
+        <li>
+          Ampersand (&): Encoded as "%26". The ampersand is used as a delimiter
+          in URLs, so encoding it ensures that it is treated as a literal
+          character and not as a separator.
+        </li>
+        <li>
+          Question Mark (?): Encoded as "%3F". The question mark is commonly
+          used to separate the URL path from query parameters, so encoding it
+          ensures it is interpreted as a literal character and not as a
+          delimiter.
+        </li>
+        <li>
+          Hash/Octothorpe (#): Encoded as "%23". The hash symbol has special
+          meaning in URLs as it is used to indicate fragments or anchors within
+          a page. Encoding it ensures it is treated as a literal character.
+        </li>
+        <li>
+          Plus Sign (+): Encoded as "%2B". The plus sign is often used to
+          represent spaces in URL query parameters. Encoding it ensures it is
+          interpreted as a literal character and not as a space replacement.
+        </li>
+        <li>
+          Colon (:): Encoded as "%3A". The colon is used in URLs to separate the
+          protocol from the rest of the URL or to denote port numbers. Encoding
+          it ensures it is treated as a literal character.
+        </li>
+        <li>url followed by ? to show a form is being used</li>
+        <li>after the ? is a key value pair eg. animal="mouse"</li>
+        <li>between key value pairs an ampersand is used</li>
+        <li>https://finviz.com/screener.ashx?v=111&ft=4</li>
+      </ol>
     </div>
   );
 };

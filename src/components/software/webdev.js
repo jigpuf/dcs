@@ -13,9 +13,9 @@ const Webdev = () => {
   const items = [
     { name: "HTML", slug: "html", component: <HTML /> },
     { name: "CSS", slug: "css", component: <CSS /> },
-    { name: "Node", slug: "node", component: <Placeholder /> },
     { name: "Javascript", slug: "js", component: <Javascript /> },
     { name: "React", slug: "react", component: <JSX /> },
+    { name: "Node", slug: "node", component: <Placeholder /> },
     { name: "MongoDB", slug: "mongo", component: <Mongo /> },
     { name: "New Webpage", slug: "webpage", component: <Webpage /> },
     { name: "Chrome Inspector", slug: "chrome", component: <Chrome /> },
@@ -24,8 +24,8 @@ const Webdev = () => {
     <div>
       <ButtonMaker buttons={items} />
       <hr />
-      Yu done with html, smilga 52 done with html, whalbeck 12 done with HTML,
-      Steel 57 done with HTML
+      Yu 32 of 74, smilga 52 of 444, whalbeck 13 of 35, Steel 58 of 141, pelling
+      0
     </div>
   );
 };
