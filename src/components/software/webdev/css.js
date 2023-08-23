@@ -1,6 +1,7 @@
 import React from "react";
 import CSSLectures from "./css/cssLectures.js";
 import CSSNotes from "./css/cssNotes.js";
+import CSSInsert from "./css/cssInsert.js";
 import Layout from "./css/layout.js";
 import Color from "./css/color.js";
 import Size from "./css/size.js";
@@ -17,7 +18,7 @@ const CSS = () => {
   const items = [
     { name: "Lectures", slug: "lectures", component: <CSSLectures /> },
     { name: "Notes", slug: "notes", component: <CSSNotes /> },
-    { name: "Inserting", slug: "inserting", component: <Placeholder /> },
+    { name: "Inserting", slug: "inserting", component: <CSSInsert /> },
     { name: "Selectors", slug: "selectors", component: <Selectors /> },
     { name: "Inheritance", slug: "inheritance", component: <Placeholder /> },
     { name: "Properties", slug: "Properties", component: <Placeholder /> },
