@@ -20,10 +20,10 @@ const CSS = () => {
     { name: "Notes", slug: "notes", component: <CSSNotes /> },
     { name: "Inserting", slug: "inserting", component: <CSSInsert /> },
     { name: "Selectors", slug: "selectors", component: <Selectors /> },
+    { name: "Color", slug: "color", component: <Color /> },
     { name: "Inheritance", slug: "inheritance", component: <Placeholder /> },
     { name: "Properties", slug: "Properties", component: <Placeholder /> },
     { name: "Variables", slug: "Variables", component: <Placeholder /> },
-
     {
       name: "Specificity,Last rule, Universal",
       slug: "specificity",
@@ -32,16 +32,13 @@ const CSS = () => {
     { name: "Units", slug: "units", component: <Placeholder /> },
     { name: "Display", slug: "display", component: <Placeholder /> },
     { name: "Images", slug: "images", component: <Placeholder /> },
-
     { name: "Layout", slug: "layouts", component: <Layout /> },
-    { name: "Color", slug: "color", component: <Color /> },
     { name: "Size Units", slug: "size", component: <Size /> },
     { name: "Position", slug: "position", component: <Position /> },
     { name: "Text Properties", slug: "text", component: <Text /> },
     { name: "Box Model", slug: "box", component: <Box /> },
     { name: "FlexBox", slug: "flex", component: <FlexBox /> },
     { name: "Grid", slug: "Grid", component: <Placeholder /> },
-
     {
       name: "Transformation/Transition/Animation",
       slug: "Transformation/Transition/Animation",

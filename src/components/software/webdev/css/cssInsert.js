@@ -7,6 +7,7 @@ const CSSInsert = () => {
       <h3>In-line</h3>
       <h3>Internal</h3>
       <h3>External</h3>
+      <h3>Libraries</h3>
     </div>
   );
 };
