@@ -48,6 +48,12 @@ h1 {
   padding: 0px;
   text-align: left;
 }
+ul.buttons {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
 table,
 td,
 th {
