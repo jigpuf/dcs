@@ -3,6 +3,7 @@ import ButtonMaker from "../../utilities/buttonMaker.js";
 import Placeholder from "../../utilities/placeholder.js";
 import Javascript from "./webdev/javascript.js";
 import JSX from "./webdev/jsx.js";
+import Node from "./webdev/node.js";
 import Mongo from "./webdev/mongo.js";
 import HTML from "./webdev/html.js";
 import CSS from "./webdev/css.js";
@@ -15,7 +16,7 @@ const Webdev = () => {
     { name: "CSS", slug: "css", component: <CSS /> },
     { name: "Javascript", slug: "js", component: <Javascript /> },
     { name: "React", slug: "react", component: <JSX /> },
-    { name: "Node", slug: "node", component: <Placeholder /> },
+    { name: "Node", slug: "node", component: <Node /> },
     { name: "MongoDB", slug: "mongo", component: <Mongo /> },
     { name: "New Webpage", slug: "webpage", component: <Webpage /> },
     { name: "Chrome Inspector", slug: "chrome", component: <Chrome /> },
@@ -26,6 +27,7 @@ const Webdev = () => {
       <hr />
       Yu 37 of 74, smilga 66 of 444, whalbeck 15 of 35, Steel 61 of 141, pelling
       0
+      <hr />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,55 +10,59 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-#side{
+#side {
   float: right;
   width: auto;
-  margin-top:0px;
-  border-top:0px;
+  margin-top: 0px;
+  border-top: 0px;
 }
-.side button{
+.side button {
   width: 100%;
   background-color: lightgray;
 }
 
-.side .active{
+.side .active {
   background-color: lightblue;
 }
 
-.active{
-  background-color:lightblue;
+.active {
+  background-color: lightblue;
 }
-header{
+header {
   border: 2px solid gray;
   height: 40px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
-ul{
-  list-style:none;
+
+h1 {
+  line-height: 10px;
+  font-size: 25px;
+}
+.side ul {
+  list-style: none;
   margin: 0px;
   padding: 0px;
   text-align: left;
 }
-h1{
-  line-height: 10px;
-  font-size: 25px;
-}
-
-table, td,th{
+table,
+td,
+th {
   border: 1px solid black;
   background: lightgray;
   color: black;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
 }
 
-tr:nth-child(2n){
+tr:nth-child(2n) {
   background-color: lightgray;
 }
 td {

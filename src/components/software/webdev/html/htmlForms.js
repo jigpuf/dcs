@@ -547,6 +547,61 @@ const HtmlForms = () => {
         <li>between key value pairs an ampersand is used</li>
         <li>https://finviz.com/screener.ashx?v=111&ft=4</li>
       </ol>
+      <h3>Get vs. Post</h3>
+      When a form is submitted in HTML, it triggers an action defined by the
+      form's action attribute. The form submission can perform several actions
+      depending on how it is configured: <br />
+      HTTP GET: If the form's method attribute is set to "get", the form data is
+      appended to the URL as query parameters and sent as part of the URL
+      request.
+      <br /> HTTP POST: If the method attribute is set to "post", the form data
+      is included in the body of the HTTP request and sent separately from the
+      URL.
+      <table>
+        <tr>
+          <th>Task</th>
+          <th>Who handles</th>
+          <th>Explaination</th>
+        </tr>
+        <tr>
+          <td>JavaScript Validation</td>
+          <td>Client</td>
+          <td>
+            Prior to form submission, JavaScript code can be used to validate
+            the form inputs and provide immediate feedback to the user.
+          </td>
+        </tr>
+        <tr>
+          <td>Custom Actions</td>
+          <td>Client</td>
+          <td>
+            JavaScript can perform additional actions based on the form data,
+            such as updating the page content, displaying a confirmation
+            message, or triggering other page interactions.
+          </td>
+        </tr>
+        <tr>
+          <td>Email Submission</td>
+          <td>Client</td>
+          <td>
+            The form submission can be configured to send an email with the form
+            data. This usually involves specifying an email address or an email
+            script as the action attribute value. However, server-side
+            processing or third-party libraries are typically required to handle
+            the email sending.
+          </td>
+        </tr>
+        <tr>
+          <td>Sending Data to a Server</td>
+          <td>Server</td>
+          <td>
+            The most common action is to send the form data to a server for
+            processing. The action attribute specifies the URL where the form
+            data should be sent. This can be a server-side script or a web
+            application that handles the submitted data
+          </td>
+        </tr>
+      </table>
     </div>
   );
 };

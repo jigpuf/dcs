@@ -192,17 +192,17 @@ const HtmlStructuredData = () => {
       Divs are just block level generic containers. There are a number of
       semantic containers that do the same thing as div but make it easier for
       webscrapers and accessibilty &lt;div&gt;&lt;/div&gt;
-      <li>nav- For holding links</li>
-      <li>main- primary content of page</li>
+      <li>nav- For holding links- Block</li>
+      <li>main- primary content of page-block</li>
       <li>
         article- easy to distribute parts of page, content that could stand
-        alone
+        alone-block
       </li>
-      <li>p- paragragh level content</li>
-      <li>aside- things that are off to the side of the main content</li>
-      <li>footer- footer type information</li>
-      <li>header- start of major sections</li>
-      <li>figure- things like diagrams</li>
+      <li>p- paragragh level content-block</li>
+      <li>aside- things that are off to the side of the main content-block</li>
+      <li>footer- footer type information-block</li>
+      <li>header- start of major sections-vlock</li>
+      <li>figure- things like diagrams-block</li>
     </div>
   );
 };

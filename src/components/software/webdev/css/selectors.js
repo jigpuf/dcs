@@ -71,26 +71,30 @@ class Selectors extends React.Component {
       {
         operator: "Space Parent with any descendant",
         syntax: "parentElement descendantElement {property:value;}",
-        example: "",
-        notes: "",
+        example: "div p {color: blue;}",
+        notes:
+          "This selector targets all <p> elements that are descendants of <div> elements. It applies the specified styles to those <p> elements.",
       },
       {
         operator: ". class or multiple class",
         syntax: ".class1.class2 {property:value;}",
-        example: "",
-        notes: "",
+        example: ".btn.primary {background-color: blue;}",
+        notes:
+          "This selector targets elements with both the 'btn' and 'primary' classes. It applies the specified styles to those elements.",
       },
       {
         operator: "> imediate child",
         syntax: "parentElement > childElement {property:value;}",
-        example: "",
-        notes: "",
+        example: "ul > li {font-weight: bold;}",
+        notes:
+          "This selector targets <li> elements that are immediate children of <ul> elements. It applies the specified styles to those <li> elements.",
       },
       {
         operator: ", multiple elements",
         syntax: "element, element {property:value;}",
-        example: "",
-        notes: "",
+        example: "h1, h2, h3 {color: red;}",
+        notes:
+          "This selector targets multiple elements (<h1>, <h2>, <h3>) and applies the specified styles to all of them.",
       },
     ];
     const renderOperators = operators.map((item) => {
@@ -100,6 +104,47 @@ class Selectors extends React.Component {
           <td>{item.syntax}</td>
           <td>{item.example}</td>
           <td>{item.notes}</td>
+        </tr>
+      );
+    });
+    const specificityRules = [
+      {
+        selector: "Inline Styles",
+        specificity: "Highest",
+        description:
+          "Inline styles have the highest specificity. Styles applied directly to an element using the style attribute.",
+      },
+      {
+        selector: "ID Selectors",
+        specificity: "High",
+        description:
+          "ID selectors have a high specificity. Styles applied to elements with the id attribute.",
+      },
+      {
+        selector: "Class Selectors, Attribute Selectors, Pseudo-classes",
+        specificity: "Medium",
+        description:
+          "Class selectors, attribute selectors, and pseudo-classes have medium specificity. Styles applied to elements with specific classes, attributes, or pseudo-classes.",
+      },
+      {
+        selector: "Element Selectors, Pseudo-elements",
+        specificity: "Low",
+        description:
+          "Element selectors and pseudo-elements have low specificity. Styles applied to elements based on their tag name or pseudo-elements.",
+      },
+      {
+        selector: "Universal Selectors",
+        specificity: "Lowest",
+        description:
+          "Universal selectors have the lowest specificity. Styles applied to all elements in the document.",
+      },
+    ];
+    const renderSpecificityRules = specificityRules.map((item) => {
+      return (
+        <tr>
+          <td>{item.selector}</td>
+          <td>{item.specificity}</td>
+          <td>{item.description}</td>
         </tr>
       );
     });
@@ -134,13 +179,14 @@ class Selectors extends React.Component {
           {renderOperators}
         </table>
         <h3>Specificity</h3>
-        Lower number wins
-        <ol>
-          <li>Inline Styles</li>
-          <li>id</li>
-          <li>class, attribute, pseudo-class</li>
-          <li>tag, pseudo-elements</li>
-        </ol>
+        <table>
+          <tr>
+            <th>Selector</th>
+            <th>Specificity</th>
+            <th>Description</th>
+          </tr>
+          {renderSpecificityRules}
+        </table>
       </div>
     );
   }
