@@ -5,6 +5,7 @@ import HtmlFileStructure from "./html/htmlFileStructure.js";
 import HtmlBoilerPlate from "./html/htmlBoilerPlate.js";
 import HtmlText from "./html/htmlText.js";
 import HtmlStructuredData from "./html/htmlStructuredData.js";
+import HtmlContainer from "./html/htmlContainer.js";
 import HtmlMedia from "./html/htmlMedia.js";
 import HtmlForms from "./html/htmlForms.js";
 
@@ -21,6 +22,8 @@ const HTML = () => {
       slug: "structure",
       component: <HtmlStructuredData />,
     },
+    { name: "Container", slug: "container", component: <HtmlContainer /> },
+
     { name: "Media", slug: "media", component: <HtmlMedia /> },
     { name: "Forms", slug: "forms", component: <HtmlForms /> },
   ];

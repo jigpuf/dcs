@@ -25,7 +25,7 @@ const Webdev = () => {
     <div>
       <ButtonMaker buttons={items} />
       <hr />
-      Yu 37 of 74, smilga 66 of 444, whalbeck 15 of 35, Steel 61 of 141, pelling
+      Yu 38 of 74, smilga 66 of 444, whalbeck 16 of 35, Steel 65 of 141, pelling
       0
       <hr />
     </div>

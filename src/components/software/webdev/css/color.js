@@ -43,6 +43,21 @@ const Color = () => {
       bestUses:
         "Specifying colors with an additional alpha (transparency) channel using the HSL color model.",
     },
+    {
+      type: "Gradient",
+      syntax:
+        "background-image: linear-gradient(direction, firstColor, secondColor);",
+      example: "background-image: linear-gradient(to right, red, blue);",
+      bestUses: "Creating gradient effects using CSS linear gradients.",
+    },
+    {
+      type: "Shadow",
+      syntax:
+        "box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color] [inset];",
+      example: "box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);",
+      bestUses:
+        "Applying shadow effects to elements using box-shadow property. Can be used for tex shadow also.Horizontal Offset: This specifies the horizontal distance of the shadow from the element. It can be a positive value (to the right) or a negative value (to the left).Vertical Offset: This specifies the vertical distance of the shadow from the element. It can be a positive value (downward) or a negative value (upward).Blur Radius: This determines the blurring effect applied to the shadow. It represents the amount of blur to be applied and creates a softer, more diffuse shadow. A value of 0 means no blur, and larger values produce more significant blurring.Spread Radius: This controls the size of the shadow. It specifies how much the shadow should spread outward from the element's boundaries. A positive value expands the shadow, while a negative value contracts it. This parameter is optional, and if omitted, the shadow will have a uniform size based on the blur radius.Color: This defines the color of the shadow. It can be specified using color names, hexadecimal values, RGB values, or RGBA values. The color parameter is mandatory for the box-shadow property.Inset: This is an optional parameter that, when present, creates an inset shadow instead of an outset shadow. An inset shadow appears inside the element rather than outside. To create an inset shadow, you can use the keyword inset.",
+    },
   ];
   const renderColorSyntax = colorSyntax.map((item) => {
     return (
