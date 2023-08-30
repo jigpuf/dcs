@@ -1,12 +1,14 @@
 import React from "react";
-import CSSLectures from "./css/cssLectures.js";
-import CSSNotes from "./css/cssNotes.js";
-import CSSInsert from "./css/cssInsert.js";
-import Layout from "./css/layout.js";
-import Color from "./css/color.js";
-import CSSUnits from "./css/cssUnits.js";
+import CSSBasics from "./css/cssBasics.js";
 
-import Selectors from "./css/selectors.js";
+import CSSLectures from "./css/cssBasics/cssLectures.js";
+import CSSNotes from "./css/cssBasics/cssNotes.js";
+import CSSInsert from "./css/cssBasics/cssInsert.js";
+import Layout from "./css/layout.js";
+import Color from "./css/cssBasics/color.js";
+import CSSUnits from "./css/cssBasics/cssUnits.js";
+
+import Selectors from "./css/cssBasics/selectors.js";
 import Position from "./css/position.js";
 import Text from "./css/text.js";
 import Box from "./css/box.js";
@@ -17,22 +19,9 @@ import Placeholder from "../../../utilities/placeholder.js";
 
 const CSS = () => {
   const items = [
-    { name: "Lectures", slug: "lectures", component: <CSSLectures /> },
-    { name: "Notes", slug: "notes", component: <CSSNotes /> },
-    { name: "Inserting", slug: "inserting", component: <CSSInsert /> },
-    { name: "Selectors", slug: "selectors", component: <Selectors /> },
-    { name: "Color", slug: "color", component: <Color /> },
-    { name: "Units", slug: "units", component: <CSSUnits /> },
+    { name: "Basics", slug: "basics", component: <CSSBasics /> },
     { name: "Position", slug: "position", component: <Position /> },
 
-    { name: "Inheritance", slug: "inheritance", component: <Placeholder /> },
-    { name: "Properties", slug: "Properties", component: <Placeholder /> },
-    { name: "Variables", slug: "Variables", component: <Placeholder /> },
-    {
-      name: "Last rule, Universal",
-      slug: "last",
-      component: <Placeholder />,
-    },
     { name: "Display", slug: "display", component: <Placeholder /> },
     { name: "Images", slug: "images", component: <Placeholder /> },
     { name: "Layout", slug: "layouts", component: <Layout /> },

@@ -187,6 +187,8 @@ class Selectors extends React.Component {
           </tr>
           {renderSpecificityRules}
         </table>
+        <h3>Inheritance</h3>
+        <h3>Last Rule</h3>
       </div>
     );
   }

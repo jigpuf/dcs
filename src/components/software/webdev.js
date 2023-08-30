@@ -21,12 +21,99 @@ const Webdev = () => {
     { name: "New Webpage", slug: "webpage", component: <Webpage /> },
     { name: "Chrome Inspector", slug: "chrome", component: <Chrome /> },
   ];
+  const progress = [
+    {
+      name: "Angel Yu",
+      course: "The Complete 2023 Web Development Bootcamp",
+      class: "39",
+      last: "398",
+    },
+    {
+      name: "John Smilga",
+      course: "HTML&CSS Tutorial and Projects Course (Flexbox&Grid)",
+      class: "67",
+      last: "445",
+    },
+    {
+      name: "Colt Steel",
+      course: "The Web Developer Bootcamp 2023",
+      class: "72",
+      last: "721",
+    },
+    {
+      name: "Mark Wahlbeck",
+      course: "Beginner Full Stack Web Development: HTML, CSS, React & Node",
+      class: "16",
+      last: "168",
+    },
+    {
+      name: "Shaun Pelling",
+      course: "Modern JavaScript (Complete guide, from Novice to Ninja)",
+      class: "5",
+      last: "188",
+    },
+
+    {
+      name: "Maxamillion Schwarzmuller",
+      course: "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+      class: "0",
+      last: "543",
+    },
+    {
+      name: "Packt Publishing",
+      course: "Hands-On MERN Stack Web Development",
+      class: "0",
+      last: "47",
+    },
+
+    {
+      name: "Stephan Grider",
+      course: "Modern React with Redux [2023 Update]",
+      class: "0",
+      last: "412",
+    },
+    {
+      name: "Stephan Grider",
+      course: "Advanced React and Redux",
+      class: "0",
+      last: "239",
+    },
+    {
+      name: "Stephan Grider",
+      course: "The Complete React Native + Hooks Course",
+      class: "0",
+      last: "436",
+    },
+    {
+      name: "Maxamillion Schwarzmuller",
+      course: "MongoDB - The Complete Developer's Guide 2023",
+      class: "0",
+      last: "436",
+    },
+  ];
+  const renderProgress = progress.map((item) => {
+    return (
+      <tr>
+        <td>{item.name}</td>
+        <td>{item.course}</td>
+        <td>{item.class}</td>
+        <td>{item.last}</td>
+      </tr>
+    );
+  });
   return (
     <div>
       <ButtonMaker buttons={items} />
       <hr />
-      Yu 38 of 74, smilga 66 of 444, whalbeck 16 of 35, Steel 65 of 141, pelling
-      0
+      <table>
+        <tr>
+          <th>Author</th>
+          <th>Course</th>
+          <th>Progress</th>
+          <th>Last Class</th>
+        </tr>
+        {renderProgress}
+      </table>
       <hr />
     </div>
   );

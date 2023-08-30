@@ -9,20 +9,20 @@ const HtmlFileStructure = () => {
         <li>index.css</li>
         <li>index.js</li>
         <li>styles</li>
-        <ul>
+        <ol>
           <li>specific style sheets</li>
-        </ul>
+        </ol>
         <li>scripts</li>
-        <ul>
+        <ol>
           <li>specific scripts</li>
-        </ul>
+        </ol>
         <li>assets</li>
-        <ul>
+        <ol>
           <li>videos</li>
           <li>pictures</li>
           <li>sounds</li>
           <li>PDF</li>
-        </ul>
+        </ol>
       </ul>
     </div>
   );
