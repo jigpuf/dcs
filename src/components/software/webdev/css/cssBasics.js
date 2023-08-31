@@ -1,6 +1,5 @@
 import React from "react";
 import CSSPurpose from "./cssBasics/cssPurpose.js";
-
 import CSSLectures from "./cssBasics/cssLectures.js";
 import CSSNotes from "./cssBasics/cssNotes.js";
 import CSSInsert from "./cssBasics/cssInsert.js";
@@ -9,6 +8,7 @@ import Color from "./cssBasics/color.js";
 import CSSUnits from "./cssBasics/cssUnits.js";
 import ButtonMaker from "../../../../utilities/buttonMaker.js";
 import Placeholder from "../../../../utilities/placeholder.js";
+import CSSVariables from "./cssBasics/cssVariables.js";
 
 const CSSBasics = () => {
   const items = [
@@ -18,7 +18,7 @@ const CSSBasics = () => {
     { name: "Inserting", slug: "inserting", component: <CSSInsert /> },
     { name: "Properties", slug: "Properties", component: <Placeholder /> },
 
-    { name: "Variables", slug: "variables", component: <Placeholder /> },
+    { name: "Variables", slug: "variables", component: <CSSVariables /> },
 
     { name: "Color", slug: "color", component: <Color /> },
     { name: "Units", slug: "units", component: <CSSUnits /> },

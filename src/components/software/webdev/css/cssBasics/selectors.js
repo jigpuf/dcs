@@ -148,17 +148,124 @@ class Selectors extends React.Component {
         </tr>
       );
     });
+    const inheritanceRules = [
+      {
+        rule: "Inherited Properties",
+        description:
+          "Some CSS properties are inherited by default. When an element doesn't have a value specified for an inherited property, it inherits the computed value of that property from its parent element.",
+        examples: [
+          "font-family",
+          "font-size",
+          "color",
+          "line-height",
+          "text-align",
+        ],
+      },
+      {
+        rule: "Non-Inherited Properties",
+        description:
+          "Conversely, some CSS properties are not inherited by default. These properties have an initial value defined by the browser, and each element must explicitly specify a value for them.",
+        examples: [
+          "width",
+          "height",
+          "padding",
+          "margin",
+          "border",
+          "background",
+          "display",
+        ],
+      },
+      {
+        rule: "Inheritance and the 'inherit' Keyword",
+        description:
+          "The 'inherit' keyword can be used to explicitly force an element to inherit the value of a property from its parent, even if the property is not normally inherited.",
+        examples: ["color: inherit;"],
+      },
+      {
+        rule: "Specificity and Inheritance",
+        description:
+          "If multiple styles are applied to an element through different selectors, the specificity of the selectors determines which styles take precedence. Inherited styles have a lower specificity than styles applied directly to an element.",
+        examples: [],
+      },
+      {
+        rule: "The 'initial' Keyword",
+        description:
+          "The 'initial' keyword can be used to reset a property to its initial value. It overrides any inherited or cascaded value and sets the property back to its default value as specified by the CSS standard.",
+        examples: [],
+      },
+      {
+        rule: "The 'unset' Keyword",
+        description:
+          "The 'unset' keyword is similar to 'inherit', but it also resets any property that has been set by the browser's default styles. It sets the property to its inherited value if it's inherited, or to its initial value if it's not inherited.",
+        examples: [],
+      },
+    ];
+    const renderInheritanceRules = inheritanceRules.map((item) => {
+      return (
+        <tr>
+          <td>{item.rule}</td>
+          <td>{item.description}</td>
+        </tr>
+      );
+    });
+    const conflictingRules = [
+      {
+        priority: "Importance",
+        description:
+          "The `!important` declaration has the highest priority. When a rule has the `!important` flag, it overrides any other conflicting rule, regardless of specificity.",
+      },
+      {
+        priority: "Specificity",
+        description:
+          "CSS rules with higher specificity take precedence over rules with lower specificity. Specificity is calculated based on the combination of selectors used to target an element. The more specific the selector, the higher the priority.",
+      },
+      {
+        priority: "Source Order",
+        description:
+          "When conflicting rules have the same specificity, the rule that appears later in the stylesheet takes precedence. The last rule defined will override any previous conflicting rules targeting the same element.",
+      },
+    ];
+    const renderConflictingRules = conflictingRules.map((item) => {
+      return (
+        <tr>
+          <td>{item.priority}</td>
+          <td>{item.description}</td>
+        </tr>
+      );
+    });
     return (
       <div>
-        <h2>Selectors</h2>
-        <a
-          href="https://www.w3schools.com/cssref/css_selectors.asp"
-          target="_blank"
-        >
-          Selector Reference Page
-        </a>
-        <br />
-        <br />
+        <h1>Rule Handling</h1>
+        <h3>How CSS works</h3>
+        <ol>
+          <li>
+            CSS applies rules from top to bottom in the order they are defined.
+          </li>
+          <li>
+            Conflicting rules can occur due to:
+            <ul>
+              <li>Inheritance</li>
+              <li>Directly conflicting rules based on different selectors</li>
+              <li>Same type of selector, but declared at different times</li>
+            </ul>
+          </li>
+          <li>
+            CSS resolves conflicts in the following ways:
+            <ol>
+              <li>
+                Higher specificity takes precedence over lower specificity.
+              </li>
+              <li>
+                If specificity is the same, the last rule defined takes
+                precedence.
+              </li>
+            </ol>
+          </li>
+        </ol>
+
+        <h2>Creating Rules</h2>
+
+        <h3>Selectors</h3>
         <table>
           <tr>
             <th>Selector</th>
@@ -178,6 +285,28 @@ class Selectors extends React.Component {
           </tr>
           {renderOperators}
         </table>
+        <h3>Inheritance</h3>
+        <table>
+          <tr>
+            <th>Rule</th>
+            <th>Description</th>
+          </tr>
+          {renderInheritanceRules}
+        </table>
+        <a
+          href="https://www.w3schools.com/cssref/css_selectors.asp"
+          target="_blank"
+        >
+          Selector Reference Page
+        </a>
+        <h2>Handling conflicts</h2>
+        <table>
+          <tr>
+            <th>Priority</th>
+            <th>Description</th>
+          </tr>
+          {renderConflictingRules}
+        </table>
         <h3>Specificity</h3>
         <table>
           <tr>
@@ -187,8 +316,6 @@ class Selectors extends React.Component {
           </tr>
           {renderSpecificityRules}
         </table>
-        <h3>Inheritance</h3>
-        <h3>Last Rule</h3>
       </div>
     );
   }

@@ -82,6 +82,21 @@ const Color = () => {
         </tr>
         {renderColorSyntax}
       </table>
+      <h3>Color Theory</h3>
+      <li>Hue-Color</li>
+      <li>Saturation-Intensity, suddle or vibrant</li>
+      <li>Value-More black or white</li>
+      <li>Monochromatic- 1 hue and changes in sautration and value</li>
+      <li>Analagous- uses colors next to each other on the wheel</li>
+      <li>Complimentary colors are oppsite on wheel</li>
+      <li>
+        Split complimentary- colors are next to the opposite on the color wheel
+        gives more options but same contrast
+      </li>
+      <li>Triadic- three colors evenly spaced, be careful with this one</li>
+      <li>Tetratic, more than one complimentary colors</li>
+      <li>If colors are too busy together, adjust contrast or saturation</li>
+      <li>Bright colors- fun or modern</li>
       <h3>Sources</h3>
       <a href="https://coolors.co/generate" target="_blank">
         Coolors
@@ -89,6 +104,13 @@ const Color = () => {
       <br />
       <a href="https://colorhunt.co/" target="_blank">
         Color Hunt
+      </a>
+      <br />
+      <a
+        href="https://www.w3schools.com/colors/colors_picker.asp"
+        target="_blank"
+      >
+        W3 Color Selector
       </a>
     </div>
   );

@@ -140,6 +140,29 @@ const Text = () => {
           specified elements on your website.
         </li>
       </ol>
+      <h3>Typography</h3>
+      <li>Sarif fonts- little strokes that look traditional</li>
+      <li>San Sarif- easier to read, more modern</li>
+      <li>Display- Decorative, titles, headers</li>
+      <li>
+        bad- Comic sans, jokerman, kristen itc, papyrus, curlz, brush script,
+        hobo
+      </li>
+      <li>1 or 2 per project</li>
+      <li>
+        Hierarchy- guides eye to most important things using emphasis, larger,
+        bolder etc.
+      </li>
+      <li>Leading- line spacing. make it comfortable to read</li>
+      <li>Tracking- character spacing</li>
+      <li>Kerning- space between specific characters</li>
+      <li>@import to make web based font</li>
+      <a
+        href="https://byui-cit.github.io/learning-modules/modules/css/css-fonts/prepare1/"
+        target="_blank"
+      >
+        Getting fonts
+      </a>
     </div>
   );
 };

@@ -10,6 +10,7 @@ import CSSUnits from "./css/cssBasics/cssUnits.js";
 
 import Selectors from "./css/cssBasics/selectors.js";
 import Position from "./css/position.js";
+import CSSImages from "./css/cssImages.js";
 import Text from "./css/text.js";
 import Box from "./css/box.js";
 import FlexBox from "./css/flexBox.js";
@@ -23,7 +24,7 @@ const CSS = () => {
     { name: "Position", slug: "position", component: <Position /> },
 
     { name: "Display", slug: "display", component: <Placeholder /> },
-    { name: "Images", slug: "images", component: <Placeholder /> },
+    { name: "Images", slug: "images", component: <CSSImages /> },
     { name: "Layout", slug: "layouts", component: <Layout /> },
     { name: "Text Properties", slug: "text", component: <Text /> },
     { name: "Box Model", slug: "box", component: <Box /> },

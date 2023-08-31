@@ -8,10 +8,9 @@ const CSSNotes = () => {
         src="https://images.squarespace-cdn.com/content/v1/6214268d2ffa8f70363098b0/ae9bcf42-f443-49f4-8617-5c5222e08fb0/AJM+Learn_Experience+CSS+Graphic.jpg"
         height="300px"
       ></img>
-      <li>CSS is used to style the HTML, make it pretty</li>
-      <li>Use /* */ for comments in CSS</li>
+
       <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">
-        Mozilla CSS Basics
+        <br /> Mozilla CSS Basics
       </a>
     </div>
   );

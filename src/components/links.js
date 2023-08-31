@@ -131,6 +131,11 @@ const Links = () => {
       url: "https://coolors.co/",
     },
     {
+      name: "Contrast Ratio",
+      purpose: "Contrast checker",
+      url: "https://www.siegemedia.com/contrast-ratio",
+    },
+    {
       name: "----------",
       purpose: "----------",
       //  url: "-----------",
