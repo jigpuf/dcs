@@ -19,37 +19,37 @@ const Webdev = () => {
     { name: "Node", slug: "node", component: <Node /> },
     { name: "MongoDB", slug: "mongo", component: <Mongo /> },
     { name: "New Webpage", slug: "webpage", component: <Webpage /> },
-    { name: "Chrome Inspector", slug: "chrome", component: <Chrome /> },
+    { name: "Chrome", slug: "chrome", component: <Chrome /> },
   ];
   const progress = [
     {
       name: "Angel Yu",
       course: "The Complete 2023 Web Development Bootcamp",
-      class: "39",
+      class: "40",
       last: "398",
     },
     {
       name: "John Smilga",
       course: "HTML&CSS Tutorial and Projects Course (Flexbox&Grid)",
-      class: "67",
+      class: "96",
       last: "445",
     },
     {
       name: "Colt Steel",
       course: "The Web Developer Bootcamp 2023",
-      class: "72",
+      class: "79",
       last: "721",
     },
     {
       name: "Mark Wahlbeck",
       course: "Beginner Full Stack Web Development: HTML, CSS, React & Node",
-      class: "16",
+      class: "17",
       last: "168",
     },
     {
       name: "Shaun Pelling",
       course: "Modern JavaScript (Complete guide, from Novice to Ninja)",
-      class: "5",
+      class: "6",
       last: "188",
     },
 

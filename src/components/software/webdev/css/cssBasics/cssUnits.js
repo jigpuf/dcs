@@ -54,6 +54,12 @@ const HtmCSSUnits = () => {
       description:
         "The pica unit represents picas as a physical measurement. 1pc is equal to 12 points.",
     },
+    {
+      name: "calc(expression)",
+
+      description:
+        "This can be used as the value with a math expression inside that allows for a calculation of size.  This can take any set of units.  They don't have to match, so the size can be responsive to changing relative units.**Requires spaces around mathematical operators",
+    },
   ];
   const renderCSSUnits = cssUnits.map((item) => {
     return (

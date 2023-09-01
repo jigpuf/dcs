@@ -31,6 +31,13 @@ class Selectors extends React.Component {
         notes: "Any anchor tag that is being hovered over will have red text",
       },
       {
+        selector: "Pseudo-class nth child",
+        syntax: "element:nth-child() {property: value;}",
+        example: "ul li:nth-child(2n) {background-color: #f0f0f0;}",
+        notes:
+          "The argument can take different forms to define the pattern of selection. Here are some examples:(n) selects every element.(2n) selects every even element.(2n+1) selects every odd element.(3n) selects every element at positions that are multiples of 3. (3n+1) selects every element at positions that are multiples of 3 plus 1. (even) selects every even element (same as 2n). (odd) selects every odd element (same as (2n+1)).",
+      },
+      {
         selector: "Element",
         syntax: "element {property:value;}",
         example: "p {color: blue;}",

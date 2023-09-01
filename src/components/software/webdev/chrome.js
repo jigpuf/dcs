@@ -1,18 +1,21 @@
-import React from 'react'
-import ButtonMaker from '../../../utilities/buttonMaker.js'
-import Placeholder from '../../../utilities/placeholder.js'
+import React from "react";
+import ButtonMaker from "../../../utilities/buttonMaker.js";
+import Placeholder from "../../../utilities/placeholder.js";
+import ChromeConsole from "./chrome/chromeConsole.js";
+import ChromeElements from "./chrome/chromeElements.js";
+import ChromeSources from "./chrome/chromeSources.js";
 
-const Chrome = () =>{
-
-    return(
-        <div>
-            <h1>Chrome</h1>
-            To open inspector, right click on the screen and choose inspector
-            <li>HTML found in the Elements section</li>
-            <li></li>
-
-        </div>
-    );
-    }
+const Chrome = () => {
+  const items = [
+    { name: "Console", slug: "console", component: <ChromeConsole /> },
+    { name: "Elements", slug: "elements", component: <ChromeElements /> },
+    { name: "Sources", slug: "sources", component: <ChromeSources /> },
+  ];
+  return (
+    <div>
+      <ButtonMaker buttons={items} />
+    </div>
+  );
+};
 
 export default Chrome;
