@@ -1,10 +1,5 @@
 import React from "react";
 import ButtonMaker from "../../../utilities/buttonMaker.js";
-import JSAdding from "./javascript/jsAdding.js";
-import JSComments from "./javascript/jsComments.js";
-import JSDataTypes from "./javascript/jsDataTypes.js";
-import JSVariables from "./javascript/jsVariables.js";
-import JSScope from "./javascript/jsScope.js";
 import JSOperators from "./javascript/jsOperators.js";
 import JSFlow from "./javascript/jsFlow.js";
 import JSDebugging from "./javascript/jsDebugging.js";
@@ -21,11 +16,7 @@ import Placeholder from "../../../utilities/placeholder.js";
 
 const Javascript = () => {
   const items = [
-    { name: "Adding JS", slug: "adding", component: <JSAdding /> },
-    { name: "Comments", slug: "comments", component: <JSComments /> },
-    { name: "Data Types", slug: "jsDataTypes", component: <JSDataTypes /> },
-    { name: "Variables", slug: "jsVariables", component: <JSVariables /> },
-    { name: "Scope", slug: "scope", component: <JSScope /> },
+    { name: "Basics", slug: "basics", component: <JsBasics /> },
     { name: "Operators", slug: "jsoperators", component: <JSOperators /> },
     { name: "Control Flow", slug: "flow", component: <JSFlow /> },
     { name: "Debugging", slug: "jsDebugging", component: <JSDebugging /> },
@@ -38,7 +29,6 @@ const Javascript = () => {
     { name: "APIs", slug: "api", component: <Placeholder /> },
 
     { name: "Lectures", slug: "lectures", component: <Lectures /> },
-    { name: "Basics", slug: "basics", component: <JsBasics /> },
   ];
   return (
     <div>
