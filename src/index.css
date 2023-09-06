@@ -32,11 +32,6 @@ code {
 .active {
   background-color: lightblue;
 }
-header {
-  border: 2px solid gray;
-  height: 40px;
-  margin-bottom: 0px;
-}
 
 h1 {
   line-height: 10px;
@@ -54,23 +49,7 @@ ul {
   padding: 0px;
   text-align: left;
 }
-table,
-td,
-th {
-  border: 1px solid black;
-  background: lightgray;
-  color: black;
-}
 
-table,
-th,
-td {
-  border: 1px solid black;
-}
-
-tr:nth-child(2n) {
-  background-color: lightgray;
-}
-td {
-  padding: 10px;
+button {
+  border-radius: 10px;
 }

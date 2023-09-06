@@ -7,7 +7,7 @@ const Box = () => {
       explanation:
         "The content area of the element, where the actual content like text, images, or other elements is displayed.",
       properties:
-        "width, height, max-width, max-height, min-width, min-height, overflow, text-align, vertical-align, display, box-sizing, position, z-index, opacity, background-color",
+        "width, height, max-width, max-height, min-width, min-height, overflow, text-align, vertical-align, display, box-sizing, position, z-index, opacity, background-color, overflow",
     },
     {
       part: "Padding",
@@ -19,7 +19,8 @@ const Box = () => {
       part: "Border",
       explanation:
         "The border that surrounds the padding and content. It can be customized with properties like color, width, and style.",
-      properties: "border-width, border-color, border-style, border-radius",
+      properties:
+        "border-width, border-color, border-style, border-radius, box-sizing",
     },
     {
       part: "Margin",
