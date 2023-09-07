@@ -63,6 +63,7 @@ const JSVariables = () => {
         <li>Has to start with letter or underscore</li>
         <li>Cannot use Javascript key words</li>
       </ol>
+      <h2>Calling, Initializing, Defining</h2>
     </div>
   );
 };
