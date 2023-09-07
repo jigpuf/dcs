@@ -1,26 +1,68 @@
 import React from "react";
-import Keywords from "../variables/keywords.js";
-import ButtonMaker from "../../../../../utilities/buttonMaker.js";
-import Placeholder from "../../../../../utilities/placeholder.js";
-//import Placeholder from '../../../utilities/placeholder.js';
 
 const JSVariables = () => {
-  const items = [
-    { name: "Hoisting", slug: "hoisting", component: <Placeholder /> },
-    { name: "Keywords", slug: "keywords", component: <Keywords /> },
-    { name: "Naming", slug: "naming", component: <Placeholder /> },
-    { name: "Syntax", slug: "syntax", component: <Placeholder /> },
-    { name: "Calling/Assigning", slug: "calling", component: <Placeholder /> },
-    { name: "Loose Typing", slug: "typing", component: <Placeholder /> },
+  const keywords = [
     {
-      name: "Type Conversion/Coercion",
-      slug: "coercion",
-      component: <Placeholder />,
+      word: "var",
+      scope: "Global",
+      writability: "Read/Write",
+      hoisting: "",
+      syntax: "var variableNameHere = valueHere;",
+    },
+    {
+      word: "let",
+      scope: "Local",
+      writability: "Read/Write",
+      hoisting: "",
+      syntax: "let variableNameHere = valueHere;",
+    },
+    {
+      word: "const",
+      scope: "Local",
+      writability: "Read only after assignment",
+      hoisting: "",
+      syntax: "const variableNameHere = valueHere;",
+    },
+    {
+      word: "strict",
+      scope: "Local",
+      writability: "Read Only",
+      hoisting: "",
+      syntax: "",
     },
   ];
+
+  const renderKeywords = keywords.map((item) => {
+    return (
+      <tr>
+        <td>{item.word}</td>
+        <td>{item.scope}</td>
+        <td>{item.writability}</td>
+        <td>{item.hoisting}</td>
+        <td>{item.syntax}</td>
+      </tr>
+    );
+  });
   return (
     <div>
-      <ButtonMaker buttons={items} />
+      <h2>Variable Keywords</h2>
+      <table>
+        <tr>
+          <th>Keyword</th>
+          <th>Scope</th>
+          <th>Writability</th>
+          <th>Hoisting</th>
+          <th>Syntax</th>
+        </tr>
+        {renderKeywords}
+      </table>
+      Variable Naming Conventions:
+      <ol>
+        <li>No spaces</li>
+        <li>Only contain letters, numbers, underscore, Dollar sign</li>
+        <li>Has to start with letter or underscore</li>
+        <li>Cannot use Javascript key words</li>
+      </ol>
     </div>
   );
 };

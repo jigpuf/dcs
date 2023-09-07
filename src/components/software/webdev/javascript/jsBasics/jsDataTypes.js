@@ -8,7 +8,7 @@ const JSDataTypes = () => {
   const items = [
     { name: "Primitive", slug: "primitive", component: <Primitive /> },
     { name: "Objects", slug: "objects", component: <Objects /> },
-    { name: "Casting", slug: "casting", component: <Casting /> },
+    { name: "Casting/Coercing", slug: "casting", component: <Casting /> },
   ];
   return (
     <div>
