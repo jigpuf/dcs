@@ -1,11 +1,13 @@
 import React from "react";
+import CSSTables from "./layouts/cssTables.js";
 import ButtonMaker from "../../../../utilities/buttonMaker.js";
 import Placeholder from "../../../../utilities/placeholder.js";
+import CSSText from "./layouts/text.js";
 
 const Layout = () => {
   const items = [
-    { name: "Tables", slug: "tables", component: <Placeholder /> },
-    { name: "Typography", slug: "typography", component: <Placeholder /> },
+    { name: "Tables", slug: "tables", component: <CSSTables /> },
+    { name: "Typography", slug: "typography", component: <CSSText /> },
     { name: "Images", slug: "images", component: <Placeholder /> },
     { name: "Lists", slug: "lists", component: <Placeholder /> },
     { name: "Navigation", slug: "navigation", component: <Placeholder /> },

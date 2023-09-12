@@ -1,6 +1,6 @@
 import React from "react";
 
-const Text = () => {
+const CSSText = () => {
   const textProperties = [
     {
       property: "font-family",
@@ -167,4 +167,4 @@ const Text = () => {
   );
 };
 
-export default Text;
+export default CSSText;
