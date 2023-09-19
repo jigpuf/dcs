@@ -3,12 +3,13 @@ import CSSTables from "./layouts/cssTables.js";
 import ButtonMaker from "../../../../utilities/buttonMaker.js";
 import Placeholder from "../../../../utilities/placeholder.js";
 import CSSText from "./layouts/text.js";
+import CSSImages from "./layouts/cssImages.js";
 
 const Layout = () => {
   const items = [
     { name: "Tables", slug: "tables", component: <CSSTables /> },
     { name: "Typography", slug: "typography", component: <CSSText /> },
-    { name: "Images", slug: "images", component: <Placeholder /> },
+    { name: "Images", slug: "images", component: <CSSImages /> },
     { name: "Lists", slug: "lists", component: <Placeholder /> },
     { name: "Navigation", slug: "navigation", component: <Placeholder /> },
     { name: "Links", slug: "links", component: <Placeholder /> },

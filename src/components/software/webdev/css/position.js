@@ -18,13 +18,13 @@ const Position = () => {
       technique: "Absolute",
       syntax: "position: absolute;\nleft: 0;\ntop: 0;",
       description:
-        "Positions elements relative to the nearest positioned ancestor or the initial containing block.",
+        "Positions elements relative to the nearest positioned ancestor or the initial containing block. This means if nothing is positioned",
     },
     {
       technique: "Relative",
       syntax: "position: relative;\nleft: 10px;\ntop: 10px;",
       description:
-        "Positions elements relative to their normal position in the document flow.",
+        "Positions elements relative to their normal position in the document flow. It is relative to the static position.  Think of the example as being pushed 10 pixels from the left and 10 pixels from the top.",
     },
     {
       technique: "Z-index",
@@ -37,6 +37,11 @@ const Position = () => {
       syntax: "position: fixed;\ntop: 0;\nleft: 0;",
       description:
         "Positions elements relative to the viewport, ensuring they remain fixed even when scrolling.",
+    },
+    {
+      technique: "Sticky",
+      syntax: "",
+      description: "",
     },
   ];
   const renderCssPositioning = cssPositioning.map((item) => {

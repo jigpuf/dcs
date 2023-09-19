@@ -39,6 +39,12 @@ const CSSText = () => {
       example: "text-align: center;",
     },
     {
+      property: "text-indent",
+      syntax: "text-indent: <indent>;",
+      options: "50px etc.",
+      example: "text-indent: 50px;",
+    },
+    {
       property: "text-decoration",
       syntax: "text-decoration: <decoration>;",
       options: "none, underline, overline, line-through",
@@ -61,6 +67,12 @@ const CSSText = () => {
       syntax: "letter-spacing: <spacing>;",
       options: "normal, 1px, 2px, 0.5em",
       example: "letter-spacing: 2px;",
+    },
+    {
+      property: "word spacing-spacing",
+      syntax: "word-spacing: <spacing>;",
+      options: "normal, 1px, 2px, 0.5em",
+      example: "word-spacing: 2px;",
     },
   ];
   const renderTextProperties = textProperties.map((item) => {
@@ -124,6 +136,14 @@ const CSSText = () => {
         <li>
           After customizing the font to your liking, click on the "Embed" tab.
           You'll see several embedding options.
+        </li>
+        <li>
+          If you use the link tag in the head of your HTML. it must come before
+          a call to the stylesheet
+        </li>
+        <li>
+          If you use the import statement in your stylesheet, it must be the
+          first thing on the stylesheet.
         </li>
         <li>
           The default option is "@import," which provides you with a CSS code

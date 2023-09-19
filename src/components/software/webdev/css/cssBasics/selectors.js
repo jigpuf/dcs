@@ -103,6 +103,13 @@ class Selectors extends React.Component {
         notes:
           "This selector targets multiple elements (<h1>, <h2>, <h3>) and applies the specified styles to all of them.",
       },
+      {
+        operator: "chaining, no space",
+        syntax: "elementelement {property:value;}",
+        example: "h1.title#firstTitle {color: red;}",
+        notes:
+          "This selector is an and operator essentially.  If everything is true, it selects them.  If the element is an h1 and has a class of title and has the id of firstTitle, then it will be styled red.  Element HAS TO be listed first in these if there is an element",
+      },
     ];
     const renderOperators = operators.map((item) => {
       return (
