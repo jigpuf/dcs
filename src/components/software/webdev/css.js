@@ -15,13 +15,14 @@ import FlexBox from "./css/flexBox.js";
 
 import ButtonMaker from "../../../utilities/buttonMaker.js";
 import Placeholder from "../../../utilities/placeholder.js";
+import CSSDisplays from "./css/cssDisplay.js";
 
 const CSS = () => {
   const items = [
     { name: "Basics", slug: "basics", component: <CSSBasics /> },
     { name: "Position", slug: "position", component: <Position /> },
 
-    { name: "Display", slug: "display", component: <Placeholder /> },
+    { name: "Display", slug: "display", component: <CSSDisplays /> },
     { name: "Layout", slug: "layouts", component: <Layout /> },
     { name: "Box Model", slug: "box", component: <Box /> },
     { name: "FlexBox", slug: "flex", component: <FlexBox /> },

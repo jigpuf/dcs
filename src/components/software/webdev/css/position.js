@@ -40,8 +40,9 @@ const Position = () => {
     },
     {
       technique: "Sticky",
-      syntax: "",
-      description: "",
+      syntax: "position: sticky;",
+      description:
+        "Positions elements relative to their nearest scrolling ancestor or the viewport if there is no scrolling ancestor. The element behaves like a relatively positioned element until it reaches a specified scroll threshold, at which point it sticks to a particular position on the screen.",
     },
   ];
   const renderCssPositioning = cssPositioning.map((item) => {

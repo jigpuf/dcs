@@ -50,16 +50,6 @@ const JSBoolean = () => {
       <br />
       Lower Case is greater than Upper Case
       <br />
-      <h3>Loose verses Strict operators</h3>
-      == Loose Equals Value
-      <br />
-      === Strict Equal Value and Type
-      <br />
-      != Loose Not Equal to value
-      <br />
-      !== Strict not Equal value and type
-      <br />
-      <br />
       <h3>Loose Verses Strict</h3>
       let age = 25;
       <br />
@@ -72,6 +62,36 @@ const JSBoolean = () => {
       (age === 25) //true
       <br />
       <h3>Truthy Falsy</h3>
+      <table>
+        <tr>
+          <th>Truthy Values</th>
+          <th>Falsy Values</th>
+        </tr>
+        <tr>
+          <td>true</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>Non-zero numbers (e.g., 1, -1)</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Non-empty strings (e.g., 'hello')</td>
+          <td>Empty string ('')</td>
+        </tr>
+        <tr>
+          <td>Arrays with at least one element</td>
+          <td>Empty array ([])</td>
+        </tr>
+        <tr>
+          <td>Objects</td>
+          <td>null</td>
+        </tr>
+        <tr>
+          <td>Functions</td>
+          <td>undefined</td>
+        </tr>
+      </table>
     </div>
   );
 };

@@ -25,7 +25,7 @@ const Box = () => {
     {
       part: "Margin",
       explanation:
-        "The space outside the border, which creates a gap between the element and surrounding elements.",
+        "The space outside the border, which creates a gap between the element and surrounding elements. You can use negative numbers if you want things to overlap",
       properties: "margin-top, margin-right, margin-bottom, margin-left",
     },
   ];

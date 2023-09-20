@@ -63,6 +63,11 @@ const JSArrays = () => {
           <td>names.pop</td>
           <td>takes last element off and returns popped value</td>
         </tr>
+        <tr>
+          <td>Array Include</td>
+          <td>names.include("Larry")</td>
+          <td>true</td>
+        </tr>
       </table>
       Push and pop? change the original array, the rest return a new array
     </div>
