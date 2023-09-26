@@ -1,6 +1,6 @@
 import React from "react";
-import Placeholder from "../../../../utilities/placeholder";
-import ButtonMaker from "../../../../utilities/buttonMaker";
+import Placeholder from "../../../../../utilities/placeholder";
+import ButtonMaker from "../../../../../utilities/buttonMaker";
 
 const LVDatanames = () => {
   const items = [

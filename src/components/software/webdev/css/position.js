@@ -12,7 +12,7 @@ const Position = () => {
       technique: "Float",
       syntax: "float: left | right;",
       description:
-        "Allows elements to be placed to the left or right of the surrounding content.Typically if you float 1 direction, it looks better putting a margin to the opposite direction to keep things wrapping around it at a better distance. If you have a block element wrapping around something, it may carry its style into the thing that is floating. By using the clear: both; command on the block element, it willdrop outside of the thing being floated",
+        "The float attribute in CSS allows elements to be positioned to the left or right of the surrounding content. By applying the float property to an element, you can make it 'float' within its container, causing other elements to wrap around it. When you float an element in one direction, it is often recommended to add a margin in the opposite direction. This helps maintain an appropriate distance between the floated element and the wrapping content, resulting in a visually pleasing layout. However, it's important to note that when a block-level element wraps around a floated element, it may inherit some of the floated element's styles. This can affect the layout and appearance of the wrapping element. To prevent this, you can use the clear property. By applying the clear: both; value to a block-level element, you can ensure that it clears any floated elements and drops below them. This means that the block-level element will be positioned outside of the floated elements, maintaining its own distinct style and layout. If you only want to avoid one type of float, the clear attribute can be set to left or right.",
     },
     {
       technique: "Absolute",

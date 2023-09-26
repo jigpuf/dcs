@@ -25,13 +25,13 @@ const Webdev = () => {
     {
       name: "Angel Yu",
       course: "The Complete 2023 Web Development Bootcamp",
-      class: "48",
+      class: "49",
       last: "398",
     },
     {
       name: "John Smilga",
       course: "HTML&CSS Tutorial and Projects Course (Flexbox&Grid)",
-      class: "117",
+      class: "123",
       last: "445",
     },
     {

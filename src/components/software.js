@@ -7,17 +7,15 @@ import Command from "./software/command.js";
 import Webdev from "./software/webdev.js";
 import Typing from "./software/typing.js";
 import Methodology from "./software/methodology.js";
-import PLC from "./software/plc.js";
 import Languages from "./software/languages.js";
 import Media from "./software/media.js";
 import Mac from "./software/mac.js";
-import ArduinoSoftware from "./software/arduinoSoftware.js";
+import ArduinoSoftware from "./controls/arduinoSoftware.js";
 import Raspberry from "./software/raspberry.js";
 import Learning from "./software/learning.js";
 import VSC from "./software/vsc.js";
 import ButtonMaker from "../utilities/buttonMaker.js";
 import Placeholder from "../utilities/placeholder.js";
-import NISoftware from "./software/niSoftware.js";
 
 const Software = () => {
   const items = [
@@ -30,18 +28,11 @@ const Software = () => {
     { name: "Command Line", slug: "command", component: <Command /> },
     { name: "Typing", slug: "typing", component: <Typing /> },
     { name: "Methodology", slug: "methodology", component: <Methodology /> },
-    { name: "PLC", slug: "plc", component: <PLC /> },
     { name: "Media", slug: "media", component: <Media /> },
     { name: "Mac OS", slug: "mac", component: <Mac /> },
-    {
-      name: "Arduinon Software",
-      slug: "arduinoSoftware",
-      component: <ArduinoSoftware />,
-    },
     { name: "Raspberry Pi", slug: "raspberry", component: <Raspberry /> },
     { name: "Learning", slug: "learning", component: <Learning /> },
     { name: "VSC", slug: "vsc", component: <VSC /> },
-    { name: "NI Software", slug: "nisoft", component: <NISoftware /> },
   ];
   return (
     <div>
