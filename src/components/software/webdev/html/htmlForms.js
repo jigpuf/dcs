@@ -479,128 +479,276 @@ const HtmlForms = () => {
       </tr>
     );
   });
+  const tasks = [
+    {
+      task: "Form Submission",
+      from: "User",
+      to: "Server",
+      style: "HTTP request",
+      methods: "POST, GET",
+      description:
+        "Sending form data from a user to a server using HTTP requests.",
+    },
+    {
+      task: "File Upload",
+      from: "User",
+      to: "Server",
+      style: "HTTP request",
+      methods: "POST",
+      description:
+        "Allowing users to select and upload files from their local system to the server.",
+    },
+    {
+      task: "AJAX Request",
+      from: "User",
+      to: "Server",
+      style: "HTTP request",
+      methods: "POST",
+      description:
+        "Submitting form data to the server asynchronously without a full page reload using AJAX techniques.",
+    },
+    {
+      task: "API Call",
+      from: "User",
+      to: "Server",
+      style: "HTTP request",
+      methods: "POST, GET, PUT, DELETE",
+      description:
+        "Making requests to server-side APIs with different HTTP methods to send and retrieve data.",
+    },
+    {
+      task: "JavaScript Validation",
+      from: "User",
+      to: "Client",
+      style: "Client-side validation",
+      methods: "N/A",
+      description:
+        "Validating form data on the client-side using JavaScript to ensure it meets certain criteria before submission.",
+    },
+    {
+      task: "Custom Actions",
+      from: "User",
+      to: "Server",
+      style: "HTTP request",
+      methods: "POST, GET, PUT, DELETE",
+      description:
+        "Performing custom actions on the server based on user interactions, typically using server-side scripting languages.",
+    },
+    {
+      task: "Email Submission",
+      from: "User",
+      to: "Server",
+      style: "HTTP request",
+      methods: "POST",
+      description:
+        "Submitting form data, such as contact or subscription forms, to the server for processing and sending emails.",
+    },
+  ];
+  const renderTasks = tasks.map((item) => {
+    return (
+      <tr>
+        <td>{item.task}</td>
+        <td>{item.from}</td>
+        <td>{item.to}</td>
+        <td>{item.style}</td>
+        <td>{item.methods}</td>
+        <td>{item.description}</td>
+      </tr>
+    );
+  });
+  const methods = [
+    {
+      method: "GET",
+      description:
+        "The GET method requests a representation of the specified resource.",
+      structure:
+        "No request body; data is usually sent in the URL parameters or query string.",
+    },
+    {
+      method: "POST",
+      description:
+        "The POST method submits data to be processed to the identified resource.",
+      structure:
+        "Data is sent in the request body, typically as form data, JSON, XML, or multipart/form-data.",
+    },
+    {
+      method: "PUT",
+      description:
+        "The PUT method replaces all current representations of the target resource with the request payload.",
+      structure:
+        "Data is sent in the request body, typically as the complete representation of the resource.",
+    },
+    {
+      method: "DELETE",
+      description: "The DELETE method deletes the specified resource.",
+      structure:
+        "No request body; data is usually identified in the URL parameters or query string.",
+    },
+    {
+      method: "HEAD",
+      description:
+        "The HEAD method asks for a response identical to that of a GET request, but without the response body.",
+      structure:
+        "No request body; data is usually sent in the URL parameters or query string.",
+    },
+    {
+      method: "PATCH",
+      description:
+        "The PATCH method is used to apply partial modifications to a resource.",
+      structure:
+        "Data is sent in the request body, typically containing only the changes to be applied.",
+    },
+    {
+      method: "OPTIONS",
+      description:
+        "The OPTIONS method describes the communication options for the target resource.",
+      structure:
+        "No request body; data is usually sent in the URL parameters or query string.",
+    },
+    {
+      method: "TRACE",
+      description:
+        "The TRACE method performs a message loop-back test along the path to the target resource.",
+      structure:
+        "No request body; data is usually sent in the URL parameters or query string.",
+    },
+  ];
+  const renderMethods = methods.map((item) => {
+    return (
+      <tr>
+        <td>{item.method}</td>
+        <td>{item.structure}</td>
+        <td>{item.description}</td>
+      </tr>
+    );
+  });
+  const entities = [
+    {
+      entity: "Percent Encoding",
+      syntax: "%20",
+      description: "Represents a space character",
+    },
+    {
+      entity: "Ampersand",
+      syntax: "&",
+      description: "Used to separate key-value pairs in query parameters",
+    },
+    {
+      entity: "Equal Sign",
+      syntax: "=",
+      description: "Used to assign a value to a key in query parameters",
+    },
+    {
+      entity: "Question Mark",
+      syntax: "?",
+      description: "Used to start the query string in a URL",
+    },
+    {
+      entity: "Forward Slash",
+      syntax: "/",
+      description: "Used to separate segments in a URL path",
+    },
+    {
+      entity: "Hash",
+      syntax: "#",
+      description: "Used to represent a fragment identifier in a URL",
+    },
+    {
+      entity: "Colon",
+      syntax: ":",
+      description:
+        "Used in the protocol part of a URL, such as 'http://' or 'https://'",
+    },
+  ];
+  const renderEntities = entities.map((item) => {
+    return (
+      <tr>
+        <td>{item.entity}</td>
+        <td>{item.syntax}</td>
+        <td>{item.description}</td>
+      </tr>
+    );
+  });
   return (
     <div>
       <h1>Forms</h1>
-      <p>
-        A form is a wrapper that will send all the information within it as an
-        HTML request to a specific URL
-      </p>
+      <ul>
+        <li>
+          <strong>Form:</strong> An essential component of a web page that
+          allows users to input and submit data to a server for processing or
+          interaction.
+        </li>
+        <li>
+          <strong>Form Elements:</strong> Various form elements such as input
+          fields, checkboxes, radio buttons, dropdown menus, and buttons.
+        </li>
+        <li>
+          <strong>Submission:</strong> Users can submit the form by clicking a
+          submit button, sending the form data to a server for further
+          processing.
+        </li>
+        <li>
+          <strong>Server-side Processing:</strong> The submitted form data is
+          processed on the server, where it can be stored, used, or further
+          actions can be performed based on the server-side logic.
+        </li>
+        <li>
+          <strong>Usage:</strong> Forms are commonly used in web applications
+          for various purposes like contact forms, registration forms, login
+          forms, search forms, and more.
+        </li>
+      </ul>
       <table>
-        <tr>
-          <th>Tag</th>
-          <th>Notes</th>
-          <th>Code</th>
-          <th>Example</th>
-          <th>Output</th>
-        </tr>
+        <caption>Form Tag Types</caption>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Notes</th>
+            <th>Code</th>
+            <th>Example</th>
+            <th>Output</th>
+          </tr>
+        </thead>
         {renderTags}
       </table>
-      <h2>Form output syntax</h2>
-      <h3>URL entities/encoding</h3>
-      <ol>
-        <li>
-          URL encoding, also known as percent-encoding, is a mechanism used to
-          represent special characters and non-alphanumeric characters in a URL.
-          It ensures that the URL remains valid and does not conflict with
-          reserved characters or have unintended interpretations.
-        </li>
-        <li>
-          In URL encoding, special characters are represented by a percent sign
-          ("%") followed by two hexadecimal digits. The hexadecimal digits
-          represent the ASCII code of the character being encoded. Here are some
-          common URL entities:
-        </li>
-        <li>
-          Space: In a URL, a space character is represented by "%20". This is
-          because spaces are not allowed in URLs, and the "%20" encoding ensures
-          that the URL remains valid.
-        </li>
-        <li>
-          Ampersand (&): Encoded as "%26". The ampersand is used as a delimiter
-          in URLs, so encoding it ensures that it is treated as a literal
-          character and not as a separator.
-        </li>
-        <li>
-          Question Mark (?): Encoded as "%3F". The question mark is commonly
-          used to separate the URL path from query parameters, so encoding it
-          ensures it is interpreted as a literal character and not as a
-          delimiter.
-        </li>
-        <li>
-          Hash/Octothorpe (#): Encoded as "%23". The hash symbol has special
-          meaning in URLs as it is used to indicate fragments or anchors within
-          a page. Encoding it ensures it is treated as a literal character.
-        </li>
-        <li>
-          Plus Sign (+): Encoded as "%2B". The plus sign is often used to
-          represent spaces in URL query parameters. Encoding it ensures it is
-          interpreted as a literal character and not as a space replacement.
-        </li>
-        <li>
-          Colon (:): Encoded as "%3A". The colon is used in URLs to separate the
-          protocol from the rest of the URL or to denote port numbers. Encoding
-          it ensures it is treated as a literal character.
-        </li>
-        <li>url followed by ? to show a form is being used</li>
-        <li>after the ? is a key value pair eg. animal="mouse"</li>
-        <li>between key value pairs an ampersand is used</li>
-        <li>https://finviz.com/screener.ashx?v=111&ft=4</li>
-      </ol>
-      <h3>Get vs. Post</h3>
-      When a form is submitted in HTML, it triggers an action defined by the
-      form's action attribute. The form submission can perform several actions
-      depending on how it is configured: <br />
-      HTTP GET: If the form's method attribute is set to "get", the form data is
-      appended to the URL as query parameters and sent as part of the URL
-      request.
-      <br /> HTTP POST: If the method attribute is set to "post", the form data
-      is included in the body of the HTTP request and sent separately from the
-      URL.
       <table>
-        <tr>
-          <th>Task</th>
-          <th>Who handles</th>
-          <th>Explaination</th>
-        </tr>
-        <tr>
-          <td>JavaScript Validation</td>
-          <td>Client</td>
-          <td>
-            Prior to form submission, JavaScript code can be used to validate
-            the form inputs and provide immediate feedback to the user.
-          </td>
-        </tr>
-        <tr>
-          <td>Custom Actions</td>
-          <td>Client</td>
-          <td>
-            JavaScript can perform additional actions based on the form data,
-            such as updating the page content, displaying a confirmation
-            message, or triggering other page interactions.
-          </td>
-        </tr>
-        <tr>
-          <td>Email Submission</td>
-          <td>Client</td>
-          <td>
-            The form submission can be configured to send an email with the form
-            data. This usually involves specifying an email address or an email
-            script as the action attribute value. However, server-side
-            processing or third-party libraries are typically required to handle
-            the email sending.
-          </td>
-        </tr>
-        <tr>
-          <td>Sending Data to a Server</td>
-          <td>Server</td>
-          <td>
-            The most common action is to send the form data to a server for
-            processing. The action attribute specifies the URL where the form
-            data should be sent. This can be a server-side script or a web
-            application that handles the submitted data
-          </td>
-        </tr>
+        <caption>Form Capabilities</caption>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Style</th>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+          {renderTasks}
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table>
+        <caption>Form Methods</caption>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Data structure</th>
+
+            <th>Description</th>
+          </tr>
+          {renderMethods}
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table>
+        <caption>Form Syntax</caption>
+        <thead>
+          <tr>
+            <th>Entity</th>
+            <th>symbol</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>{renderEntities}</tbody>
       </table>
     </div>
   );

@@ -41,6 +41,8 @@ const HtmlStructuredData = () => {
       step: "Tables",
       points: [
         "Open Table",
+        "The caption is a label included at the top of the table",
+        "thead allows styling of the head exclusively",
         "Open a table row",
         "Table header that spans accross 2 rows",
         "Table Header that spans accross 2 columns",
@@ -48,19 +50,26 @@ const HtmlStructuredData = () => {
         "Second table row open",
         "2 Table Header",
         "Close second table row",
+        "Close thead",
+        "Open table body.  Makes styling for the body specifically available",
         "Open third table row",
         "Table datum",
         "Table datum",
         "Table datum",
         "Close third row",
+        "Close table body",
         "Close Table",
       ],
       code: [
         "<table>",
+        "<caption>Running Competition</caption>",
+        "<thead>",
         "<tr>",
         "<th rowspan='2'>Race</th>",
         "<th colspan='2'>Top Competitor</th>",
         "</tr>",
+        "</thead>",
+        "<tbody>",
         "<tr>",
         "<th>Man</th> <th>Woman</th>",
         "</tr>",
@@ -69,22 +78,29 @@ const HtmlStructuredData = () => {
         "<td>Kman</td>",
         "<td>Kwoman</td>",
         "</tr>",
+        "</tbody>",
         "</table>",
       ],
       visual: (
         <table>
-          <tr>
-            <th rowspan="2 ">Race</th>
-            <th colspan="2">Top Competitor</th>
-          </tr>
-          <tr>
-            <th>Man</th> <th>Woman</th>
-          </tr>
-          <tr>
-            <td>5K</td>
-            <td>Kman</td>
-            <td>Kwoman</td>
-          </tr>
+          <caption>Running Competition</caption>
+          <thead>
+            <tr>
+              <th rowspan="2 ">Race</th>
+              <th colspan="2">Top Competitor</th>
+            </tr>
+
+            <tr>
+              <th>Man</th> <th>Woman</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5K</td>
+              <td>Kman</td>
+              <td>Kwoman</td>
+            </tr>
+          </tbody>
         </table>
       ),
     },
@@ -92,6 +108,7 @@ const HtmlStructuredData = () => {
       step: "Lists",
       points: [
         "Open unordered list",
+        "Create caption for the list",
         "two list items",
         "Ordered list nesten under a list item",
         "3 list items in the nested list",
@@ -101,6 +118,7 @@ const HtmlStructuredData = () => {
       ],
       code: [
         "<ul>",
+        "<caption>Breeds</caption>",
         "<li>dog</li> <li>cat</li>",
         "<ol>",
         "<li>cheshire</li> <li>tabby</li> <li>hairless</li>",
@@ -110,6 +128,7 @@ const HtmlStructuredData = () => {
       ],
       visual: (
         <ul>
+          <caption>Breeds</caption>
           <li>dog</li>
           <li>cat</li>
           <ol>

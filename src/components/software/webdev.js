@@ -37,7 +37,7 @@ const Webdev = () => {
     {
       name: "Colt Steel",
       course: "The Web Developer Bootcamp 2023",
-      class: "92",
+      class: "95",
       last: "721",
     },
     {
@@ -105,6 +105,11 @@ const Webdev = () => {
     <div>
       <ButtonMaker buttons={items} />
       <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <h3>Progress</h3>
       <table>
         <tr>
           <th>Author</th>
@@ -114,7 +119,6 @@ const Webdev = () => {
         </tr>
         {renderProgress}
       </table>
-      <hr />
     </div>
   );
 };

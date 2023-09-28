@@ -61,37 +61,6 @@ const Box = () => {
       </p>
 
       <p>
-        The padding provides space between the content and the element's border.
-        It helps create visual separation and breathing room around the content.
-        You can adjust the padding using properties such as{" "}
-        <code>padding-top</code>, <code>padding-right</code>,{" "}
-        <code>padding-bottom</code>, and <code>padding-left</code>. By modifying
-        these values, you can increase or decrease the space between the content
-        and the border, achieving the desired visual effect.
-      </p>
-
-      <p>
-        The border surrounds the padding and content areas and serves as a
-        visible boundary. It can be customized with properties like{" "}
-        <code>border-width</code>, <code>border-color</code>,{" "}
-        <code>border-style</code>, and <code>border-radius</code>. Borders are
-        commonly used to visually separate elements or add emphasis. By
-        manipulating the border properties, you can control the thickness,
-        color, and style of the border, allowing for various design
-        possibilities.
-      </p>
-
-      <p>
-        The margin is the space around the element, outside the border. It
-        creates a gap between the element and neighboring elements. You can
-        adjust the margin using properties like <code>margin-top</code>,{" "}
-        <code>margin-right</code>, <code>margin-bottom</code>, and{" "}
-        <code>margin-left</code>. By modifying these values, you can control the
-        spacing between elements, influencing their positioning and overall
-        layout. Margins are particularly useful for creating whitespace and
-        controlling the flow of content within a webpage.
-      </p>
-      <p>
         Total width = content width + left padding + right padding + left border
         + right border + left margin + right margin
       </p>
