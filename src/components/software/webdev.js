@@ -43,13 +43,13 @@ const Webdev = () => {
     {
       name: "Mark Wahlbeck",
       course: "Beginner Full Stack Web Development: HTML, CSS, React & Node",
-      class: "25",
+      class: "28",
       last: "168",
     },
     {
       name: "Shaun Pelling",
       course: "Modern JavaScript (Complete guide, from Novice to Ninja)",
-      class: "18",
+      class: "21",
       last: "188",
     },
 

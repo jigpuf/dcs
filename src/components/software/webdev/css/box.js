@@ -50,26 +50,11 @@ const Box = () => {
         {renderBoxModelParts}
       </table>
       <p>
-        The box model allows you to have fine-grained control over the size,
-        spacing, and appearance of elements on a webpage. By manipulating the
-        content, padding, border, and margin of an element, you can create
-        visually appealing and well-structured layouts. The content area holds
-        the actual content of the element, such as text or images. By setting
-        the <code>width</code> and <code>height</code> properties, you can
-        determine the dimensions of the content area. This allows you to control
-        how much space the content occupies within its parent container.
-      </p>
-
-      <p>
         Total width = content width + left padding + right padding + left border
         + right border + left margin + right margin
       </p>
       <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/box-model.png" />
       <br />
-
-      <a href="https://htmlcolorcodes.com/color-picker/" target="_blank">
-        Color Selector
-      </a>
     </div>
   );
 };

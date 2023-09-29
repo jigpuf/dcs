@@ -4,10 +4,13 @@ import ButtonMaker from "../../../../utilities/buttonMaker.js";
 import Placeholder from "../../../../utilities/placeholder.js";
 import CSSText from "./layouts/text.js";
 import CSSImages from "./layouts/cssImages.js";
+import CSSNavBar from "./layouts/cssNavBar.js";
 
 const Layout = () => {
   const items = [
     { name: "Tables", slug: "tables", component: <CSSTables /> },
+    { name: "NavBar", slug: "NavBar", component: <CSSNavBar /> },
+
     { name: "Typography", slug: "typography", component: <CSSText /> },
     { name: "Images", slug: "images", component: <CSSImages /> },
     { name: "Lists", slug: "lists", component: <Placeholder /> },

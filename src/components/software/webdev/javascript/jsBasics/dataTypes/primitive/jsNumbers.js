@@ -172,7 +172,7 @@ const JSNumber = () => {
     <div>
       <h1>JS Numbers</h1>
       Numbers can be written in two different ways:
-      {renderNumbers}
+      <table>{renderNumbers}</table>
       All numbers in Javascript can access the global Number Method and the Math
       Method.
       <h3>Number Methods:</h3>
@@ -267,10 +267,6 @@ const JSNumber = () => {
       </table>
       **NAN means Not a number when program is expecting a number and gets
       another data type.
-      <br />
-      let likes = 'me' + 'hello';
-      <br />
-      NAN
     </div>
   );
 };

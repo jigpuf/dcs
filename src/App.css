@@ -94,3 +94,8 @@ div > a:hover {
   font-size: 30px;
   transition: font-size 10s, color 3s;
 }
+code {
+  color: rgb(3, 201, 232);
+  font-family: monospace;
+  font-size: 20px;
+}
