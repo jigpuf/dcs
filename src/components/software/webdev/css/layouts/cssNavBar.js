@@ -23,14 +23,14 @@ const CSSNavBar = () => {
       code: [
         "<nav>",
         "<ul>",
-        "<li><a href='#'></a>Home</li>",
-        "<li><a href='#'></a>Links</li>",
-        "<li><a href='#'></a>Resources</li>",
-        "<li><a href='#'></a>About</li>",
-        "<li><a href='#'></a>Videos</li>",
-        "<li><a href='#'></a>Friends</li>",
-        "<li><a href='#' class='right-side'></a>Sign Up</li>",
-        "<li><a href='#' class='right-side'></a>Sign In</li>",
+        "<li><a href='#'>Home</a></li>",
+        "<li><a href='#'>Links</a></li>",
+        "<li><a href='#'>Resources</a></li>",
+        "<li><a href='#'>About</a></li>",
+        "<li><a href='#'>Videos</a></li>",
+        "<li><a href='#'>Friends</a></li>",
+        "<li><a href='#' class='right-side'>Sign Up</a></li>",
+        "<li><a href='#' class='right-side'>Sign In</a></li>",
         "</ul>",
         "</nav>",
       ],
@@ -130,6 +130,161 @@ const CSSNavBar = () => {
     <div>
       <h1>CSS Nav Bar</h1>
       <TableMaker tableType="coding" array={nav} head={navHead} />
+
+      <nav style={{ display: "block", width: "100%", margin: "0" }}>
+        <ul
+          style={{
+            "background-color": "#eee",
+            overflow: "hidden",
+            margin: "0",
+            padding: "0",
+          }}
+        >
+          <li style={{ "list-style": "none", float: "left" }}>
+            <a
+              href="#"
+              className="sampleNav"
+              style={{
+                display: "block",
+                "text-decoration": "none",
+                "min-height": "16px",
+                "text-align": "center",
+                padding: "14px",
+                "text-transform": "uppercase",
+                color: "#666",
+              }}
+            >
+              Home
+            </a>
+          </li>
+          <li style={{ "list-style": "none", float: "left" }}>
+            <a
+              href="#"
+              className="sampleNav"
+              style={{
+                display: "block",
+                "text-decoration": "none",
+                "min-height": "16px",
+                "text-align": "center",
+                padding: "14px",
+                "text-transform": "uppercase",
+                color: "#666",
+              }}
+            >
+              Links
+            </a>
+          </li>
+          <li style={{ "list-style": "none", float: "left" }}>
+            <a
+              href="#"
+              className="sampleNav"
+              style={{
+                display: "block",
+                "text-decoration": "none",
+                "min-height": "16px",
+                "text-align": "center",
+                padding: "14px",
+                "text-transform": "uppercase",
+                color: "#666",
+              }}
+            >
+              Resources
+            </a>
+          </li>
+          <li style={{ "list-style": "none", float: "left" }}>
+            <a
+              href="#"
+              className="sampleNav"
+              style={{
+                display: "block",
+                "text-decoration": "none",
+                "min-height": "16px",
+                "text-align": "center",
+                padding: "14px",
+                "text-transform": "uppercase",
+                color: "#666",
+              }}
+            >
+              About
+            </a>
+          </li>
+          <li style={{ "list-style": "none", float: "left" }}>
+            <a
+              href="#"
+              className="sampleNav"
+              style={{
+                display: "block",
+                "text-decoration": "none",
+                "min-height": "16px",
+                "text-align": "center",
+                padding: "14px",
+                "text-transform": "uppercase",
+                color: "#666",
+              }}
+            >
+              Videos
+            </a>
+          </li>
+          <li style={{ "list-style": "none", float: "left" }}>
+            <a
+              href="#"
+              className="sampleNav"
+              style={{
+                display: "block",
+                "text-decoration": "none",
+                "min-height": "16px",
+                "text-align": "center",
+                padding: "14px",
+                "text-transform": "uppercase",
+                color: "#666",
+              }}
+            >
+              Friends
+            </a>
+          </li>
+          <li style={{ "list-style": "none", float: "right" }}>
+            <a
+              href="#"
+              className="sampleNav"
+              style={{
+                display: "block",
+                "text-decoration": "none",
+                "min-height": "16px",
+                "text-align": "center",
+                padding: "14px",
+                "text-transform": "uppercase",
+                color: "#666",
+              }}
+              class="right-side"
+            >
+              Sign Up
+            </a>
+          </li>
+          <li style={{ "list-style": "none", float: "right" }}>
+            <a
+              href="#"
+              className="sampleNav"
+              style={{
+                display: "block",
+                "text-decoration": "none",
+                "min-height": "16px",
+                "text-align": "center",
+                padding: "14px",
+                "text-transform": "uppercase",
+                color: "#666",
+              }}
+              class="right-side"
+            >
+              Sign In
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };

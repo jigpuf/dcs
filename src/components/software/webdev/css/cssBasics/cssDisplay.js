@@ -21,8 +21,29 @@ const CSSDisplays = () => {
     },
     {
       type: "none",
-      syntax: "display:none;",
-      notes: "makes item disapear",
+      syntax: "display: none;",
+      notes: "Hides the item by removing it from the display flow.",
+    },
+    {
+      type: "opacity",
+      syntax: "opacity: 0;",
+      notes:
+        "Makes the item completely transparent, effectively hiding it. But this does preserve the space",
+    },
+    {
+      type: "visibility",
+      syntax: "visibility: hidden;",
+      notes: "Hides the item while still preserving its space in the layout.",
+    },
+    {
+      type: "grid",
+      syntax: "display:grid;",
+      notes: "This is what is used with grid style formatting",
+    },
+    {
+      type: "flex",
+      syntax: "display:flex;",
+      notes: "This is what is used with flex box style formatting",
     },
   ];
   const renderDisplay = display.map((item) => {

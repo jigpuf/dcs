@@ -28,6 +28,12 @@ const Box = () => {
         "The space outside the border, which creates a gap between the element and surrounding elements. You can use negative numbers if you want things to overlap",
       properties: "margin-top, margin-right, margin-bottom, margin-left",
     },
+    {
+      part: "border-box",
+      explanation:
+        "The space inside the border, containing the content and padding areas.In border-box, the properties that control the spacing outside the border are the padding properties, not the margin properties.",
+      properties: "padding-top, padding-right, padding-bottom, padding-left",
+    },
   ];
   const renderBoxModelParts = boxModelParts.map((item) => {
     return (
