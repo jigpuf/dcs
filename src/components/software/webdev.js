@@ -31,7 +31,7 @@ const Webdev = () => {
     {
       name: "John Smilga",
       course: "HTML&CSS Tutorial and Projects Course (Flexbox&Grid)",
-      class: "129",
+      class: "133",
       last: "445",
     },
     {

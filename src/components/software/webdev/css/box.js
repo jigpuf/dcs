@@ -5,9 +5,9 @@ const Box = () => {
     {
       part: "Content",
       explanation:
-        "The content area of the element, where the actual content like text, images, or other elements is displayed.",
+        "The content area of the element, where the actual content like text, images, or other elements is displayed. Background image can be used instead of color.",
       properties:
-        "width, height, max-width, max-height, min-width, min-height, overflow, text-align, vertical-align, display, box-sizing, position, z-index, opacity, background-color, overflow",
+        "width, height, max-width, max-height, min-width, min-height, overflow, text-align(this will adjust any inline elements), vertical-align, display, box-sizing, position, z-index, opacity, background-color, overflow",
     },
     {
       part: "Padding",
@@ -20,12 +20,12 @@ const Box = () => {
       explanation:
         "The border that surrounds the padding and content. It can be customized with properties like color, width, and style.",
       properties:
-        "border-width, border-color, border-style, border-radius, box-sizing",
+        "border-width, border-color, border-style, border-radius, box-sizing; border-style options: solid, double, groove, outset, dotted, dashed, inset, ridges",
     },
     {
       part: "Margin",
       explanation:
-        "The space outside the border, which creates a gap between the element and surrounding elements. You can use negative numbers if you want things to overlap",
+        "The space outside the border, which creates a gap between the element and surrounding elements. You can use negative numbers if you want things to overlap.  Margin for 2 block elements on top of each other collapses to the lagest margin. Margins for inline elements add together.",
       properties: "margin-top, margin-right, margin-bottom, margin-left",
     },
     {
