@@ -6,6 +6,7 @@ import CSSText from "./layouts/text.js";
 import CSSImages from "./layouts/cssImages.js";
 import CSSNavBar from "./layouts/cssNavBar.js";
 import BackgroundImage from "./layouts/backgroundImage.js";
+import CSSLinks from "./layouts/cssLinks.js";
 
 const Layout = () => {
   const items = [
@@ -21,7 +22,7 @@ const Layout = () => {
     { name: "Images", slug: "images", component: <CSSImages /> },
     { name: "Lists", slug: "lists", component: <Placeholder /> },
     { name: "Navigation", slug: "navigation", component: <Placeholder /> },
-    { name: "Links", slug: "links", component: <Placeholder /> },
+    { name: "Links", slug: "links", component: <CSSLinks /> },
     { name: "Video", slug: "video", component: <Placeholder /> },
     { name: "Buttons", slug: "buttons", component: <Placeholder /> },
     { name: "Audio", slug: "audio", component: <Placeholder /> },

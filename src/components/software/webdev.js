@@ -37,7 +37,7 @@ const Webdev = () => {
     {
       name: "Colt Steel",
       course: "The Web Developer Bootcamp 2023",
-      class: "95",
+      class: "97",
       last: "721",
     },
     {
@@ -49,7 +49,7 @@ const Webdev = () => {
     {
       name: "Shaun Pelling",
       course: "Modern JavaScript (Complete guide, from Novice to Ninja)",
-      class: "21",
+      class: "25",
       last: "188",
     },
 

@@ -73,8 +73,8 @@ const BackgroundImage = () => {
         "width:400px;",
         "background-repeat: repeat-y;",
         "background-size:50px;",
-        "background-image: url('imageUrl');}",
-        "background-position: top right",
+        "background-image: url('imageUrl');",
+        "background-position: top right;}",
       ],
       notes: ["Repeats on Y axisnotice background-position is top right"],
       background: (
@@ -118,5 +118,3 @@ const BackgroundImage = () => {
 };
 
 export default BackgroundImage;
-
-//style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/016/432/575/small/paintball-icon-design-free-vector.jpg)"
