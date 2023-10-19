@@ -7,6 +7,7 @@ import ButtonMaker from "../../../utilities/buttonMaker.js";
 import Placeholder from "../../../utilities/placeholder.js";
 import CSSTransitions from "./css/cssTransition.js";
 import CSSMediaQuerry from "./css/cssMediaQuerry.js";
+import CSSTransform from "./css/cssTransform.js";
 
 const CSS = () => {
   const items = [
@@ -19,16 +20,15 @@ const CSS = () => {
       slug: "Transition",
       component: <CSSTransitions />,
     },
+    {
+      name: "Transformation/Animation",
+      slug: "Transformation",
+      component: <CSSTransform />,
+    },
     { name: "Box Model", slug: "box", component: <Box /> },
     { name: "FlexBox", slug: "flex", component: <FlexBox /> },
     { name: "Grid", slug: "Grid", component: <Placeholder /> },
     { name: "Bootstrap", slug: "bootstrap", component: <Placeholder /> },
-
-    {
-      name: "Transformation/Animation",
-      slug: "Transformation",
-      component: <Placeholder />,
-    },
   ];
   return (
     <div>
