@@ -42,10 +42,21 @@ const PlcHardware = () => {
   ];
   const micro = [
     {
+      type: "CPU-Micro820 Processor",
+      pn: "",
+      note: "",
+    },
+    {
+      type: "CPU-Micro850 Processor",
+      pn: "",
+      note: "",
+    },
+    {
       type: "CPU-Micro870 Processor",
       pn: "2080-LC70-24QBB",
       note: "14DI,10DO included",
     },
+
     { type: "Plug IN, 4 Channel AI", pn: "2080-IF4", note: "" },
     { type: "Plug in, 8 Channel 4DI, 4DO", pn: "2080-IQ4OB4", note: "" },
     {
@@ -125,7 +136,7 @@ const PlcHardware = () => {
         </tr>
         {renderHardware}
       </table>
-      <h3>Micrologix</h3>
+      <h3>Micro</h3>
       <table>
         <tr>
           <th>Part</th>
