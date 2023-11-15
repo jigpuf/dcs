@@ -1,6 +1,5 @@
 import React from "react";
 import ButtonMaker from "../../../utilities/buttonMaker.js";
-import JSOperators from "./javascript/jsOperators.js";
 import JSFlow from "./javascript/jsFlow.js";
 import JSDebugging from "./javascript/jsDebugging.js";
 import JSDom from "./javascript/jsDom.js";
@@ -17,7 +16,6 @@ import Placeholder from "../../../utilities/placeholder.js";
 const Javascript = () => {
   const items = [
     { name: "Basics", slug: "basics", component: <JsBasics /> },
-    { name: "Operators", slug: "jsoperators", component: <JSOperators /> },
     { name: "Control Flow", slug: "flow", component: <JSFlow /> },
     { name: "Debugging", slug: "jsDebugging", component: <JSDebugging /> },
     { name: "DOM Manipulation", slug: "dom", component: <JSDom /> },

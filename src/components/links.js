@@ -36,6 +36,11 @@ const Links = () => {
       url: "https://tinypng.com/",
     },
     {
+      name: "Google Fonts",
+      purpose: "endless fonts",
+      url: "https://fonts.google.com/",
+    },
+    {
       name: "----------",
       purpose: "----------",
       //      url: "#-----------",

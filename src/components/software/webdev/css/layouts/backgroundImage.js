@@ -145,88 +145,100 @@ const BackgroundImage = () => {
         set the background-size property, the browser uses that value to
         calculate how to display the background image.
       </p>
-      <ul>
+      <ol>
         <li>
-          <span class="function">Auto:</span>
-          <span class="description">
-            If you set background-size: auto;, the background image will be
-            displayed at its original size. It will not be scaled or modified in
-            any way.
-          </span>
+          background-size: auto; the background image will be displayed at its
+          original size. It will not be scaled or modified in any way.
         </li>
         <li>
-          <span class="function">Cover:</span>
-          <span class="description">
-            When you set background-size: cover;, the background image is scaled
-            proportionally to cover the entire background area of the element.
-            The image might be cropped if necessary to ensure that the entire
-            background area is filled. The aspect ratio of the image is
-            maintained.
-          </span>
+          background-size: cover; the background image is scaled proportionally
+          to cover the entire background area of the element. The image might be
+          cropped if necessary to ensure that the entire background area is
+          filled. The aspect ratio of the image is maintained.
         </li>
         <li>
-          <span class="function">Contain:</span>
-          <span class="description">
-            If you set background-size: contain;, the background image is scaled
-            proportionally to fit within the background area of the element. The
-            entire image will be visible, but there might be empty spaces within
-            the background area if the aspect ratio of the image and the element
-            differ.
-          </span>
+          background-size: contain; the background image is scaled
+          proportionally to fit within the background area of the element. The
+          entire image will be visible, but there might be empty spaces within
+          the background area if the aspect ratio of the image and the element
+          differ.
         </li>
         <li>
-          <span class="function">Length Values:</span>
-          <span class="description">
-            You can use specific length values, such as pixels (px) or
-            percentages (%), to define the width and height of the background
-            image. For example, background-size: 200px 150px; sets the width of
-            the background image to 200 pixels and the height to 150 pixels.
-          </span>
+          specific length values, such as pixels (px) or percentages (%), to
+          define the width and height of the background image. For example,
+          background-size: 200px 150px; sets the width of the background image
+          to 200 pixels and the height to 150 pixels.
         </li>
         <li>
-          <span class="function">Cover and Contain with Multiple Values:</span>
-          <span class="description">
-            You can combine the cover or contain keywords with length values to
-            achieve more precise control over the background size. For example,
-            background-size: cover 100px; will scale the background image to
-            cover the background area while ensuring its height is 100 pixels.
-          </span>
+          {" "}
+          You can combine the cover or contain keywords with length values to
+          achieve more precise control over the background size. For example,
+          background-size: cover 100px; will scale the background image to cover
+          the background area while ensuring its height is 100 pixels.
         </li>
-      </ul>
+      </ol>
+
       <h2>Background-position</h2>
-      <ul>
+      <ol>
         <li>
-          <span class="function">Length Values:</span>
-          <span class="description">
-            You can use specific length values, such as pixels (px) or
-            percentages (%), to define the horizontal and vertical position of
-            the background image. For example, background-position: 50% 25%;
-            will position the background image to be horizontally centered and
-            vertically positioned 25% from the top.
-          </span>
+          Length Values:You can use specific length values, such as pixels (px)
+          or percentages (%), to define the horizontal and vertical position of
+          the background image. For example, background-position: 50% 25%; will
+          position the background image to be horizontally centered and
+          vertically positioned 25% from the top.
         </li>
         <li>
-          <span class="function">Keywords:</span>
-          <span class="description">
-            CSS provides a set of keywords that you can use to position the
-            background image. These keywords include: top, bottom, left, right,
-            and center. For example, background-position: top left; will
-            position the background image at the top left corner of the element.
-          </span>
+          Keywords:CSS provides a set of keywords that you can use to position
+          the background image. These keywords include: top, bottom, left,
+          right, and center. For example, background-position: top left; will
+          position the background image at the top left corner of the element.
         </li>
         <li>
-          <span class="function">Multiple Values:</span>
-          <span class="description">
-            You can specify multiple values to define both the horizontal and
-            vertical positions of the background image. The values are provided
-            in pairs, where the first value represents the horizontal position
-            and the second value represents the vertical position. For example,
-            background-position: top 20px right 10%; will position the
-            background image at the top 20 pixels from the top and 10% from the
-            right.
-          </span>
+          Multiple Values:You can specify multiple values to define both the
+          horizontal and vertical positions of the background image. The values
+          are provided in pairs, where the first value represents the horizontal
+          position and the second value represents the vertical position. For
+          example, background-position: top 20px right 10%; will position the
+          background image at the top 20 pixels from the top and 10% from the
+          right.
         </li>
-      </ul>
+      </ol>
+
+      <h2>Background Attachment</h2>
+      <p>
+        The background-attachment property in CSS is used to control how a
+        background image behaves when scrolling the content of an element. It
+        specifies whether the background image scrolls with the content, remains
+        fixed in place, or scrolls within its containing element.
+      </p>
+      <p>The background-attachment property can take the following values:</p>
+      <ol>
+        <li>
+          scroll: This is the default value. The background image scrolls along
+          with the content of the element as the user scrolls the page. It moves
+          with the content, so its position is relative to the element's content
+          box.
+        </li>
+        <li>
+          fixed: The background image remains fixed in place regardless of
+          scrolling. It stays positioned relative to the viewport, meaning it
+          doesn't move when the user scrolls the page. This creates a "fixed"
+          background effect, where the content appears to scroll over the top of
+          the fixed background image.
+        </li>
+        <li>
+          local: This value is not widely supported by browsers. When used, it
+          causes the background image to scroll with the element's contents,
+          similar to the scroll value. However, it differs in that the
+          background image is positioned relative to the element's padding box
+          rather than its content box.
+        </li>
+        <li>
+          initial and inherit: These values are used to set the
+          background-attachment property to its initial value or inherit its
+          value from the parent element, respectively.
+        </li>
+      </ol>
     </div>
   );
 };

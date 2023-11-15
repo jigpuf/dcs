@@ -6,10 +6,12 @@ import JSComments from "./jsBasics/jsComments.js";
 import JSDataTypes from "./jsBasics/jsDataTypes.js";
 import JSScope from "./jsBasics/jsScope.js";
 import JSVariables from "./jsBasics/jsVariables.js";
+import JSOperators from "./jsBasics/jsOperators.js";
 
 const JsBasics = () => {
   const items = [
-    { name: "Adding", slug: "adding", component: <JSAdding /> },
+    { name: "Adding JS", slug: "adding", component: <JSAdding /> },
+    { name: "Operators", slug: "jsoperators", component: <JSOperators /> },
     { name: "Data Types", slug: "data", component: <JSDataTypes /> },
     { name: "Variables", slug: "variables", component: <JSVariables /> },
     { name: "Comments", slug: "comments", component: <JSComments /> },

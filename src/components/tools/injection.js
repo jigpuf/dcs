@@ -10,7 +10,7 @@ const Injection = () => {
   const items = [
     { name: "Smart Instruments", slug: "smart", component: <Smart /> },
     { name: "Dumb Instruments", slug: "dumb", component: <Dumb /> },
-    { name: "Dumb Instruments", slug: "dumb", component: <Channels /> },
+    { name: "Channels", slug: "channels", component: <Channels /> },
   ];
   const tablesHead = [
     "Channel",

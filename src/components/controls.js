@@ -46,6 +46,20 @@ const Controls = () => {
       <ul>
         <ButtonMaker buttons={items} />
       </ul>
+      <table>
+        <tr>
+          <th>Course</th>
+          <th>Author</th>
+          <th>Done</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>From Wire to PLC, A Bootcamp in Industrial Automation</td>
+          <td>Mouhammmed Hamsho</td>
+          <td>3</td>
+          <td>187</td>
+        </tr>
+      </table>
     </div>
   );
 };

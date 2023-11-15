@@ -18,7 +18,11 @@ const JSObjects = () => {
     { name: "Console Object", slug: "console", component: <Placeholder /> },
     { name: "Browser Object", slug: "browser", component: <Placeholder /> },
     { name: "Window Object", slug: "window", component: <Placeholder /> },
-    { name: "Spread Operator", slug: "spread", component: <Placeholder /> },
+    {
+      name: "Spread Operator W/ objects",
+      slug: "spread",
+      component: <Placeholder />,
+    },
     {
       name: "Object Literals",
       slug: "literals",
