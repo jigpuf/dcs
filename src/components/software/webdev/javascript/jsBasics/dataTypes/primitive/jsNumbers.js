@@ -267,6 +267,42 @@ const JSNumber = () => {
       </table>
       **NAN means Not a number when program is expecting a number and gets
       another data type.
+      <h2>Order of operations</h2>
+      <ol>
+        <li>
+          Parentheses: Expressions enclosed in parentheses () are evaluated
+          first.
+        </li>
+        <li>
+          Exponentiation: The exponentiation operator ** has the highest
+          precedence.
+        </li>
+        <li>
+          Multiplication, Division, and Remainder: Multiplication *, division /,
+          and remainder % operators have the next highest precedence.
+        </li>
+        <li>
+          Addition and Subtraction: The addition + and subtraction - operators
+          have the next highest precedence.
+        </li>
+        <li>
+          String Concatenation: The + operator can also be used for string
+          concatenation.
+        </li>
+        <li>
+          Comparison Operators: Comparison operators such as ==, !=, ===, and
+          !== are evaluated after arithmetic operations.
+        </li>
+        <li>
+          Logical Operators: Logical operators such as && (logical AND), ||
+          (logical OR), and ! (logical NOT) are evaluated after comparison
+          operators.
+        </li>
+        <li>
+          Assignment Operators: Assignment operators such as =, +=, -=, *=, /=,
+          and %= are evaluated last.
+        </li>
+      </ol>
     </div>
   );
 };

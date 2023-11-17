@@ -28,11 +28,7 @@ const If = () => {
         "Neither of the first statements was true so the else statement returned a value",
         "instead of returning a value, the code block could also be used to manipulate values of global variables",
       ],
-      code: [
-        "if(kman > kwoman){return('Kman is Greater!!');}",
-        "elseif(kman == kwoman){return('Kman is equal to KWoman!!');}",
-        "else{return('Kman must not be as great as KWoman!!');}",
-      ],
+      code: ["'Kman must not be as great as KWoman!!'"],
     },
   ];
   return (

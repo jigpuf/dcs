@@ -43,6 +43,11 @@ const Loops = () => {
   });
   const loopArray = [
     {
+      type: "Initial Code",
+      code: ["const names=['Kman','Kwoman','Ksauce'];"],
+      output: "",
+    },
+    {
       type: "For",
       code: [
         "for (let i=0;i<names.length; i++){",
@@ -105,8 +110,14 @@ const Loops = () => {
       </table>
       <h2>Examples</h2>
       <h3>Loop through array</h3>
-      <code>const names=['Kman','Kwoman','Ksauce'];</code>
-      <table>{renderLoopArray}</table>
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Code</th>
+          <th>Result</th>
+        </tr>
+        {renderLoopArray}
+      </table>
     </div>
   );
 };

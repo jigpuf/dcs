@@ -7,14 +7,14 @@ import Ternary from "./flow/ternary.js";
 
 import ButtonMaker from "../../../../utilities/buttonMaker.js";
 import Placeholder from "../../../../utilities/placeholder.js";
-//import Placeholder from '../../../utilities/placeholder.js';
+import JSOperators from "./jsBasics/jsOperators.js";
 
 const JSFlow = () => {
   const other = [
     {
       name: "Logical Operators",
       slug: "logical",
-      component: <Break />,
+      component: <JSOperators />,
     },
   ];
   const items = [
