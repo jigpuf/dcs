@@ -7,6 +7,8 @@ import ButtonMaker from "../../../../../../utilities/buttonMaker.js";
 import Placeholder from "../../../../../../utilities/placeholder.js";
 import JSStrings from "./primitive/jsStrings.js";
 import JSDateObject from "./jsObjects/jsDateObject.js";
+import JSConsoleObject from "./jsObjects/jsConsoleObject.js";
+import JSBrowserObject from "./jsObjects/jsBrowserObject.js";
 //import Placeholder from '../../../utilities/placeholder.js';
 
 const JSObjects = () => {
@@ -20,9 +22,8 @@ const JSObjects = () => {
       component: <JSNumberObject />,
     },
     { name: "Date Object", slug: "dat", component: <JSDateObject /> },
-    { name: "Console Object", slug: "console", component: <Placeholder /> },
-    { name: "Browser Object", slug: "browser", component: <Placeholder /> },
-    { name: "Window Object", slug: "window", component: <Placeholder /> },
+    { name: "Console Object", slug: "console", component: <JSConsoleObject /> },
+    { name: "Window Object", slug: "browser", component: <JSBrowserObject /> },
     {
       name: "Object Literals",
       slug: "literals",

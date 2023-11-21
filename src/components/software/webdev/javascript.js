@@ -7,7 +7,6 @@ import JSExternal from "./javascript/jsExternal.js";
 import JSGraphics from "./javascript/jsGraphics.js";
 import JSRef from "./javascript/jsRef.js";
 import JSExamples from "./javascript/jsExamples.js";
-import Lectures from "./javascript/lectures.js";
 import JsBasics from "./javascript/jsBasics.js";
 
 import Placeholder from "../../../utilities/placeholder.js";
@@ -23,10 +22,6 @@ const Javascript = () => {
     { name: "Graphics", slug: "graphics", component: <JSGraphics /> },
     { name: "References", slug: "references", component: <JSRef /> },
     { name: "Examples", slug: "examples", component: <JSExamples /> },
-    { name: "Event Attributes", slug: "event", component: <Placeholder /> },
-    { name: "APIs", slug: "api", component: <Placeholder /> },
-
-    { name: "Lectures", slug: "lectures", component: <Lectures /> },
   ];
   return (
     <div>

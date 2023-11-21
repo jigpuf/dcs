@@ -8,6 +8,8 @@ import Ternary from "./flow/ternary.js";
 import ButtonMaker from "../../../../utilities/buttonMaker.js";
 import Placeholder from "../../../../utilities/placeholder.js";
 import JSOperators from "./jsBasics/jsOperators.js";
+import JSEventListeners from "./flow/listeners.js";
+import JSAsync from "./flow/jsAsync.js";
 
 const JSFlow = () => {
   const other = [
@@ -24,8 +26,8 @@ const JSFlow = () => {
       component: <Break />,
     },
     { name: "If", slug: "if", component: <If /> },
-    { name: "Listeners", slug: "listeners", component: <Placeholder /> },
-    { name: "ASYNC", slug: "async", component: <Placeholder /> },
+    { name: "Listeners", slug: "listeners", component: <JSEventListeners /> },
+    { name: "ASYNC", slug: "async", component: <JSAsync /> },
     { name: "Loops", slug: "loops", component: <Loops /> },
     { name: "Switch", slug: "switch", component: <SwitchStatement /> },
     { name: "Ternary", slug: "ternary", component: <Ternary /> },

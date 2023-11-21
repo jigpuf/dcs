@@ -3,6 +3,11 @@ import React from "react";
 const CSSTransitions = () => {
   const components = [
     {
+      component: "Syntax",
+      description: "transition: property duration timing-function delay;",
+      example: "transition: font-size 4s, color 5s;",
+    },
+    {
       component: "property",
       description:
         "Specifies the CSS property to apply the transition effect to.",
@@ -110,15 +115,7 @@ const CSSTransitions = () => {
         allows you to create smooth and animated transitions between different
         states of an element.
       </p>
-      <h2>Syntax</h2>
-      <b>transition: property duration timing-function delay;</b>
-      <br />
-      <h3>Single example</h3>
 
-      <b>transition: font-size 4s; </b>
-      <h3>Multiple transitions</h3>
-      <b>transition: font-size 4s, color 5s;</b>
-      <br />
       <table>
         <caption>Transition Component</caption>
         <thead>
