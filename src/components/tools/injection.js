@@ -23,167 +23,190 @@ const Injection = () => {
   const instruments = [
     {
       channel: "Analog In(Current)",
-      instrument: "4-20mA Instrument",
-      top: "",
+      instrument: "4-20mA Instrument (Loop Powered, passive)",
+      top: "--",
       bottom: "Source 2-Wire Sim",
-      black: "mA- (4W)",
-      red: "mA+ (3W)",
+      black: "Source/Measure mA- → (-)",
+      red: "Source/Measure mA+ → (+)",
+    },
+    {
+      channel: "Analog In(Current)",
+      instrument: "4-20mA Instrument (Not Loop Powered, Active)",
+      top: "--",
+      bottom: "Source mA",
+      black: "Source/Measure mA- → (-)",
+      red: "Source/Measure mA+ → (+)",
     },
     {
       channel: "Analog In(Voltage)",
-      instrument: "Pressure Ducer",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      instrument: "Voltage Output (Pressure Ducer etc)",
+      top: "--",
+      bottom: "Source V",
+      black: "Source/Measure Com → (-)",
+      red: "Source/Measure V → (+)",
     },
     {
       channel: "RTD(1000 ohm)",
-      instrument: "1000 ohm RTD",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      instrument: "PT1000 ohm RTD 4-Wire",
+      top: "--",
+      bottom: "Source *F/*C PT1000",
+      black: "Source/Measure  Com 2X → Excitation(+) & Sense(+)",
+      red: "Source/ Measure RTD 2X → Excitation(-) & Sense(-)",
     },
     {
       channel: "RTD(100 ohm)",
-      instrument: "100 ohm RTD",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      instrument: "PT100 ohm RTD 4-Wire",
+      top: "--",
+      bottom: "Source *F/*C PT100",
+      black: "Source/Measure  Com 2X → Excitation(+) & Sense(+)",
+      red: "Source/ Measure RTD 2X → Excitation(-) & Sense(-)",
     },
     {
-      channel: "K-Type TC",
-      instrument: "K-Type TC",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      channel: "K type TC",
+      instrument: "K type TC",
+      top: "--",
+      bottom: "Source *F/*C K",
+      black: "Red Wire Source/Measure TC Big Slot → (-)",
+      red: "Yellow Wire Source/Measure TC Small Slot → (+)",
     },
     {
-      channel: "E-Type TC",
-      instrument: "E-Type TC",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      channel: "E type TC",
+      instrument: "E type TC",
+      top: "--",
+      bottom: "Source *F/*C E",
+      black: "Red Wire Source/Measure TC Big Slot → (-)",
+      red: "Purple Wire Source/Measure TC Small Slot → (+)",
     },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
+    {
+      channel: "Resistance",
+      instrument: "Resistor 3200 ohm Max",
+      top: "--",
+      bottom: "Source Ω ",
+      black: "Source/Measure COM → (-)",
+      red: "Source/Measure Ω → (+)",
+    },
+    {
+      channel: "Frequency",
+      instrument: "Frequency Output (1K Hz Max)",
+      top: "--",
+      bottom: "Source Hz",
+      black: "Source/Measure COM → (-)",
+      red: "Source/Measure Hz → (+)",
+    },
   ];
   const channels = [
     {
       channel: "Analog In(Current)",
-      instrument: "",
+      instrument: "4-20mA Instrument (Loop Powered, passive)",
       top: "Measure Loop mA",
       bottom: "--",
-      black: "Measure Com",
-      red: "Measure Loop",
+      black: "Measure Com → Excite(-)",
+      red: "Measure Loop → Excite(+)",
+    },
+    {
+      channel: "Analog In(Current)",
+      instrument: "4-20mA Instrument (Not Loop Powered, Active)",
+      top: "Measure mA",
+      bottom: "--",
+      black: "Measure Com → Sense(-)",
+      red: "Measure mA → Sense(+)",
     },
     {
       channel: "Analog In(Voltage)",
-      instrument: "Pressure Ducer",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
-    },
-    {
-      channel: "RTD(1000 ohm)",
-      instrument: "1000 ohm RTD",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      instrument: "Voltage Output (Pressure Ducer etc)",
+      top: "Measure V",
+      bottom: "--",
+      black: "Measure Com → Sense(-)",
+      red: "Source/Measure V → Sense(+)",
     },
     {
       channel: "RTD(100 ohm)",
-      instrument: "100 ohm RTD",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      instrument: "PT100 ohm RTD 4-wire",
+      top: "--",
+      bottom: "Measure *F/*C PT100 4-Wire",
+      black: "Source/Measure 3W, Source/Measure COM → (-)",
+      red: "Source/Measure 4W, Source/Measure V → (+)",
     },
+    {
+      channel: "RTD(1000 ohm)",
+      instrument: "PT1000 ohm RTD 4-wire",
+      top: "--",
+      bottom: "Measure *F/*C PT1000 4-Wire",
+      black: "Source/Measure 3W, Source/Measure COM → (-)",
+      red: "Source/Measure 4W, Source/Measure V → (+)",
+    },
+
     {
       channel: "K-Type TC",
       instrument: "K-Type TC",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      top: "--",
+      bottom: "Measure *F/*C K",
+      black: "Red Wire Source/Measure TC Big Slot → (-)",
+      red: "Yellow Wire Source/Measure TC Small Slot → (+)",
     },
     {
       channel: "E-Type TC",
       instrument: "E-Type TC",
-      top: "",
-      bottom: "",
-      black: "",
-      red: "",
+      top: "--",
+      bottom: "Measure *F/*C E",
+      black: "Red Wire Source/Measure TC Big Slot → (-)",
+      red: "Purple Wire Source/Measure TC Small Slot → (+)",
     },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
-    { channel: "", instrument: "", top: "", bottom: "", black: "", red: "" },
+    {
+      channel: "Resistance(Must remove Power",
+      instrument: "Resistor",
+      top: "--",
+      bottom: "Measure Ω ",
+      black: "Source/Measure COM → (-)",
+      red: "Source/Measure Ω → (+)",
+    },
+    {
+      channel: "Frequency",
+      instrument: "Frequency Output",
+      top: "--",
+      bottom: "Measure Hz",
+      black: "Source/Measure COM → (-)",
+      red: "Source/Measure Hz → (+)",
+    },
+  ];
+  const capabilitiesHead = ["Signal", "Source", "Measure"];
+  const capabilities = [
+    { signal: "Voltage", source: "10V", measure: "30V" },
+    { signal: "mA", source: "24 mA", measure: "Same" },
+    { signal: "mA Loop", source: "24mA", measure: "Same" },
+    { signal: "Resistance", source: "3200 Ω", measure: "" },
+    {
+      signal: "RTD",
+      source:
+        "Pt100(1472°F), Pt3916, Pt200, Pt500, Pt1000(1166°F), Ni120, Pt3926",
+      measure: "Same",
+    },
+    {
+      signal: "TC",
+      source: "K(2498°F), E(1742°F), J, L, N, R, S, T, U, BP, XK, mV, B ",
+      measure: "Same",
+    },
+    { signal: "Frequency", source: "1000 Hz", measure: "" },
   ];
   return (
     <div>
       <h1>Injection Meter Fluke 725</h1>
       <img src="https://static.grainger.com/rp/s/is/image/Grainger/6KD42_AS01?$adapimg$&hei=1072&wid=1072"></img>
-      <h2>Meter as Instrument</h2>
+      <h2>Capabilities</h2>
+      <TableMaker
+        head={capabilitiesHead}
+        array={capabilities}
+        tableType="simpleColumn"
+      />
+      <h2>Meter as Instrument || (Check Channel)</h2>
       <TableMaker
         head={tablesHead}
         array={instruments}
         tableType="simpleColumn"
       />
-      <h2>Meter as Channel</h2>
+      <h2>Meter as Channel || (Check Instrument)</h2>
       <TableMaker head={tablesHead} array={channels} tableType="simpleColumn" />
-      <h2>Check Resistance</h2>
-      <ol>
-        <li>
-          Turn off power to the circuit or device being measured and disconnect
-          it from any power source.
-        </li>
-        <li>
-          Connect the leads of the Fluke 726 to the ends of the resistor being
-          measured. The red lead should be connected to the positive end of the
-          resistor and the black lead should be connected to the negative end.
-        </li>
-        <li>
-          Set the Fluke 726 to resistance measurement mode by pressing the
-          "MODE" button until the resistance symbol (Ω) is displayed on the
-          screen.
-        </li>
-        <li>
-          Adjust the range of the resistance measurement if necessary by
-          pressing the "RANGE" button. The Fluke 726 can measure resistance up
-          to 50 megaohms, and has several range options to choose from.
-        </li>
-        <li>
-          Press the "MEASURE" button to take a resistance reading. The
-          resistance value will be displayed on the screen.
-        </li>
-        <li>
-          If necessary, repeat the measurement multiple times to ensure accuracy
-          and consistency.
-        </li>
-        <li>
-          When finished, disconnect the leads from the resistor being measured
-          and turn off the Fluke 726.
-        </li>
-      </ol>
+
       <ButtonMaker buttons={items} />
     </div>
   );
