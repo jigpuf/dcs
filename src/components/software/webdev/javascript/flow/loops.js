@@ -73,8 +73,13 @@ const Loops = () => {
         "let text = ' ';",
         "function addText(item, index){text += `${index}: ${item} `}",
         "names.forEach(addText);",
+        "//Another way to write",
+        "names.forEach((name,index)=>console.log(`${index+1}${name}, `))",
       ],
-      output: "1:Kman 2:Kwoman 3:Ksauce",
+      output: [
+        "1:Kman 2:Kwoman 3:Ksauce",
+        "//'1Kman, ' '2Kwoman, ' '3Ksauce, '",
+      ],
     },
     {
       type: "Map",
