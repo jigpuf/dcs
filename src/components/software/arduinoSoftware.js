@@ -1,6 +1,6 @@
 import React from "react";
-import ArduinoCommands from "./arduino/arduinoCommands.js";
-import ArduinoDataTypes from "./arduino/arduinoDataTypes.js";
+import ArduinoCommands from "../controls/arduino/arduinoCommands.js";
+import ArduinoDataTypes from "../controls/arduino/arduinoDataTypes.js";
 import ButtonMaker from "../../utilities/buttonMaker.js";
 import Placeholder from "../../utilities/placeholder.js";
 

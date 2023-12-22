@@ -14,7 +14,8 @@ import Arduino from "./controls/arduino.js";
 import Placeholder from "../utilities/placeholder.js";
 
 import ButtonMaker from "../utilities/buttonMaker.js";
-import ArduinoSoftware from "./controls/arduinoSoftware.js";
+import ArduinoSoftware from "./software/arduinoSoftware.js";
+import ESP32 from "./controls/esp32.js";
 
 const Controls = () => {
   const items = [
@@ -35,12 +36,51 @@ const Controls = () => {
     },
     { name: "Arduino", slug: "arduino", component: <Arduino /> },
     {
-      name: "Arduinon Software",
-      slug: "arduinoSoftware",
-      component: <ArduinoSoftware />,
+      name: "ESP32",
+      slug: "ESP32",
+      component: <ESP32 />,
     },
+
     { name: "Motor drivers", slug: "motor", component: <Placeholder /> },
   ];
+  const courses = [
+    {
+      course: "From Wire to PLC, A Bootcamp in Industrial Automation",
+      author: "Mouhammmed Hamsho",
+      finished: "3",
+      total: "187",
+    },
+    {
+      course: "Arduino Step By Step Getting Started",
+      author: "Peter Dalmaris",
+      finished: "1",
+      total: "143",
+    },
+    {
+      course: "Arduino Step By Step Getting Serious",
+      author: "Peter Dalmaris",
+      finished: "1",
+      total: "290",
+    },
+    {
+      course: "ESP32 for Arduino Makers",
+      author: "Peter Dalmaris",
+      finished: "2",
+      total: "58",
+    },
+    { course: "", author: "", finished: "", total: "" },
+    { course: "", author: "", finished: "", total: "" },
+  ];
+  const renderCourses = courses.map((course) => {
+    return (
+      <tr>
+        <td>{course.course}</td>
+        <td>{course.author}</td>
+        <td>{course.finished}</td>
+        <td>{course.total}</td>
+      </tr>
+    );
+  });
   return (
     <div>
       <ul>
@@ -53,12 +93,7 @@ const Controls = () => {
           <th>Done</th>
           <th>Total</th>
         </tr>
-        <tr>
-          <td>From Wire to PLC, A Bootcamp in Industrial Automation</td>
-          <td>Mouhammmed Hamsho</td>
-          <td>3</td>
-          <td>187</td>
-        </tr>
+        {renderCourses}
       </table>
     </div>
   );

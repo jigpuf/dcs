@@ -10,7 +10,7 @@ import Methodology from "./software/methodology.js";
 import Languages from "./software/languages.js";
 import Media from "./software/media.js";
 import Mac from "./software/mac.js";
-import ArduinoSoftware from "./controls/arduinoSoftware.js";
+import ArduinoSoftware from "./software/arduinoSoftware.js";
 import Raspberry from "./software/raspberry.js";
 import Learning from "./software/learning.js";
 import VSC from "./software/vsc.js";
@@ -33,6 +33,7 @@ const Software = () => {
     { name: "Raspberry Pi", slug: "raspberry", component: <Raspberry /> },
     { name: "Learning", slug: "learning", component: <Learning /> },
     { name: "VSC", slug: "vsc", component: <VSC /> },
+    { name: "Arduino IDE", slug: "arduino", component: <ArduinoSoftware /> },
   ];
   return (
     <div>
