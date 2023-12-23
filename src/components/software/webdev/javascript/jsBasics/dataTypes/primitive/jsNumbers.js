@@ -109,8 +109,8 @@ const JSNumber = () => {
     },
     {
       name: "Math.random()",
-      syntax: "Math.random()",
-      action: `When executed, the code above will output a random floating-point number between 0 (inclusive) and 1 (exclusive)`,
+      syntax: "Math.random(), Math.floor(Math.random() * 100) + 1;",
+      action: `When executed, the code above will output a random floating-point number between 0 (inclusive) and 1 (exclusive), The second one gives number between 1 and 100`,
       type: `${typeof Math.random()}`,
       returned: `${Math.random()}`,
     },
@@ -167,7 +167,45 @@ const JSNumber = () => {
       </tr>
     );
   });
-
+  const usefulFunctions = [
+    {
+      use: "Random Number generator",
+      codes: [
+        "const randNumber = (min=0,max=100) =>{",
+        "return(",
+        "Math.floor((Math.random() *((max+1)-min))+min);};",
+        "console.log(randNumber(4,12));",
+      ],
+      notes: [
+        "function takes minimum of random number and max random number, if none are given the min will be 0 and the max 100",
+        "return",
+        "uses max and min to set up math to produce random number between them",
+        "//logs random number between 4 and 12",
+      ],
+    },
+    { use: "", codes: [""], notes: [""] },
+    { use: "", codes: [""], notes: [""] },
+    { use: "", codes: [""], notes: [""] },
+  ];
+  const renderUsefulFunctions = usefulFunctions.map((item) => {
+    const codeLines = item.codes.map((code) => {
+      return <li>{code}</li>;
+    });
+    const noteLines = item.notes.map((note) => {
+      return <li>{note}</li>;
+    });
+    return (
+      <tr>
+        <td>{item.use}</td>
+        <td>
+          <ol>{codeLines}</ol>
+        </td>
+        <td>
+          <ol>{noteLines}</ol>
+        </td>
+      </tr>
+    );
+  });
   return (
     <div>
       <h1>JS Numbers</h1>
@@ -303,6 +341,15 @@ const JSNumber = () => {
           and %= are evaluated last.
         </li>
       </ol>
+      <h2>Useful functions</h2>
+      <table>
+        <tr>
+          <th>Use</th>
+          <th>Code</th>
+          <th>Notes</th>
+        </tr>
+        {renderUsefulFunctions}
+      </table>
     </div>
   );
 };
