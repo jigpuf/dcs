@@ -10,7 +10,6 @@ const JSDom = () => {
     { name: "Listeners", slug: "listeners", component: <JSEventListeners /> },
     { name: "Nodes", slug: "nodes", component: <Placeholder /> },
     { name: "Validation", slug: "valid", component: <Placeholder /> },
-    { name: "Persistant Data", slug: "data", component: <Placeholder /> },
   ];
   return (
     <div>

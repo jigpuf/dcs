@@ -10,6 +10,7 @@ import JSExamples from "./javascript/jsExamples.js";
 import JsBasics from "./javascript/jsBasics.js";
 
 import Placeholder from "../../../utilities/placeholder.js";
+import JSLocal from "./javascript/jsLocal.js";
 //import Placeholder from '../../../utilities/placeholder.js';
 
 const Javascript = () => {
@@ -18,6 +19,7 @@ const Javascript = () => {
     { name: "Control Flow", slug: "flow", component: <JSFlow /> },
     { name: "Debugging", slug: "jsDebugging", component: <JSDebugging /> },
     { name: "DOM Manipulation", slug: "dom", component: <JSDom /> },
+    { name: "Local Data", slug: "data", component: <JSLocal /> },
     { name: "External Data", slug: "external", component: <JSExternal /> },
     { name: "Graphics", slug: "graphics", component: <JSGraphics /> },
     { name: "References", slug: "references", component: <JSRef /> },
