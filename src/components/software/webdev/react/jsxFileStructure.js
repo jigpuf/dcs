@@ -1,54 +1,82 @@
-import React from 'react';
+import React from "react";
 
-const JSXFileStructure = () =>{
-
-    return(
-        <div>
-            <h2>JSX/React File Structure</h2>
-            <ul>
-                <li>node_modules</li>
-                    <dd>These make things run. Don't touch them</dd>
-                <li>public</li>
-                    <ul>
-                        <li>Any static files</li>
-                            <dd>Pictures, json, text</dd>
-                        <li>index.html</li>
-                            <dd>This is the only HTML file in the program.  This is where the root div lives that the entire program feeds into.  It is otherwise  a standard HTML file.  Since react is for making single page Applictaions, this is the only page that exists and everything else is placed here dynamically</dd>
-                    </ul>
-                <li>src</li>
-                    <ul>
-                        <li>components</li>
-                            <dd>This is where you hold any additional files you make to run your program</dd>
-                        <li>App.css</li>
-                            <dd></dd>
-                        <li>App.js</li>
-                        <li>App.test.js</li>
-                        <li>index.css</li>
-                        <li>index.js</li>
-                        <li>reportWebVitals.js</li>
-                        <li>setupTests.js</li>
-                    </ul>
-                <li>.gitignore</li>
-                <li>package-lock.json</li>
-                <li>package.json</li>
-                <li>README</li>
-                <h2>SRC Folder</h2>
-        Program lives here
-        <h2>Public Folder</h2>
-        Contains static files like HTML, images etc.
-        <h2>Node Modules</h2>
-        Contains all dependencies. Don't need to go here much.
-        <h2>Package.json file</h2>
-        Project config files. List dependencies needed
-        <h2>Package-lock.json file</h2>
-        Records version of all dependencies in project
-        <h2>Read Me</h2>
-        Tells how to run Project
-        <h2>GitIgnore </h2>
-        These are things not transfered to Git when uploading.
-            </ul>
-        </div>
+const JSXFileStructure = () => {
+  const reactFiles = [
+    {
+      name: "index.html",
+      purpose:
+        "The main HTML file that serves as the entry point for the React application.This is the only HTML file in the program. This is where the root div lives that the entire program feeds into. It is otherwise a standard HTML file. Since react is for making single page Applictaions, this is the only page that exists and everything else is placed here dynamically",
+    },
+    {
+      name: "index.css",
+      purpose:
+        "CSS file that contains styles specific to the index.html file or overall application styling.",
+    },
+    {
+      name: "index.js",
+      purpose:
+        "The main JavaScript file that renders the React application and mounts it to the DOM.",
+    },
+    {
+      name: "App.js",
+      purpose:
+        "A React component that serves as the root component for the application, containing the main structure and logic.",
+    },
+    {
+      name: "serviceWorker.js",
+      purpose:
+        "An optional file that enables the use of a service worker for offline functionality and caching.",
+    },
+    {
+      name: ".gitignore",
+      purpose:
+        "A file that specifies which files and directories should be ignored by Git when tracking changes.",
+    },
+    {
+      name: "package-lock.json",
+      purpose:
+        "A file that locks down the versions of installed npm packages, ensuring consistent installations across different environments.",
+    },
+    {
+      name: "package.json",
+      purpose:
+        "A file that contains metadata about the project, including project dependencies, scripts, and other configurations.",
+    },
+    {
+      name: "App.test.js",
+      purpose:
+        "A test file that contains test cases and assertions for testing the functionality of the App.js component.",
+    },
+    {
+      name: "node_modules",
+      purpose:
+        "A directory that contains the installed npm packages and their dependencies for the project.These make things run. Don't touch them",
+    },
+    {
+      name: "public",
+      purpose: "Any static files,Pictures, json, text, index.html",
+    },
+  ];
+  const renderReactFiles = reactFiles.map((item) => {
+    return (
+      <tr>
+        <td>{item.name}</td>
+        <td>{item.purpose}</td>
+      </tr>
     );
-    }
+  });
+  return (
+    <div>
+      <h2>JSX/React File Structure</h2>
+      <table>
+        <tr>
+          <th>File</th>
+          <th>Purpose</th>
+        </tr>
+        {renderReactFiles}
+      </table>
+    </div>
+  );
+};
 
 export default JSXFileStructure;

@@ -13,7 +13,7 @@ const JSX = () => {
     { name: "File Structure", slug: "jsx", component: <JSXFileStructure /> },
     { name: "Useful Code", slug: "useful", component: <JSXUsefulCode /> },
     { name: "Hooks", slug: "hooks", component: <Placeholder /> },
-    { name: "Props", slug: "props", component: <Placeholder /> },
+    { name: "Props vs imports", slug: "props", component: <Placeholder /> },
     { name: "Scope", slug: "scope", component: <Placeholder /> },
     {
       name: "Event Handlers",
