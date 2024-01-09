@@ -1,43 +1,133 @@
-import React from 'react';
+import React from "react";
 
-class Setup extends React.Component {
-  render () {
+const Setup = () => {
+  const software = [
+    {
+      program: "NodeJS",
+      purpose:
+        "App to build full stack applications.  It allows JS use on serverside applications",
+      source: "https://node.org/",
+    },
+    {
+      program: "React",
+      purpose: "Library for writing JSX, installs with Terminal",
+      source: "",
+    },
+    { program: "Visual Studio Code", purpose: "Text editor", source: "" },
+    {
+      program: "iTerm",
+      purpose: "Better Command Line tool",
+      source: "https://www.iterm2.com/",
+    },
+    {
+      program: "Github Desktop",
+      purpose: "GUI for git repository",
+      source: "https://desktop.github.com/",
+    },
+  ];
+  const accounts = [
+    { account: "Github", instructions: [""] },
+    { account: "Netlify", instructions: [""] },
+  ];
+  const renderAccounts = accounts.map((item) => {
+    const instructions = item.instructions.map((instruction) => {
+      return <li>{instruction}</li>;
+    });
     return (
-      <div>
-        <h2>Setup</h2>
-          <h3>Dependencies</h3>
-            <table>
-              <tr><th>Program</th><th>Function</th><th>Source</th></tr>
-              <tr><td>Node</td><td>App to build full stack applications</td><td><a href='https://node.org/' target='_blank'>Node</a></td></tr>
-              <tr><td>React</td><td>Library for writing JSX</td><td>Installs with create react app command</td></tr>
-              <tr><td>Atom</td><td>Programming environment</td><td><a href='https://atom.io/' target='_blank'>Atom</a> </td></tr>
-              <tr><td>iTerm</td><td>Better Command Line tool</td><td><a href='https://www.iterm2.com/' target='_blank'>iterm2</a></td></tr>
-              <tr><td>Github Desktop</td><td>GUI for git repository</td><td><a href='https://desktop.github.com/' target='_blank'>Github</a></td></tr>
-            </table>
-          <h3>Checking versions</h3>
-            <table>
-              <tr><th>Program</th><th>Comandline</th></tr>
-              <tr><td>Node</td><td>node -v</td></tr>
-              <tr><td>React</td><td>npm review react version</td></tr>
-              <tr><td>Atom</td><td>Updates automatically on mac</td></tr>
-              <tr><td>iTerm</td><td></td></tr>
-            </table>
-          <h3>Creating new app</h3>
-            In command line type the following:<br />
-            npx create-react-app 	&lt; AppName	&gt;<br />
-          <h3>Connecting app to Github repository</h3>
-            Github offers version control and wide usability among many hosting sites<br />
-            File-New Repository<br />
-            Name it, add description, choose path to parent folder of app,
-          <h3>Connecting Github to hosting sites</h3>
-          <h3>Running the website locally</h3>
-          In folder where app lives:<br />
-          npm start<br />
-
-
-      </div>
+      <tr>
+        <td>{item.account}</td>
+        <td>
+          <ol>{instructions}</ol>
+        </td>
+      </tr>
     );
-  }
-}
+  });
+  const appCreation = [
+    {
+      step: "Create new react app",
+      instructions: [
+        "Open terminal and navigate to the folder where the app is going to live",
+        "in the command type: npx create-react-app myAppName",
+        "It will take a few minutes, but all the files will be put into the folder under the name you gave the app",
+      ],
+    },
+    { step: "Connect app to Github Desktop App", instructions: [""] },
+    { step: "Set up in Github repository", instructions: [""] },
+    { step: "Set up in Netlify", instructions: [""] },
+  ];
+  const renderSoftware = software.map((item) => {
+    return (
+      <tr>
+        <td>
+          <a href={item.source} target="_blank">
+            {item.program}
+          </a>
+        </td>
+        <td>{item.purpose}</td>
+      </tr>
+    );
+  });
+  const renderAppCreation = appCreation.map((item) => {
+    const instruction = item.instructions.map((instruction) => {
+      return <li>{instruction}</li>;
+    });
+    return (
+      <tr>
+        <td>{item.step}</td>
+        <td>
+          <ol>{instruction}</ol>
+        </td>
+      </tr>
+    );
+  });
+  return (
+    <div>
+      <h1>React Setup</h1>
+      <h2>Needed Software</h2>
+      <table>
+        <tr>
+          <th>Program</th>
+          <th>Function</th>
+        </tr>
+        {renderSoftware}
+      </table>
+      <h2>Set up Accounts</h2>
+      <table>
+        <tr>
+          <th>Account</th>
+          <th>Instructions</th>
+        </tr>
+        {renderAccounts}
+      </table>
+      <h2>Checking versions</h2>
+      <table>
+        <tr>
+          <th>Program</th>
+          <th>Comandline</th>
+        </tr>
+        <tr>
+          <td>Node</td>
+          <td>node -v</td>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td>npm review react version</td>
+        </tr>
+        <tr>
+          <td>iTerm</td>
+          <td></td>
+        </tr>
+      </table>
+      <h2>Creating new app</h2>
+      <table>
+        <tr>
+          <th>Step</th>
+          <th>Instructions</th>
+        </tr>
+        {renderAppCreation}
+      </table>
+    </div>
+  );
+};
 
 export default Setup;

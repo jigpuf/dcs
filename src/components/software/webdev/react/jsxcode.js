@@ -2,6 +2,7 @@ import React from "react";
 import Placeholder from "../../../../utilities/placeholder";
 import ButtonMaker from "../../../../utilities/buttonMaker";
 import JSXComponentBoilerPlate from "./jsxCode/jsxBoilerPlate";
+import DataModule from "./jsxCode/dataModule";
 
 const JSXUsefulCode = () => {
   const items = [
@@ -11,9 +12,9 @@ const JSXUsefulCode = () => {
       component: <JSXComponentBoilerPlate />,
     },
     {
-      name: "Array of Object",
-      slug: "AOO",
-      component: <Placeholder />,
+      name: "Data Module",
+      slug: "data",
+      component: <DataModule />,
     },
     {
       name: "JSON",
