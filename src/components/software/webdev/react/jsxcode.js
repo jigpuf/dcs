@@ -3,6 +3,7 @@ import Placeholder from "../../../../utilities/placeholder";
 import ButtonMaker from "../../../../utilities/buttonMaker";
 import JSXComponentBoilerPlate from "./jsxCode/jsxBoilerPlate";
 import DataModule from "./jsxCode/dataModule";
+import JSXTableBuilder from "./jsxCode/jsxTableBuild";
 
 const JSXUsefulCode = () => {
   const items = [
@@ -24,7 +25,7 @@ const JSXUsefulCode = () => {
     {
       name: "TableBuilder",
       slug: "tablebuilder",
-      component: <Placeholder />,
+      component: <JSXTableBuilder />,
     },
     {
       name: "Active buttons",
