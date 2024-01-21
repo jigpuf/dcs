@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 const UseEffectHook = () => {
   const code =
     "useEffect(() => {// Side effect code goes here}, [dependency1, dependency2]);";
