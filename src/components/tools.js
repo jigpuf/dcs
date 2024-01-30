@@ -12,6 +12,7 @@ import ContactRetention from "./tools/contactRetention.js";
 import ButtonMaker from "../utilities/buttonMaker.js";
 import Placeholder from "../utilities/placeholder.js";
 import WF1000 from "./tools/wf1000.js";
+import Travel from "./tools/travel.js";
 
 const Tools = () => {
   const items = [
@@ -35,6 +36,7 @@ const Tools = () => {
     },
     { name: "HiPot", slug: "hipot", component: <Placeholder /> },
     { name: "Printer", slug: "printer", component: <Placeholder /> },
+    { name: "Travel Tools", slug: "travel", component: <Travel /> },
     { name: "WF1000 Stripper", slug: "wf1000", component: <WF1000 /> },
   ];
   return (
