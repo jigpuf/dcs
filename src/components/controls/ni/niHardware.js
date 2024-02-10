@@ -327,7 +327,7 @@ const NiHardware = () => {
     {
       module: "9202",
       use: "AI(V)",
-      total: ["White:16", "Green:16", "Black:4"],
+      total: ["White:16", "Green:16", "Black:4", "Sockets"],
       empty: ["19"],
       wires: [
         "White:(AI+)1-8,11-18",
@@ -352,7 +352,7 @@ const NiHardware = () => {
     {
       module: "9205",
       use: "AI(V)",
-      total: ["White:32", "Black:3"],
+      total: ["White:32", "Black:3", "Sockets"],
       empty: ["9", "28"],
       wires: [
         "White:(AI)1-8,11-18,20-27,30-37",
@@ -362,7 +362,7 @@ const NiHardware = () => {
     {
       module: "9216",
       use: "100 ohm RTD",
-      total: ["Red:8", "White:8", "Green:8", "Black:8"],
+      total: ["Red:8", "White:8", "Green:8", "Black:8", "Sockets"],
       empty: ["9-10", "19", "28-29"],
       wires: [
         "Red:(Ex+)1,3,5,7,11,13,15,17",
@@ -375,14 +375,22 @@ const NiHardware = () => {
     {
       module: "9220",
       use: "",
-      total: ["White:16", "Green:16", "Black:5"],
+      total: ["White:16", "Green:16", "Black:5", "Sockets"],
       empty: [""],
       wires: ["White:1-8,11-18", "Green:20-27,30-37", "Black:9,10,19,28,29"],
     },
     {
       module: "9237",
       use: "Full bridge, Load Cells",
-      total: ["Red:5", "White:4", "Green:4", "Black:5", "Orange:4", "Blue:4"],
+      total: [
+        "Red:5",
+        "White:4",
+        "Green:4",
+        "Black:5",
+        "Orange:4",
+        "Blue:4",
+        "Sockets",
+      ],
       empty: ["4", "8-9", "14", "18-19", "23", "27-28", "33", "37"],
       wires: [
         "Red:(EX+)2,6,12,16 (VSUP+)10",
@@ -396,14 +404,14 @@ const NiHardware = () => {
     {
       module: "9264",
       use: "AO(V)",
-      total: ["Red:16", "Black:17"],
+      total: ["Red:16", "Black:17", "Sockets"],
       empty: ["9-10", "28-29"],
       wires: ["Red:(AO+)1-8,11-18", "Black:(Com)19,20-27,30-37"],
     },
     {
       module: "9266",
       use: "AO(I) V200",
-      total: ["Red:9", "Black:9"],
+      total: ["Red:9", "Black:9", "Sockets"],
       empty: ["9-18", "28", "30-37"],
       wires: ["Red:(AO+)1-8 (Vsup)29", "Black:(Com)20-27,19"],
     },
