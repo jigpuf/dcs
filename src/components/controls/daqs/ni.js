@@ -5,7 +5,7 @@ import NiCommunications from "./ni/niCommunications.js";
 import Nimax from "./ni/nimax.js";
 import NiControl from "./ni/nicontrol.js";
 import Scb100 from "./ni/scb100.js";
-import ButtonMaker from "../../utilities/buttonMaker.js";
+import ButtonMaker from "../../../utilities/buttonMaker.js";
 import NISoftware from "./ni/niSoftware.js";
 
 const Ni = () => {

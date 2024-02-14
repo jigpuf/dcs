@@ -1,5 +1,5 @@
 import React from "react";
-import TableMaker from "../../../utilities/tableMaker";
+import TableMaker from "../../../../utilities/tableMaker.js";
 
 const NiHardware = () => {
   const chasisHead = [

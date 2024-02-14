@@ -4,21 +4,19 @@ const SideMenu = (props) => {
   const items = [
     { name: "Controls", slug: "controls" },
     { name: "Instruments", slug: "instruments" },
+    { name: "Panels", slug: "panels" },
     { name: "Cables", slug: "cables" },
     { name: "Tools", slug: "tools" },
     { name: "Raceways", slug: "raceways" },
     { name: "Electronics", slug: "electronics" },
     { name: "Power", slug: "power" },
+    { name: "Inventory", slug: "inventory" },
+    { name: "Project Manager", slug: "manage" },
     { name: "Networking", slug: "networking" },
     { name: "Software", slug: "software" },
-    { name: "Panels", slug: "panels" },
-    { name: "Inventory", slug: "inventory" },
-    { name: "Project Manage", slug: "manage" },
     { name: "Apps", slug: "apps" },
     { name: "Build", slug: "build" },
     { name: "Cars", slug: "cars" },
-    { name: "Stock", slug: "stock" },
-
     { name: "Links", slug: "links" },
   ];
   const renderItems = items.map((item) => {

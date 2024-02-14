@@ -5,9 +5,17 @@ import TerminalBlocks from "./panels/terminalBlocks";
 const Panels = () => {
   const items = [
     { name: "Terminal Blocks", slug: "blocks", component: <TerminalBlocks /> },
-    { name: "Placeholder", slug: "placeholder", component: <Placeholder /> },
-    { name: "Placeholder", slug: "placeholder", component: <Placeholder /> },
-    { name: "Placeholder", slug: "placeholder", component: <Placeholder /> },
+    { name: "Components", slug: "components", component: <Placeholder /> },
+    {
+      name: "Signal Conditioners",
+      slug: "conditioners",
+      component: <Placeholder />,
+    },
+    {
+      name: "Channel Types",
+      slug: "Channel Types",
+      component: <Placeholder />,
+    },
   ];
   return (
     <div>

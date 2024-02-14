@@ -14,7 +14,6 @@ import Manager from "./manager.js";
 import Apps from "./apps.js";
 import Build from "./build.js";
 import Cars from "./cars.js";
-import Stock from "./stock.js";
 
 import Links from "./links.js";
 
@@ -37,7 +36,6 @@ const MainSection = (props) => {
       {activeTab === "apps" && <Apps />}
       {activeTab === "build" && <Build />}
       {activeTab === "cars" && <Cars />}
-      {activeTab === "stock" && <Stock />}
 
       {activeTab === "links" && <Links />}
     </div>

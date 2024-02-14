@@ -1,6 +1,6 @@
 import React from "react";
-import Placeholder from "../../../../../utilities/placeholder";
-import ButtonMaker from "../../../../../utilities/buttonMaker";
+import Placeholder from "../../../../../../utilities/placeholder";
+import ButtonMaker from "../../../../../../utilities/buttonMaker";
 import Micro850 from "./ccwCompatibleHardware/micro850";
 
 const CCWCompatibleHardware = () => {

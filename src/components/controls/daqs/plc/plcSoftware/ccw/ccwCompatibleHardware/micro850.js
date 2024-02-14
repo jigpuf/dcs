@@ -1,5 +1,5 @@
 import React from "react";
-import LinksBuilder from "../../../../../../utilities/resourceBuilder";
+import LinksBuilder from "../../../../../../../utilities/resourceBuilder.js";
 
 const Micro850 = () => {
   const links = [

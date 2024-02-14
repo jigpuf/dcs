@@ -1,8 +1,8 @@
 import React from "react";
 import LVSoftwareRequirements from "./labview/lvSoftwareRequirements.js";
 import LVFunction from "./labview/lvFunctional.js";
-import ButtonMaker from "../../../../utilities/buttonMaker.js";
-import Placeholder from "../../../../utilities/placeholder.js";
+import ButtonMaker from "../../../../../utilities/buttonMaker.js";
+import Placeholder from "../../../../../utilities/placeholder.js";
 import LVDataTypes from "./labview/lvDataTypes.js";
 
 const Labview = () => {

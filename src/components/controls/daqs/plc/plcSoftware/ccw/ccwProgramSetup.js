@@ -1,6 +1,6 @@
 import React from "react";
-import ProcessBuilder from "../../../../../utilities/processMaker";
-import LinksBuilder from "../../../../../utilities/resourceBuilder";
+import ProcessBuilder from "../../../../../../utilities/processMaker";
+import LinksBuilder from "../../../../../../utilities/resourceBuilder";
 
 const CCWProgramSetup = () => {
   const links = [
