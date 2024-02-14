@@ -1,7 +1,6 @@
 import React from "react";
 
 const TerminalBlocks = () => {
-  const none = "./dang.png";
   const terminals = [
     {
       part: "301186",
@@ -10,10 +9,13 @@ const TerminalBlocks = () => {
         "https://caas.phoenixcontact.com/caas/v1/stable/media/199316/full/b408?format=jpg",
       jumper: "-4",
       awg: "16",
-      endCap: "3030815",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030815_t.jpg",
-      accessories: [{ pn: "none", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3030815",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030815_t.jpg",
+        },
+      ],
+      accessories: [{ pn: "none", image: "" }],
     },
     {
       part: "3038600",
@@ -22,10 +24,13 @@ const TerminalBlocks = () => {
         "https://caas.phoenixcontact.com/caas/v1/stable/media/120858/full/b408?format=jpg",
       jumper: "-4",
       awg: "16",
-      endCap: "3030815",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030815_t.jpg",
-      accessories: [{ pn: "none", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3030815",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030815_t.jpg",
+        },
+      ],
+      accessories: [{ pn: "none", image: "" }],
     },
     {
       part: "3031209",
@@ -34,10 +39,13 @@ const TerminalBlocks = () => {
         "https://www.mouser.com/images/phoenixcontact/images/3031209_SPL.jpg",
       jumper: "-4",
       awg: "16",
-      endCap: "3030815",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030815_t.jpg",
-      accessories: [{ pn: "none", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3030815",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030815_t.jpg",
+        },
+      ],
+      accessories: [{ pn: "none", image: "" }],
     },
     {
       part: "3031306",
@@ -46,10 +54,13 @@ const TerminalBlocks = () => {
         "https://www.mouser.com/images/phoenixcontact/images/3037410_SPL.jpg",
       jumper: "-5",
       awg: "12",
-      endCap: "3030514",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
-      accessories: [{ pn: "", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3030514",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
+        },
+      ],
+      accessories: [{ pn: "none", image: "" }],
     },
     {
       part: "3031636",
@@ -58,10 +69,13 @@ const TerminalBlocks = () => {
         "https://www.mouser.com/images/phoenixcontact/images/3031636_SPL.jpg",
       jumper: "-5",
       awg: "12",
-      endCap: "3030514",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
-      accessories: [{ pn: "", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3030514",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
+        },
+      ],
+      accessories: [{ pn: "none", image: "" }],
     },
     {
       part: "3031322",
@@ -70,32 +84,43 @@ const TerminalBlocks = () => {
         "https://www.mouser.com/images/phoenixcontact/images/3031322_SPL.jpg",
       jumper: "-5",
       awg: "12",
-      endCap: "3030514",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
-      accessories: [{ pn: "", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3030514",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
+        },
+      ],
+      accessories: [{ pn: "none", image: "" }],
     },
     {
-      part: "",
-      description: "",
-      image: "./dang.png",
+      part: "3037410",
+      description: "ST 2,5-QUATTRO RD - Feed-through terminal block",
+      image:
+        "https://caas.phoenixcontact.com/caas/v1/stable/media/236050/full/b408?format=jpg",
       jumper: "-5",
       awg: "12",
-      endCap: "3030514",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
-      accessories: [{ pn: "", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3030514",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
+        },
+      ],
+      accessories: [{ pn: "none", image: "" }],
     },
     {
-      part: "",
-      description: "",
-      image: "./dang.png",
+      part: "3037452",
+      description: "ST 2,5-QUATTRO BK - Feed-through terminal block",
+      image:
+        "https://caas.phoenixcontact.com/caas/v1/stable/media/264530/full/b408?format=jpg",
       jumper: "-5",
       awg: "12",
-      endCap: "3030514",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
-      accessories: [{ pn: "", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3030514",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3030514_t.jpg",
+        },
+      ],
+      accessories: [{ pn: "none", image: "" }],
     },
     {
       part: "3210547",
@@ -104,10 +129,23 @@ const TerminalBlocks = () => {
         "https://www.mouser.com/images/phoenixcontact/images/52209_1000_int_04_SPL.jpg",
       jumper: "-5",
       awg: "12",
-      endCap: "3210553, 32100552",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/3210553_SPL.jpg",
-      accessories: [{ pn: "", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3210553",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/3210553_SPL.jpg",
+        },
+        {
+          part: "32100552",
+          pic: "https://caas.phoenixcontact.com/caas/v1/stable/media/229234/full/b408?format=jpg",
+        },
+      ],
+      accessories: [
+        {
+          pn: "3036796",
+          image:
+            "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3036796_t.jpg",
+        },
+      ],
     },
     {
       part: "3210539",
@@ -116,10 +154,23 @@ const TerminalBlocks = () => {
         "https://www.mouser.com/images/phoenixcontact/images/3210539_SPL.jpg",
       jumper: "-5",
       awg: "12",
-      endCap: "3210553, 32100552",
-      endCapPic:
-        "https://www.mouser.com/images/phoenixcontact/images/3210553_SPL.jpg",
-      accessories: [{ pn: "", image: "./dang.png" }],
+      cap: [
+        {
+          part: "3210553",
+          pic: "https://www.mouser.com/images/phoenixcontact/images/3210553_SPL.jpg",
+        },
+        {
+          part: "32100552",
+          pic: "https://caas.phoenixcontact.com/caas/v1/stable/media/229234/full/b408?format=jpg",
+        },
+      ],
+      accessories: [
+        {
+          pn: "3036796",
+          image:
+            "https://www.mouser.com/images/phoenixcontact/images/ITP_651-3036796_t.jpg",
+        },
+      ],
     },
     {
       part: "",
@@ -127,8 +178,13 @@ const TerminalBlocks = () => {
       image: "./dang.png",
       jumper: "",
       awg: "",
-      endCap: "",
-      endCapPic: "./dang.png",
+      cap: [
+        {
+          part: "",
+          pic: "",
+        },
+        { part: "", pic: "" },
+      ],
       accessories: [{ pn: "", image: "./dang.png" }],
     },
   ];
@@ -136,7 +192,8 @@ const TerminalBlocks = () => {
     const accessories = item.accessories.map((accessory) => {
       return (
         <li>
-          {accessory.pn}||
+          {accessory.pn}
+          <br></br>
           <a href={accessory.image} target="_blank">
             <img src={accessory.image} width="80px"></img>
           </a>
@@ -144,24 +201,37 @@ const TerminalBlocks = () => {
         </li>
       );
     });
-
+    const endcaps = item.cap.map((cap) => {
+      return (
+        <li>
+          {cap.part}
+          <br></br>
+          <a href={cap.pic} target="_blank">
+            <img src={cap.pic} width="80px"></img>
+          </a>
+          <hr></hr>
+        </li>
+      );
+    });
     return (
       <tr>
-        <td>{item.part}</td>
-        <td>{item.description}</td>
+        <td>
+          {item.part}
+          <hr></hr>
+          {item.description}
+        </td>
+
         <td>
           <a href={item.image} target="_blank">
             <img src={item.image} width="80px"></img>
           </a>
         </td>
-        <td>{item.jumper}</td>
-        <td>{item.awg}</td>
-        <td>{item.endCap}</td>
         <td>
-          <a href={item.endCapPic} target="_blank">
-            <img src={item.endCapPic} width="80px"></img>
-          </a>
+          Jumper:{item.jumper}
+          <hr></hr> Max {item.awg}AWG
         </td>
+        <td>{endcaps}</td>
+
         <td>
           <ul>{accessories}</ul>
         </td>
@@ -221,13 +291,10 @@ const TerminalBlocks = () => {
 
       <table>
         <tr>
-          <th>Part ./dang.png</th>
-          <th>Description</th>
+          <th>Terminal</th>
           <th>Image</th>
-          <th>Jumper Size</th>
-          <th>Max AWG</th>
-          <th>EndCap P./dang.png</th>
-          <th>EndCap Image</th>
+          <th>Sizes</th>
+          <th>EndCap</th>
           <th>Accessories</th>
         </tr>
         {renderTerminals}
