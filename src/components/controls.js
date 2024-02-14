@@ -16,6 +16,7 @@ import Placeholder from "../utilities/placeholder.js";
 import ButtonMaker from "../utilities/buttonMaker.js";
 import ArduinoSoftware from "./software/arduinoSoftware.js";
 import ESP32 from "./controls/esp32.js";
+import Panels from "./controls/panels.js";
 
 const Controls = () => {
   const items = [
@@ -42,6 +43,7 @@ const Controls = () => {
     },
 
     { name: "Motor drivers", slug: "motor", component: <Placeholder /> },
+    { name: "Panels", slug: "Panels", component: <Panels /> },
   ];
   const courses = [
     {
