@@ -1,5 +1,5 @@
 import React from "react";
-import DcDistro from "./power/dcDistro.js";
+import Dc from "./power/dc.js";
 import Concepts from "./power/concepts.js";
 import Transformers from "./power/transformers.js";
 import Panels from "./power/panels.js";
@@ -7,11 +7,14 @@ import ButtonMaker from "../utilities/buttonMaker.js";
 import Placeholder from "../utilities/placeholder.js";
 import AC from "./power/ac.js";
 import Motors from "./power/motors.js";
+import Fuses from "./panels/fuses.js";
 
 const Power = () => {
   const items = [
-    { name: "DC", slug: "dc", component: <DcDistro /> },
+    { name: "DC", slug: "dc", component: <Dc /> },
     { name: "AC", slug: "ac", component: <AC /> },
+    { name: "Fuses", slug: "fuses", component: <Fuses /> },
+
     { name: "Motors", slug: "motors", component: <Motors /> },
     { name: "Power concepts", slug: "concepts", component: <Concepts /> },
     { name: "Transformers", slug: "transformers", component: <Transformers /> },
