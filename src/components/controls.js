@@ -48,6 +48,12 @@ const Controls = () => {
       total: "187",
     },
     {
+      course: "Studio 5000 PLC Ladder Logic Training",
+      author: "Jeff Sharman",
+      finished: "3",
+      total: "32",
+    },
+    {
       course: "Arduino Step By Step Getting Started",
       author: "Peter Dalmaris",
       finished: "1",
