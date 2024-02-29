@@ -25,7 +25,7 @@ const Webdev = () => {
     {
       name: "Angel Yu",
       course: "The Complete 2023 Web Development Bootcamp",
-      class: "53",
+      class: "54",
       last: "398",
     },
     {
