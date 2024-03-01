@@ -68,7 +68,7 @@ const Controls = () => {
     {
       course: "ESP32 for Arduino Makers",
       author: "Peter Dalmaris",
-      finished: "2",
+      finished: "8",
       total: "58",
     },
     { course: "", author: "", finished: "", total: "" },

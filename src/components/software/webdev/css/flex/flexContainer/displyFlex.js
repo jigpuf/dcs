@@ -17,7 +17,7 @@ const DisplayFlex = () => {
   });
   return (
     <div>
-      <h1>Display:Flex</h1>
+      <h1>Display:Flex, Gap</h1>
       <h2>Syntax</h2>
       <h3>HTML</h3>
       <ul>{renderHtmlCode}</ul>
