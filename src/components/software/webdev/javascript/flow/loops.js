@@ -9,7 +9,7 @@ const Loops = () => {
     },
     {
       type: "While",
-      code: "while (i<5){CodeHere}",
+      code: "while (i<5){CodeHere;}",
       meaning:
         "Checks Boolean, does code each time. Notice I will have to be initialized prior to the loop so the loop knows what it means.  Also if incementing is needed, it has to be put into the loop code.  Otherwise there will be an infinite loop",
     },

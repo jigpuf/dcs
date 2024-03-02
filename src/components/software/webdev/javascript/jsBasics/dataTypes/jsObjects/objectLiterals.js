@@ -57,10 +57,40 @@ const ObjectLiterals = () => {
 
     {
       part: "Deleting properties",
-      purpose: "",
-      syntax: [""],
-      example: [""],
-      notes: [""],
+      purpose: "Delete a property from an object",
+      syntax: ["delete object.key;"],
+      example: ["delete kman.age;"],
+      notes: ["This deletes the key 'age' from the object 'kman'"],
+    },
+    {
+      part: "Adding properties to an object",
+      purpose: "Add new properties to an existing object",
+      syntax: ["object.newKey = value;"],
+      example: ["kman.weight = '180 lbs';"],
+      notes: [
+        "This adds a new property 'weight' with the value '180 lbs' to the object 'kman'",
+      ],
+    },
+    {
+      part: "Adding methods to an object",
+      purpose: "Add new methods to an existing object",
+      syntax: ["object.newMethod = function() {", "  // code here", "}"],
+      example: ["kman.greet = function() {console.log('Hello!');};"],
+      notes: [
+        "This adds a new method 'greet' to the object 'kman' that logs 'Hello!' when invoked",
+      ],
+    },
+    {
+      part: "Using the 'this' keyword in objects",
+      purpose: "Refer to the current object inside its own methods",
+      syntax: ["this.key"],
+      example: ["console.log(this.height);"],
+      notes: [
+        "The 'this' keyword refers to the current object.",
+        "In the example, 'this.height' accesses the 'height' property of the current object.",
+        "Using 'this' allows accessing other keys in the object from within its methods.",
+        "Avoid using arrow functions with 'this' notation as it will refer to the global scope instead of the object.",
+      ],
     },
   ];
   const renderObjects = objects.map((object) => {
@@ -120,10 +150,6 @@ const ObjectLiterals = () => {
       reference
       <br />
       This means the values of the object can be changed
-      <br />
-      <h3>Deleting properties</h3>
-      delete user.age;
-      <br />
     </div>
   );
 };

@@ -34,13 +34,15 @@ const FlexDirection = () => {
       value: "row (default)",
       syntax: [
         ".container {",
-        "display: flex;",
-        <p>
+        <span>
+          display: <mark>flex</mark>;
+        </span>,
+        <span>
           flex-direction: <mark>row</mark>;
-        </p>,
+        </span>,
         "}",
         "",
-        "container>div{",
+        ".container>div{",
         "width:'100px';",
         "height: '100px';",
         "backgroundColor: '#ccc';",
@@ -69,15 +71,15 @@ const FlexDirection = () => {
       value: "row-reverse",
       syntax: [
         ".container {",
-        <p>
+        <span>
           display: <mark>flex</mark>;
-        </p>,
-        <p>
+        </span>,
+        <span>
           flex-direction: <mark>row-reverse</mark>;
-        </p>,
+        </span>,
         "}",
         "",
-        "container>div{",
+        ".container>div{",
         "width:'100px';",
         "height: '100px';",
         "backgroundColor: '#ccc';",
@@ -110,7 +112,7 @@ const FlexDirection = () => {
         "flex-direction: column;",
         "}",
         "",
-        "container>div{",
+        ".container>div{",
         "width:'100px';",
         "height: '100px';",
         "backgroundColor: '#ccc';",
@@ -139,13 +141,15 @@ const FlexDirection = () => {
       value: "column-reverse",
       syntax: [
         ".container {",
-        <p>
+        <span>
           display: <mark>inline-flex;</mark>
-        </p>,
-        "flex-direction: column-reverse;",
+        </span>,
+        <span>
+          flex-direction: <mark>column-reverse</mark>;
+        </span>,
         "}",
         "",
-        "container>div{",
+        ".container>div{",
         "width:'100px';",
         "height: '100px';",
         "backgroundColor: '#ccc';",
@@ -200,12 +204,12 @@ const FlexDirection = () => {
   return (
     <div>
       <h1>Flex-direction Flex Basis</h1>
-      <p>
+      <span>
         The flex-direction property defines the direction in which the flex
         items are laid out within a flex container. It specifies whether the
         flex items should be arranged horizontally or vertically. It accepts
         four values:
-      </p>
+      </span>
       <table>
         <tr>
           <th>Value</th>
