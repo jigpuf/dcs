@@ -186,6 +186,16 @@ const Links = () => {
       purpose: "Store photos for access from pages",
       url: "https://photobucket.com/",
     },
+    {
+      name: "Tinkercad",
+      purpose: "Cad and 3d designs",
+      url: "https://www.tinkercad.com/",
+    },
+    {
+      name: "Thingverse",
+      purpose: "Cad and 3d designs",
+      url: "https://www.thingiverse.com/",
+    },
   ];
 
   return (

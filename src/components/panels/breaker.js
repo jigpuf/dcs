@@ -57,6 +57,8 @@ const Breaker = () => {
           <td></td>
         </tr>
       </table>
+      <h2>Trip curve</h2>
+      <img src="https://wiki.testguy.net/uploads/default/original/1X/9abed3eb8fa421cd11a9c9d6e8b3b1329cf11b4c.jpeg"></img>
     </div>
   );
 };

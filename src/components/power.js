@@ -8,6 +8,8 @@ import Placeholder from "../utilities/placeholder.js";
 import AC from "./power/ac.js";
 import Motors from "./power/motors.js";
 import Fuses from "./panels/fuses.js";
+import Contactors from "./power/contactors.js";
+import Breaker from "./panels/breaker.js";
 
 const Power = () => {
   const items = [
@@ -16,9 +18,16 @@ const Power = () => {
     { name: "Fuses", slug: "fuses", component: <Fuses /> },
 
     { name: "Motors", slug: "motors", component: <Motors /> },
+    { name: "Contactors", slug: "contactors", component: <Contactors /> },
+    { name: "Breakers", slug: "breakers", component: <Breaker /> },
+
     { name: "Power concepts", slug: "concepts", component: <Concepts /> },
     { name: "Transformers", slug: "transformers", component: <Transformers /> },
-    { name: "Switches", slug: "switches", component: <Placeholder /> },
+    {
+      name: "Switches/ Buttons/Indicators",
+      slug: "switches",
+      component: <Placeholder />,
+    },
     { name: "Panels", slug: "panels", component: <Panels /> },
     { name: "Codes", slug: "codes", component: <Placeholder /> },
     { name: "ATS Function", slug: "ats", component: <Placeholder /> },

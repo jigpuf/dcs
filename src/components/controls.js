@@ -44,7 +44,7 @@ const Controls = () => {
     {
       course: "From Wire to PLC, A Bootcamp in Industrial Automation",
       author: "Mouhammmed Hamsho",
-      finished: "20",
+      finished: "30",
       total: "187",
     },
     {

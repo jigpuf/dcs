@@ -97,10 +97,17 @@ const HtmlMedia = () => {
         "width='400'",
         "controls",
         "autoplay>",
+        "poster='images/smiley.png'",
         "src='video.mp4'",
         "></video>",
+        "Other Attributes available:",
+        "loop if there it loops the video",
+        "autoplay if there the video loads and starts playing imediately",
+        "",
       ],
-      visual: <video width="400" controls autoplay loop></video>,
+      visual: (
+        <video width="400" controls autoplay poster="./dang.png" loop></video>
+      ),
     },
     {
       step: "Audio",
@@ -154,8 +161,16 @@ const HtmlMedia = () => {
     {
       step: "Meter",
       points: ["", "", "", "", "", "", "", ""],
-      code: ["", "", "", "", "", "", "", ""],
-      visual: <div></div>,
+      code: [
+        "<h2>Temperature Meter</h2>",
+        "<meter id='myMeter' value='60' min='0' max='100'></meter>",
+      ],
+      visual: (
+        <div>
+          <h2>Temperature Meter</h2>
+          <meter id="myMeter" value="60" min="0" max="100"></meter>
+        </div>
+      ),
     },
     {
       step: "Progress",
