@@ -13,9 +13,10 @@ const V200 = () => {
         href="https://vacaccessories.com/wp-content/uploads/V200-Feedback-option-IOM-2019.pdf"
         target="_blank"
       >
-        Manual
+        Manual for feedback module
       </a>
-      Pg 8 Factory reeset on feedback <h3>Calibration</h3>
+      Pg 8 Factory reeset on feedback 
+      <h3>Calibration</h3>
       <h4>Mechanical Calibration</h4>
       <li>
         If feedback module is installed, remove pot drive gear during mechanical
