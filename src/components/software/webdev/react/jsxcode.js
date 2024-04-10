@@ -4,6 +4,7 @@ import ButtonMaker from "../../../../utilities/buttonMaker";
 import JSXComponentBoilerPlate from "./jsxCode/jsxBoilerPlate";
 import DataModule from "./jsxCode/dataModule";
 import JSXTableBuilder from "./jsxCode/jsxTableBuild";
+import JSXButtons from "./jsxCode/jsxButtons";
 
 const JSXUsefulCode = () => {
   const items = [
@@ -30,7 +31,7 @@ const JSXUsefulCode = () => {
     {
       name: "Active buttons",
       slug: "active Buttons",
-      component: <Placeholder />,
+      component: <JSXButtons />,
     },
   ];
   return (
