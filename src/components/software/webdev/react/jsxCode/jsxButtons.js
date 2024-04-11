@@ -1,10 +1,10 @@
 import React from "react";
 const JSXButtons = () => {
   const buttons = [
-    { step: "", code: [""], notes: [""], display: "" },
-    { step: "", code: [""], notes: [""], display: "" },
-    { step: "", code: [""], notes: [""], display: "" },
-    { step: "", code: [""], notes: [""], display: "" },
+    { step: "Top Level copmponent", code: [""], notes: [""], display: "" },
+    { step: "Buttons component", code: [""], notes: [""], display: "" },
+    { step: "Render button", code: [""], notes: [""], display: "" },
+    { step: "CSS", code: [""], notes: [""], display: "" },
     { step: "", code: [""], notes: [""], display: "" },
   ];
   const renderButtons = buttons.map((item) => {

@@ -4,7 +4,27 @@ const Breaker = () => {
   return (
     <div>
       <h1>Circuit Breakers</h1>
-      <h2>Types</h2>
+      <hr />
+      <h2>Fault Types</h2>
+      <h3>Overcurrent</h3>
+      <ol>
+        <li>Also called Short Circuit or Magnetic protection</li>
+        <li>Instant circuit disconnection at a particular current</li>
+        <li>Can be adjustable depending on device</li>
+      </ol>
+      <h3>Overload</h3>
+      <ol>
+        <li>Also called thermal protection</li>
+        <li>
+          Depends on the heat the current produces to take a circuit
+          disconnection action
+        </li>
+        <li>Does not support momentary disconnection</li>
+        <li>Can be adjustable depending on device</li>
+      </ol>
+      A protection device can have thermal, magnetic or both protections
+      <hr />
+      <h2>Types of Breakers</h2>
       <table>
         <tr>
           <th>Type</th>

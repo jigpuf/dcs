@@ -1,6 +1,6 @@
 import React from "react";
 
-const Panels = () => {
+const WireCodes = () => {
   const wires = [
     {
       voltage: "120",
@@ -133,4 +133,4 @@ const Panels = () => {
   );
 };
 
-export default Panels;
+export default WireCodes;

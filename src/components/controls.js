@@ -10,7 +10,6 @@ import Placeholder from "../utilities/placeholder.js";
 import ButtonMaker from "../utilities/buttonMaker.js";
 import ArduinoSoftware from "./software/arduinoSoftware.js";
 import ESP32 from "./controls/esp32.js";
-import Panels from "./controls/panels.js";
 import Daqs from "./controls/daqs.js";
 import Controllers from "./controls/controllers.js";
 
@@ -37,14 +36,12 @@ const Controls = () => {
       slug: "ESP32",
       component: <ESP32 />,
     },
-
-    { name: "Panels", slug: "Panels", component: <Panels /> },
   ];
   const courses = [
     {
       course: "From Wire to PLC, A Bootcamp in Industrial Automation",
       author: "Mouhammmed Hamsho",
-      finished: "30",
+      finished: "33",
       total: "187",
     },
     {

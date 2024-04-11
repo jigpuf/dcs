@@ -18,7 +18,15 @@ import Cars from "./cars.js";
 import Links from "./links.js";
 
 const MainSection = (props) => {
-  const activeTab = props.activeTab;
+  const activeTab = props.activeTab; //from App.js
+  /*
+Here's how the && operator works:
+
+If the left operand (the expression before &&) evaluates to a truthy value, the operator evaluates the right operand (the expression after &&) and returns the value of the right operand.
+
+If the left operand evaluates to a falsy value, the operator short-circuits and returns the value of the left operand without evaluating the right operand.
+The  active Tab is set  by the props brought in from the parrent App component.  It is set by the buttons formed from the side menu
+  */
   return (
     <div className="main">
       {activeTab === "controls" && <Controls />}

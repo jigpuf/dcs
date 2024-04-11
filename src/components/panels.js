@@ -1,24 +1,32 @@
 import React from "react";
-import Fuses from "./panels/fuses.js";
-import Breaker from "./panels/breaker.js";
+
 import Examples from "./panels/examples.js";
 import ButtonMaker from "../utilities/buttonMaker.js";
 import Placeholder from "../utilities/placeholder.js";
 import Relays from "./panels/relays.js";
+import CircuitProtection from "./power/circuitProtection.js";
+import TerminalBlocks from "./panels/terminalBlocks.js";
+import WireCodes from "./power/wireCodes.js";
+import DcPowerSupply from "./power/dc/dcPowerSupply.js";
 const Controls = () => {
   const items = [
-    { name: "Fuse", slug: "fuse", component: <Fuses /> },
-    { name: "Breaker", slug: "breaker", component: <Breaker /> },
+    {
+      name: "Circuit Protection",
+      slug: "protection",
+      component: <CircuitProtection />,
+    },
+    { name: "Terminals", slug: "blocks", component: <TerminalBlocks /> },
+
     { name: "Contactor", slug: "contactor", component: <Placeholder /> },
     { name: "Relay", slug: "relay", component: <Relays /> },
-    { name: "Power Supply", slug: "power", component: <Placeholder /> },
+    { name: "DC Power Supply", slug: "power", component: <DcPowerSupply /> },
     { name: "HOA Switches", slug: "hoa", component: <Placeholder /> },
-    { name: "Terminals", slug: "terminals", component: <Placeholder /> },
     { name: "Current Transducers", slug: "ct", component: <Placeholder /> },
     { name: "Panel Examples", slug: "examples", component: <Examples /> },
     { name: "Resisters", slug: "resisters", component: <Placeholder /> },
     { name: "Backplane", slug: "backplane", component: <Placeholder /> },
     { name: "Enclosure", slug: "enclosure", component: <Placeholder /> },
+    { name: "Wire Codes", slug: "Wire Codes", component: <WireCodes /> },
   ];
   return (
     <div>
