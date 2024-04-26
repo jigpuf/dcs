@@ -220,6 +220,11 @@ const FlexDirection = () => {
         </tr>
         {renderValues}
       </table>
+      There is also a flex-basis property. The property can be set to pixels. If
+      the flex direction is row, then the flex basis will give the property
+      horizontally. If it is set to column, flex basis will set the size of each
+      item vertically. Flex basis has to target the children and not the
+      container parent
     </div>
   );
 };

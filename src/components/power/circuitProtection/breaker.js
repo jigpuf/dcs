@@ -1,6 +1,57 @@
 import React from "react";
 
 const Breaker = () => {
+  const breakers = [
+    {
+      breaker: "MCB Single and Multi-pole",
+      meaning: "Miniature Circuit Breaker",
+      rating: "Max 100 Amps",
+      uses: "Overcurrent, Overheating, Switching",
+      notes: [
+        "Single-Pole(single Phase), Never use 3 single poles for a 3-phase circuit",
+        "Di-Pole(Hot and neutral of single Phase)",
+        "Three-Pole(3-Phase)",
+      ],
+    },
+    {
+      breaker: "MCCB",
+      meaning: "Molded Case Circuit Breaker",
+      rating: "up to 1000 Amps",
+      uses: "Input Power Switch of Large electrical panels",
+      notes: [
+        "Trip characteristics are adjustable",
+        "In = Rated Current",
+        "Ir = percent of rated current, usually 70-100%",
+        "Tr = Long time Delay, ",
+      ],
+    },
+    {
+      breaker: "ELCB",
+      meaning: "Earth Leakage Circuit Breaker",
+      rating: "",
+      uses: "Detects any small current leakage and trips instantly. Usually installed in series after the main panel circuit breaker. Used to protect personel.",
+      notes: [
+        "current rating should match the current rating of the breaker that is in line with it",
+        "Rated by amount of leakage current it will see",
+      ],
+    },
+  ];
+  const renderBreakers = breakers.map((item) => {
+    const notes = item.notes.map((note) => {
+      return <li>{note}</li>;
+    });
+    return (
+      <tr>
+        <td>{item.breaker}</td>
+        <td>{item.meaning}</td>
+        <td>{item.rating}</td>
+        <td>{item.uses}</td>
+        <td>
+          <ol>{notes}</ol>
+        </td>
+      </tr>
+    );
+  });
   return (
     <div>
       <h1>Circuit Breakers</h1>
@@ -33,49 +84,7 @@ const Breaker = () => {
           <th>Uses</th>
           <th>Configurations</th>
         </tr>
-        <tr>
-          <td>MCB Single and Multi-pole</td>
-          <td>Miniature Circuit Breaker</td>
-          <td>Max 100 Amps</td>
-          <td>Overcurrent, Overheating, Switching</td>
-          <td>
-            <ol>
-              <li>
-                Single-Pole(single Phase), Never use 3 single poles for a
-                3-phase circuit
-              </li>
-              <li>Di-Pole(Hot and neutral of single Phase)</li>
-              <li>Three-Pole(3-Phase)</li>
-            </ol>
-          </td>
-        </tr>
-        <tr>
-          <td>MCCB</td>
-          <td>Molded Case Circuit Breaker</td>
-          <td>up to 1000 Amps</td>
-          <td>Input Power Switch of Large electrical panels</td>
-          <td>Trip characteristics are adjustable</td>
-        </tr>
-        <tr>
-          <td>ELCB</td>
-          <td>Earth Leakage Circuit Breaker</td>
-          <td></td>
-          <td>
-            Detects any small current leakage and trips instantly. Usually
-            installed in series after the main panel circuit breaker. Used to
-            protect personel.
-          </td>
-          <td>
-            Need to connect 3-phases, the neutral, and earth to sense leakage
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+        {renderBreakers}
       </table>
       <h2>Trip curve</h2>
       <img src="https://wiki.testguy.net/uploads/default/original/1X/9abed3eb8fa421cd11a9c9d6e8b3b1329cf11b4c.jpeg"></img>
