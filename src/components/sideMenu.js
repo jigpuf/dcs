@@ -22,6 +22,8 @@ const SideMenu = (props) => {
 so the button will be blue if its slug property is equal to the prop.active tab
 */
   const items = [
+    { name: "Apps", slug: "apps" },
+
     { name: "Controls", slug: "controls" },
     { name: "Instruments", slug: "instruments" },
     { name: "Panels", slug: "panels" },
@@ -34,7 +36,6 @@ so the button will be blue if its slug property is equal to the prop.active tab
     { name: "Project Manager", slug: "manage" },
     { name: "Networking", slug: "networking" },
     { name: "Software", slug: "software" },
-    { name: "Apps", slug: "apps" },
     { name: "Build", slug: "build" },
     { name: "Cars", slug: "cars" },
     { name: "Links", slug: "links" },

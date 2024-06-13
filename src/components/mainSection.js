@@ -29,6 +29,7 @@ The  active Tab is set  by the props brought in from the parrent App component. 
   */
   return (
     <div className="main">
+      {activeTab === "apps" && <Apps />}
       {activeTab === "controls" && <Controls />}
       {activeTab === "instruments" && <Instruments />}
       {activeTab === "cables" && <Cables />}
@@ -41,7 +42,6 @@ The  active Tab is set  by the props brought in from the parrent App component. 
       {activeTab === "panels" && <Panels />}
       {activeTab === "inventory" && <Inventory />}
       {activeTab === "manage" && <Manager />}
-      {activeTab === "apps" && <Apps />}
       {activeTab === "build" && <Build />}
       {activeTab === "cars" && <Cars />}
 
