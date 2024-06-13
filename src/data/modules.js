@@ -378,7 +378,7 @@ export default [
         },
       },
       {
-        use: "Valve CMD Feedback to 9205",
+        use: "Valve CMD-FDBK to 9205",
         channelCount: "32",
         instruments: ["Valve FDBK"],
         wires: {
@@ -439,7 +439,7 @@ export default [
     module: "Limit Board",
     series: "",
     channelType: "Limits",
-    header: "DB-37",
+    header: "DB-37 Open=Pin, Close=Pin, Output=Pin, Return=Socket",
     uses: [
       {
         use: "Output to Module 9205",
