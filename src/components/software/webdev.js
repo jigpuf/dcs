@@ -49,7 +49,7 @@ const Webdev = () => {
     {
       name: "Shaun Pelling",
       course: "Modern JavaScript (Complete guide, from Novice to Ninja)",
-      class: "47",
+      class: "48",
       last: "188",
     },
 
