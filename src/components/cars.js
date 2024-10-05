@@ -1,5 +1,5 @@
 import React from "react";
-import Drivetrain from "./cars/drivetrain.js";
+import Videos from "./cars/videos.js";
 import Steering from "./cars/steering.js";
 import Hvac from "./cars/hvac.js";
 import Body from "./cars/body.js";
@@ -11,7 +11,7 @@ import Placeholder from "../utilities/placeholder.js";
 
 const Cars = () => {
   const items = [
-    { name: "Drivetrain", slug: "drivetrain", component: <Drivetrain /> },
+    { name: "Videos", slug: "videos", component: <Videos /> },
     { name: "Steering/Suspension", slug: "steering", component: <Steering /> },
     { name: "HVAC", slug: "hvac", component: <Hvac /> },
     { name: "Body/chasis", slug: "body", component: <Body /> },

@@ -3,6 +3,79 @@ import ButtonMaker from "../../utilities/buttonMaker.js";
 import Placeholder from "../../utilities/placeholder.js";
 
 const Media = () => {
+  const sounds = [
+    {
+      type: "Sound from an application only",
+      systemAudioIN: "na",
+      systemAudioOUT: "na",
+      applicationName: "Audio Hijac",
+      applicationAudioIn: "Application",
+      applicationAudioOut: "anything",
+      instructions: [
+        <a href="https://www.youtube.com/watch?v=5aR3MywmcXI" target="_blank">
+          Video
+        </a>,
+        "Open Audio Hijack",
+        "Session->New Session",
+        "Select Application Audio",
+        "Set application block for the application or URL you will be recording",
+        "Set recorder box and choose the quality you want",
+        "For voice lectures:MP# 64 KBPS, variable bitrate, auto sample rate, channels mono",
+        "For Music Highest quality uncompressed AIFF, min 16 bit, min 44100Hz, Stereo",
+        "For basic Quality music, High Quality MP3, high bit rate stereo",
+        "Set file name and location",
+        "Application volume will affect recording volume but output device volume will not",
+      ],
+    },
+    {
+      type: "Sound from an application and external Mic",
+      systemAudioIN: "",
+      systemAudioOUT: "",
+      applicationName: "",
+      applicationAudioIn: "",
+      applicationAudioOut: "",
+      instructions: [""],
+    },
+    {
+      type: "Sound from an application and internal Mic",
+      systemAudioIN: "",
+      systemAudioOUT: "",
+      applicationName: "",
+      applicationAudioIn: "",
+      applicationAudioOut: "",
+      instructions: [""],
+    },
+    {
+      type: "Sound from external Mic Only",
+      systemAudioIN: "",
+      systemAudioOUT: "",
+      applicationName: "",
+      applicationAudioIn: "",
+      applicationAudioOut: "",
+      instructions: [""],
+    },
+  ];
+  const renderSounds = sounds.map((item) => {
+    const instructions = item.instructions.map((instruction) => {
+      return <li>{instruction}</li>;
+    });
+    return (
+      <tr>
+        <td>{item.type}</td>
+        <td>{item.systemAudioIN}</td>
+        <td>{item.systemAudioOUT}</td>
+        <td>{item.applicationName}</td>
+        <td>{item.applicationAudioIn}</td>
+        <td>{item.applicationAudioOut}</td>
+        <td>
+          <details>
+            <ol>{instructions}</ol>
+          </details>
+        </td>
+      </tr>
+    );
+  });
+  /////////////
   const mediaTypes = [
     {
       mediaName: "Screen Shot",
@@ -66,14 +139,6 @@ const Media = () => {
       picture: "",
       instructions: ["", ""],
     },
-    {
-      mediaName: "Sound",
-      video: "-",
-      audioIn: "Computer",
-      audioOut: "Speaker",
-      picture: "-",
-      instructions: ["Audio Hijack:System Audio→internal Speakers→Record", ""],
-    },
   ];
   const renderMediaTypes = mediaTypes.map((item) => {
     const instructions = item.instructions.map((instruction) => {
@@ -94,7 +159,26 @@ const Media = () => {
   });
   return (
     <div>
-      <h2>Media:</h2>
+      <h1>Media Capture</h1>
+      <details>
+        <summary>Capture Sound Only</summary>
+        <table>
+          <tr>
+            <th rowSpan={2}>Type of Capture</th>
+            <th colSpan={2}>System Sound Settings</th>
+            <th colSpan={3}>Application Settings</th>
+            <th rowSpan={2}>Instructions</th>
+          </tr>
+          <tr>
+            <th>Audio in</th>
+            <th>Audio Out</th>
+            <th>Application Name</th>
+            <th>Audio In</th>
+            <th>Audio Out</th>
+          </tr>
+          {renderSounds}
+        </table>
+      </details>
       <table>
         <tr>
           <th>Media</th>
