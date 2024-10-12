@@ -11,6 +11,7 @@ const Webpage = () => {
         "Get visual Studio Code",
         "Get any extensions for VSC",
       ],
+      details: ["", ""],
     },
     {
       part: "Create Accounts",
@@ -19,10 +20,26 @@ const Webpage = () => {
     },
     {
       part: "Build App Locally",
-      steps: ["npx create-react-app my-app", "Start Coding"],
+      steps: ["npx create-react-app my-app", "Dump unnecesary files"],
       details: [
         "Open terminal, navigate to the folder you want to put the App in, put in 'npx create-react-app my-app' with my-app being the name of the app",
-        "",
+        "Delete setuptests.js, delete service worker, delete logo.svg, delete index.css, delete app.test.js",
+        "inside index.js remove all comments and serviceworker.unregister() and import service worker, import index.css",
+        "Inside App.js- remove import logo, entire header tag, put in an h1 or something between the divs, change App to a const arrow function",
+        "In App.css- remove everything and start building your own css",
+        "In public folder, remove all files except index.html",
+        "In index.html- remove all link tags and comments, change title. Ylu can add the tab icon by adding back in your own link tag link with rel and href to a local public file picture with the favicon.ico name",
+        "In App.js, index.html, index.js- delete any references to service workers, manifest",
+        "Ready to code",
+      ],
+    },
+    {
+      part: "Set up file structure",
+      steps: ["Add folder"],
+      details: [
+        "data file for database/json type info",
+        "dataShapers for tools to manipulate the data",
+        "Under public set up folders for sound, pictures, video",
       ],
     },
     {
