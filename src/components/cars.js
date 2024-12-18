@@ -8,9 +8,11 @@ import Electrical from "./cars/electrical.js";
 import Stats from "./cars/stats.js";
 import ButtonMaker from "../utilities/buttonMaker.js";
 import Placeholder from "../utilities/placeholder.js";
+import CarTools from "./cars/carTools.js";
 
 const Cars = () => {
   const items = [
+    { name: "Tools", slug: "tools", component: <CarTools /> },
     { name: "Videos", slug: "videos", component: <Videos /> },
     { name: "Steering/Suspension", slug: "steering", component: <Steering /> },
     { name: "HVAC", slug: "hvac", component: <Hvac /> },
